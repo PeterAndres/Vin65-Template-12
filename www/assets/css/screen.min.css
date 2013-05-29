@@ -1,0 +1,6255 @@
+/* ======================================================================================================				
+	Normalize @ Import File
+==================================================================================================== */
+/* normalize.css v2.0.1 | MIT License | git.io/normalize */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace,serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ====================================================================================================				
+	Vin65 Responsive Base .SCSS @ Import File
+==================================================================================================== */
+/* CSS Document */
+/* ====================================================================================================                                                                
+
+	Table of Content
+
+	Base 2 Responsive CSS
+	
+	A. Responsive Breakpoints
+
+	1. Basic Typography
+	2. Top Menu
+	3. Pagination
+	4. Blog
+		a. Blog Right Custom Tags
+		b. Blog List Content
+	5. Recipes
+		a. Recipe List
+		b. Recipe Drilldown
+		c. Recipe Related Products
+	6. Comments
+		a. Drilldown Content Form Styling
+	7. Components
+		a. Calendar
+		b. Calendar Widgets
+		c. FAQ
+		d. Site Map
+		e. Store Locator
+		f. Table of Contents
+		g. Subscribe Widget
+		h. Twitter Widget
+		i. Search Widget
+		j. Auto Suggest Search
+	8. Login Links
+	9. Modal Cart 
+		a. Modal Cart
+		b. Modal Cart Table
+	10. Product Global Styles
+		a. Product - Add To Cart 
+		b. Add To Cart - Volume Based Pricing 
+		c. Product Review Stats
+		d. Social Media Bar
+		e. Wine Specs - table format
+		f. Wine Specs - paragraph format
+		g. Wine Specs - Professional Reviews 
+		h. Related Products 
+		i. Product Tabs
+	11. Product V3 List 1 Up
+	12. Product V3 List 2 Up
+	13. Product V3 List 3 Up
+	14. Product V3 List 5 Up
+	15. Product V3 List
+	16. Product V3 List Store 1 Up
+	17. Product Groups 
+	18. Related Products
+	19. Product Sets
+	20. Product Quick View
+	21. Product Store Drilldown
+	22. Product Drilldown 
+	23. Cart
+		a. Cart Header
+		b. Cart Table
+	24. Checkout
+	25. Billing & Shipping
+		a. Mini Cart Summary
+		b. Main Form
+		c. Review Screen
+		d. Print Receipt
+	26. Club
+		a. Club List Component
+		b. Main Form 
+		c. Sign Up Screen
+		d. Review Screen
+	27. Member Area
+		a. Login Form
+		b. Main Form
+		c. Club List
+		d. Member Orders
+		e. Member Orders Drilldown
+		f. Member Allocations
+		g. Member Allocations History
+	28. Modal PopUp Layout
+	29. Form Builder
+	30. Misc
+*/
+/*   ===================================================================================================                                                                
+    1. Basic Typography // do not touch these styles in the responsive base
+======================================================================================================== */
+/* Misc classes
+-------------------------------------------------------------- */
+.last, div.last {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: 0;
+}
+
+.small {
+  font-size: 0.917em;
+}
+
+.small a {
+  font-weight: bold;
+}
+
+.smaller {
+  font-size: 0.834em;
+}
+
+.smaller a {
+  font-weight: bold;
+}
+
+.red {
+  color: #CC0000;
+}
+
+.red a {
+  color: #CC0000;
+}
+
+.red a:hover {
+  color: #990000;
+}
+
+.promo {
+  color: #CC0000;
+  font-weight: bold;
+}
+
+.error {
+  color: #CC0000;
+}
+
+.alert {
+  padding: 7px 10px;
+  background-color: #c53939;
+  color: #fff;
+  font-size: 0.95em;
+  line-height: 1.6em;
+}
+
+.alert p {
+  color: #fff;
+}
+
+.alert ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.alert li {
+  color: #fff;
+}
+
+.alertYellow {
+  padding: 7px 10px;
+  background-color: #FF9;
+  color: #333;
+  font-size: 0.95em;
+  line-height: 1.6em;
+}
+
+.alertYellow p {
+  padding: 0;
+  color: #333;
+  margin: 0;
+}
+
+/* consider deleting these.
+-------------------------------------------------------------- */
+.underline {
+  text-decoration: underline;
+}
+
+.strikethru {
+  text-decoration: line-through;
+  font-weight: normal;
+}
+
+.right {
+  text-align: right;
+}
+
+.floatRight {
+  float: right;
+}
+@media screen and (max-width: 640px) {
+  .floatRight {
+    float: none;
+  }
+}
+
+.left {
+  text-align: left;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.verticalMiddle {
+  vertical-align: middle;
+}
+
+/* clearing
+-------------------------------------------------------------- */
+.v65-group:before, .v65-group:after {
+  content: "";
+  display: table;
+}
+
+.v65-group:after {
+  clear: both;
+}
+
+.v65-group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+
+.v65-clear {
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Images 
+-------------------------------------------------------------- */
+/* removing the floats on mobile */
+img.v65-featureRight {
+  padding: 0;
+  margin: 0 0 1em 0;
+}
+@media screen and (min-width: 481px) {
+  img.v65-featureRight {
+    float: right;
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin: 0 0 1em 1em;
+  }
+}
+
+img.v65-right {
+  padding: 0;
+  margin: 0 0 1em 0;
+}
+@media screen and (min-width: 481px) {
+  img.v65-right {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+}
+
+img.v65-featureLeft {
+  padding: 0;
+  margin: 0 0 1em 0;
+}
+@media screen and (min-width: 481px) {
+  img.v65-featureLeft {
+    float: left;
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin: 0 1em 1em 0;
+  }
+}
+
+img.v65-left {
+  padding: 0;
+  margin: 0 0 1em 0;
+}
+@media screen and (min-width: 481px) {
+  img.v65-left {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+}
+
+img.v65-border {
+  border: 1px solid #ccc;
+  padding: 3px;
+}
+
+/*Pull Quotes
+-------------------------------------------------------------- */
+.v65-quoteRight {
+  width: 33%;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  color: #555;
+  font: italic 1.17em/1.5em Georgia, "Times New Roman", Times, serif;
+  float: right;
+  padding: 0.65em;
+  margin: 0 0 1em 1em;
+}
+
+.v65-quoteRight:first-letter {
+  display: block;
+  float: left;
+  margin: 4px 8px 0 0;
+  font-size: 3.2em;
+}
+
+.v65-quoteLeft {
+  width: 33%;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  color: #555;
+  font: italic 1.17em/1.5em Georgia, "Times New Roman", Times, serif;
+  float: left;
+  padding: 0.65em;
+  margin: 0 1em 1em 0;
+}
+
+.v65-quoteLeft:first-letter {
+  display: block;
+  float: left;
+  margin: 4px 8px 0 0;
+  font-size: 3.2em;
+}
+
+/* Tables
+-------------------------------------------------------------- */
+th {
+  font-weight: bold;
+}
+
+thead th {
+  background: #ccc;
+}
+
+tr.altRow td {
+  background: #eee;
+}
+
+tfoot {
+  font-style: italic;
+}
+
+caption {
+  background: #eee;
+}
+
+/* Responsive Global Styles for Inputs
+-------------------------------------------------------------- */
+@media screen and (max-width: 767px) {
+  input {
+    height: 36px;
+    min-width: 36px;
+  }
+  input[type=checkbox] {
+    height: 22px;
+    min-width: 22px;
+  }
+  input[type=radio] {
+    margin: 5px 2px;
+    height: 22px;
+    min-width: 22px;
+  }
+}
+@media screen and (max-width: 767px) {
+  select {
+    height: 36px;
+    min-width: 36px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* adjust this to the width of the content wrapper minus padding */
+  img {
+    max-width: 100%;
+    height: auto !important;
+  }
+}
+/*   ===================================================================================================                                                                
+    2. Top Menu 
+======================================================================================================== */
+/*   ===================================================================================================                                                                
+    3. Pagination
+======================================================================================================== */
+/* a. Product Pagination
+-------------------------------------------------------------- */
+.v65-paging {
+  border-bottom: 1px solid #999;
+  line-height: 3em;
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .v65-paging {
+    display: none;
+  }
+}
+
+.v65-pagingBottom {
+  border-bottom: 0;
+  border-top: 1px solid #999;
+  clear: both;
+  margin: 1.5em 0;
+}
+@media screen and (max-width: 767px) {
+  .v65-pagingBottom {
+    display: block;
+  }
+}
+
+/* b. Product & Blog Pagination
+-------------------------------------------------------------- */
+.v65-product-pagination {
+  float: right;
+}
+
+.v65-product-pagination, .v65-Paging {
+  text-align: right;
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .v65-product-pagination, .v65-Paging {
+    width: 100%;
+  }
+}
+.v65-product-pagination ul, .v65-Paging ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+@media screen and (min-width: 768px) {
+  .v65-product-pagination ul, .v65-Paging ul {
+    margin: 10px 0;
+  }
+}
+.v65-product-pagination li, .v65-Paging li {
+  display: inline;
+  padding-left: 2px;
+}
+.v65-product-pagination li a, .v65-Paging li a {
+  text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+  .v65-product-pagination li a, .v65-Paging li a {
+    background-color: #ccc;
+    display: inline-block;
+    padding: 0 12px;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+}
+.v65-product-pagination li a:hover, .v65-Paging li a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 767px) {
+  .v65-product-pagination li.border:first-child, .v65-Paging li.border:first-child {
+    margin: 5px 2px;
+    padding: 7px 16px;
+  }
+}
+.v65-product-pagination li.border, .v65-Paging li.border {
+  border-right: 1px solid #000;
+  padding: 0 5px;
+}
+@media screen and (max-width: 767px) {
+  .v65-product-pagination li.border, .v65-Paging li.border {
+    background-color: #909090;
+    border: 0;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 5px 0 5px 2px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .v65-product-pagination li.border a, .v65-Paging li.border a {
+    background: none;
+  }
+}
+
+/*   ===================================================================================================                                                                
+    3. Pagination Blog - Delete once blog is set.
+======================================================================================================== */
+.v65-Paging {
+  border-bottom: 1px solid #999;
+  line-height: 3em;
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+.v65-Paging ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+.v65-Paging li {
+  display: inline;
+  padding-left: 5px;
+}
+.v65-Paging li a {
+  text-decoration: none;
+}
+.v65-Paging li a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  #v65-PagingTop {
+    display: none;
+  }
+}
+
+#v65-PagingBottom {
+  border-bottom: 0;
+  border-top: 1px solid #999;
+  clear: both;
+  margin: 1.5em 0;
+}
+
+/*   ===================================================================================================                                                                
+    4. Blog
+======================================================================================================== */
+/* a. Blog Right Custom Tags
+-------------------------------------------------------------- */
+#v65-blogRecentPosts li {
+  padding-bottom: 0.75em;
+}
+
+#v65-blogSubscribeByRSS {
+  display: block;
+  padding: 0 0 0 22px;
+  background: url(../images/blog/rss.png) no-repeat left;
+}
+
+.v65-recentEntriesDate {
+  font-style: italic;
+}
+
+.v65-recentEntriesTitle {
+  font-weight: bold;
+}
+
+/* b. Blog List Content
+-------------------------------------------------------------- */
+.v65-blogPostWrapper {
+  position: relative;
+  margin-bottom: 1.5em;
+  padding: 0;
+}
+.v65-blogPostWrapper:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.v65-avatar {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .v65-avatar {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+  }
+}
+.v65-avatar img {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .v65-avatar img {
+    display: block;
+    border: 1px solid #999;
+    padding: 2px;
+    background-color: #fff;
+  }
+}
+
+.v65-blogPost {
+  position: relative;
+  margin-left: 64px;
+  padding-bottom: 1.5em;
+}
+@media screen and (max-width: 767px) {
+  .v65-blogPost {
+    margin: 0;
+  }
+}
+
+.v65-blogPostDate {
+  font-size: 0.85em;
+  margin-bottom: 0.5em;
+  color: #666666;
+}
+@media screen and (max-width: 480px) {
+  .v65-blogPostDate {
+    font-size: 1.3em;
+  }
+}
+
+.v65-blogFooter {
+  font-size: 0.85em;
+  height: 1.8em;
+  margin: 0 0 1.5em;
+  clear: both;
+}
+
+.v65-blogFooterDate {
+  float: left;
+  padding-right: 1em;
+}
+@media screen and (max-width: 480px) {
+  .v65-blogFooterDate {
+    height: 22px;
+    font-size: 1.3em;
+  }
+}
+
+.v65-blogFooterLink {
+  float: left;
+  padding-right: 1em;
+}
+@media screen and (max-width: 480px) {
+  .v65-blogFooterLink {
+    display: none;
+  }
+}
+
+.v65-blogFooterComments {
+  float: left;
+  padding-right: 1em;
+}
+@media screen and (max-width: 480px) {
+  .v65-blogFooterComments {
+    height: 22px;
+    font-size: 1.3em;
+  }
+}
+
+.v65-blogFooterShareThis {
+  float: left;
+}
+
+/*   ===================================================================================================                                                                
+    5. Recipe
+======================================================================================================== */
+/* a. Recipe List 
+-------------------------------------------------------------- */
+.v65-recipe {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1em;
+  padding: 0 0 1em 0;
+}
+
+.v65-recipe-photo {
+  float: left;
+  padding: 0 1em 1em 0;
+  width: 125px;
+}
+.v65-recipe-photo img {
+  max-width: 100%;
+}
+
+.v65-recipe-info {
+  float: left;
+  padding: 0 0 1em 0;
+  width: 490px;
+}
+
+.v65-recipe-title {
+  font-size: 16px;
+}
+
+.v65-recipe-date {
+  font-size: 0.8;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 0.5em;
+}
+
+/* b. Recipe Drilldown
+-------------------------------------------------------------- */
+.v65-recipe-drilldown-left {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .v65-recipe-drilldown-left {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .v65-recipe-drilldown-left {
+    float: left;
+    width: 385px;
+    margin-right: 20px;
+  }
+}
+
+.v65-recipe-drilldown-subtitle {
+  font-size: 1.6em;
+  margin-bottom: 0.4em;
+}
+
+.v65-recipe-drilldown-right {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .v65-recipe-drilldown-right {
+    float: left;
+    width: 49%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .v65-recipe-drilldown-right {
+    width: 225px;
+  }
+}
+.v65-recipe-drilldown-right .v65-recipe-drilldown-photo {
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 480px) {
+  .v65-recipe-drilldown-right .v65-recipe-drilldown-photo {
+    text-align: center;
+  }
+}
+.v65-recipe-drilldown-right .v65-recipe-drilldown-attributes {
+  margin-bottom: 2em;
+}
+.v65-recipe-drilldown-right .v65-recipe-attribute {
+  margin-bottom: 0.5em;
+}
+.v65-recipe-drilldown-right .v65-recipe-attribute .v65-recipe-attributeLabel {
+  float: left;
+  font-weight: bold;
+  margin-right: 3%;
+  text-align: right;
+}
+@media screen and (min-width: 768px) {
+  .v65-recipe-drilldown-right .v65-recipe-attribute .v65-recipe-attributeLabel {
+    width: 47%;
+  }
+}
+.v65-recipe-drilldown-right .v65-recipe-attribute .v65-recipe-attributeValue {
+  float: left;
+  width: 50%;
+}
+
+/* c. Recipe Related Products
+-------------------------------------------------------------- */
+.v65-recipe-drilldown-related-products {
+  clear: both;
+  margin-bottom: 1em;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+.v65-recipe-drilldown-related-product {
+  float: left;
+  width: 30%;
+  margin: 0 3% 0 0;
+  /* Product Add To Cart */
+  /*Product Review Stats*/
+}
+.v65-recipe-drilldown-related-product .v65-product-photo img {
+  max-width: 40%;
+}
+.v65-recipe-drilldown-related-product .v65-product-title {
+  font-size: 1.3em;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+.v65-recipe-drilldown-related-product .v65-product-subtitle {
+  font-size: 1.1em;
+}
+.v65-recipe-drilldown-related-product .v65-product-addToCart-priceWrapper {
+  display: block;
+  margin-bottom: 5px;
+}
+.v65-recipe-drilldown-related-product .v65-product-reviewStats-stars {
+  display: inline;
+  float: none;
+  margin-right: 2px;
+}
+.v65-recipe-drilldown-related-product .v65-product-reviewStats-count {
+  display: inline;
+  float: none;
+}
+
+/*   ===================================================================================================                                                                
+    6. Comments
+======================================================================================================== */
+.v65-commentWrapper {
+  position: relative;
+  margin: 0 0 1.4em 0;
+  padding: 0 0 1em 0;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.v65-comment {
+  position: relative;
+  margin: 0 0 0 64px;
+  padding: 0;
+}
+@media screen and (max-width: 480px) {
+  .v65-comment {
+    margin: 0;
+  }
+}
+
+.v65-commentDate {
+  font-size: 0.85em;
+}
+
+.v65-commentText {
+  padding: 1em 0 0 0;
+}
+.v65-commentText p {
+  font-size: 1em;
+}
+
+/* a. Drilldown Content Form Styling
+-------------------------------------------------------------- */
+#v65-commentFormWrapper form {
+  width: 80%;
+}
+#v65-commentFormWrapper #Comments {
+  height: 140px;
+  width: 95%;
+}
+
+/*   ===================================================================================================                                                                
+    7. Components
+======================================================================================================== */
+/* a. Calendar
+-------------------------------------------------------------- */
+/*List View*/
+.v65-calendarList-Month {
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+  margin: 0 0 12px;
+}
+
+.v65-calendarList-Event {
+  padding-left: 12px;
+  margin-bottom: 12px;
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+  /*This is here until the class group is removed and replace with v65-group* in the template */
+}
+@media screen and (max-width: 767px) {
+  .v65-calendarList-Event {
+    padding: 0;
+  }
+}
+.v65-calendarList-Event:before {
+  content: "";
+  display: table;
+}
+.v65-calendarList-Event:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.v65-calendarList-Title {
+  font-weight: bold;
+}
+
+.v65-calendarList-Time {
+  font-style: italic;
+}
+
+.v65-calendarList-Description {
+  margin: 8px 0;
+}
+
+/*Block View*/
+#v65-CalendarWrapper {
+  width: 100%;
+}
+
+#v65-CalendarNav {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#v65-CalendarNav td {
+  padding: 3px;
+  width: 33%;
+}
+
+#v65-CalendarTable {
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  width: 100%;
+  background-color: #fff;
+}
+#v65-CalendarTable th {
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #999;
+  font-weight: bold;
+  font-size: 0.917em;
+  text-align: center;
+  padding: 0px;
+  height: 15px;
+  color: #fff;
+  background-color: #666;
+}
+#v65-CalendarTable td {
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #999;
+  padding: 2px;
+  width: 14%;
+  height: 55px;
+}
+
+.v65-CalendarDay {
+  float: right;
+  width: 15px;
+  height: 15px;
+  padding: 0 2px 2px 2px;
+  border-left: 1px solid #999;
+  border-bottom: 1px solid #999;
+  text-align: right;
+  font-size: 0.917em;
+  color: #869fc3;
+  clear: both;
+}
+
+.v65-CalendarToDay {
+  background-color: #ccc;
+}
+
+.v65-CalendarOffMonthDays {
+  background-color: #eee;
+}
+
+.v65-CalendarEvent {
+  clear: both;
+  padding: 0px 0px 8px 0px;
+  font-size: 0.917em;
+}
+.v65-CalendarEvent a {
+  /*color: #000;*/
+}
+
+#v65-CalendarEventTable td {
+  padding: 2px 10px 2px 2px;
+}
+
+/* b. Calendar Widgets
+-------------------------------------------------------------- */
+/* -----Event Today----- */
+.v65-event-today {
+  text-align: center;
+}
+
+.v65-event-title {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.v65-event-events-event {
+  margin-bottom: 1em;
+}
+
+.v65-event-events-event-time {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.v65-event-events-event-title {
+  display: inline-block;
+}
+
+/* -----Event Today With Calendar----- */
+.v65-event-calendar {
+  margin-bottom: 1em;
+}
+.v65-event-calendar table {
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0.897em;
+}
+.v65-event-calendar table th {
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #999;
+  padding: 1px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  color: #fff;
+  background-color: #666;
+}
+.v65-event-calendar table td {
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #999;
+  padding: 1px;
+  text-align: center;
+  width: 14%;
+}
+.v65-event-calendar .v65-CalendarDay {
+  float: right;
+  width: 15px;
+  height: 15px;
+  padding: 0 2px 2px 2px;
+  border-left: 1px solid #999;
+  border-bottom: 1px solid #999;
+  text-align: right;
+  font-size: 0.917em;
+  color: #869fc3;
+  clear: both;
+}
+.v65-event-calendar .v65-CalendarToDay {
+  background-color: #ccc;
+}
+.v65-event-calendar .v65-CalendarOffMonthDays {
+  background-color: #eee;
+}
+
+.v65-event-calendar-nav {
+  font-weight: bold;
+  text-align: center;
+}
+
+.v65-CalendarEvent {
+  clear: both;
+  padding: 0px 0px 8px 0px;
+  font-size: 0.917em;
+}
+.v65-CalendarEvent a {
+  /*color: #000;*/
+}
+
+/* -----Event Upcoming----- */
+.v65-event-upcoming {
+  text-align: center;
+}
+
+.v65-event-upcoming-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.v65-event-upcoming-event {
+  margin-bottom: 1em;
+}
+
+.v65-event-upcoming-event-date {
+  font-weight: bold;
+}
+
+.v65-event-upcoming-event-time {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.v65-event-upcoming-event-title {
+  display: inline-block;
+}
+
+/* c. FAQ
+-------------------------------------------------------------- */
+.v65-FAQ-Pair {
+  border-top: 1px solid #ccc;
+  width: 100%;
+  padding: 1em 0 0 0;
+  margin: 2em 0 0 0;
+}
+.v65-FAQ-Pair blockquote {
+  padding: 0;
+  margin: 0 0 0 1em;
+}
+.v65-FAQ-Pair p.topofpage {
+  text-align: right;
+  font-size: 0.917em;
+}
+
+/* d. Site Map
+-------------------------------------------------------------- */
+#v65-SiteMap {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px dotted #ccc;
+}
+#v65-SiteMap ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#v65-SiteMap ul li {
+  line-height: 1.3em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  #v65-SiteMap ul li {
+    line-height: inherit;
+    line-height: 2.5em;
+    font-size: 1.167em;
+    border: none;
+  }
+}
+#v65-SiteMap ul li a {
+  color: #333;
+  line-height: 1.4em;
+  border-bottom: 1px dotted #ccc;
+}
+@media screen and (max-width: 767px) {
+  #v65-SiteMap ul li a {
+    display: block;
+    font-size: 1em;
+    line-height: 3em;
+  }
+}
+@media screen and (min-width: 768px) {
+  #v65-SiteMap ul li a {
+    border: none;
+  }
+}
+#v65-SiteMap ul li ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 10%;
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  #v65-SiteMap ul li ul {
+    margin: 0 0 0 0.8em;
+  }
+}
+#v65-SiteMap ul li ul li {
+  font-size: 0.858em;
+}
+#v65-SiteMap ul li ul li li {
+  font-weight: normal;
+}
+
+/* e. Store Locator
+-------------------------------------------------------------- */
+#v65-businessLocator {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 1.4em;
+  padding: 0 0 1em;
+}
+@media screen and (min-width: 768px) {
+  #v65-businessLocator {
+    position: relative;
+  }
+}
+@media screen and (max-width: 767px) {
+  #v65-businessLocator .defaultBtn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #v65-businessLocator input, #v65-businessLocator select {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #v65-businessLocator input[type="text"] {
+    margin-bottom: 10px;
+  }
+}
+
+#v65-businessLocatorSelectByCity {
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  #v65-businessLocatorSelectByCity {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #v65-businessLocatorCategory {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #v65-businessLocatorCountryCode {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #v65-businessLocatorStateCode {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #v65-businessLocatorCity {
+    width: 150px;
+  }
+}
+
+#v65-businessLocatorSelectByZipCode {
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  #v65-businessLocatorSelectByZipCode {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #v65-businessLocatorCategoryBottom {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #v65-businessLocatorZipCode {
+    width: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #v65-businessLocatorRadius {
+    width: 80px;
+  }
+}
+
+#v65-BusinessList {
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  #v65-BusinessList {
+    position: relative;
+    margin: 0 400px 0 0;
+    padding: 0;
+  }
+}
+#v65-BusinessList ol li {
+  margin: 0 0 12px 0;
+}
+@media screen and (max-width: 767px) {
+  #v65-BusinessList ol li {
+    border-top: 1px solid #CCC;
+    padding-top: 8px;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  #v65-BusinessList ol li:last-child {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 8px;
+  }
+}
+
+#v65-map_canvas {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+@media screen and (min-width: 768px) {
+  #v65-map_canvas {
+    position: absolute;
+    width: 390px;
+    height: 300px;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    border: 1px solid #ccc;
+  }
+}
+
+/* f. Table of Contents
+-------------------------------------------------------------- */
+#v65-TableOfContents {
+  list-style: none;
+  padding: 0 0 0 1em;
+  margin: 0;
+  line-height: 2em;
+}
+
+/* g. Subscribe Widget
+-------------------------------------------------------------- */
+#v65-subscribeWidget {
+  /*The input width is adjusted globally to 100%*/
+}
+#v65-subscribeWidget input {
+  width: 100px;
+}
+
+/* h. Twitter Widget
+-------------------------------------------------------------- */
+.v65-tweet {
+  font-size: 11px;
+  line-height: 1.6em;
+  margin-bottom: 1em;
+  position: relative;
+  width: 100%;
+}
+
+.v65-tweetProfileImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+}
+
+.v65-tweetText {
+  position: relative;
+  margin: 0 0 5px 64px;
+  padding: 0;
+  min-height: 48px;
+}
+
+.v65-tweetDetails {
+  clear: both;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: right;
+}
+
+/* i. Search Widget
+-------------------------------------------------------------- */
+#v65-searchWidgetInput input {
+  width: 90px;
+}
+#v65-searchWidgetInput select {
+  width: 70px;
+}
+
+/* j. Auto Suggest Search
+-------------------------------------------------------------- */
+ul.ui-autocomplete {
+  width: 215px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 5px;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 250px;
+  background-color: #fff;
+}
+ul.ui-autocomplete li {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+}
+ul.ui-autocomplete li a {
+  display: block;
+  width: 200px;
+  cursor: pointer;
+  padding: 5px 0;
+  margin: 0 0 6px;
+}
+ul.ui-autocomplete li a .ui-state-hover {
+  background: #efefef;
+}
+ul.ui-autocomplete li a:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+ul.ui-autocomplete li a img {
+  float: left;
+  margin: 0 8px;
+  width: 15px;
+}
+ul.ui-autocomplete li a span {
+  float: left;
+  width: 169px;
+}
+
+/*   ===================================================================================================                                                                
+    8. Login Links
+======================================================================================================== */
+#user-tools {
+  background: #000;
+  border-bottom: 1px solid #6A6A6A;
+  line-height: 44px;
+  height: 44px;
+  z-index: 200;
+}
+@media screen and (min-width: 768px) {
+  #user-tools {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border-bottom: none;
+    height: 36px;
+    line-height: 36px;
+    float: right;
+    font-size: .917em;
+    width: 400px;
+  }
+}
+#user-tools a {
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  #user-tools a {
+    color: #000;
+  }
+}
+
+.v65-yourAccount, .v65-editProfile {
+  float: left;
+  position: relative;
+  width: 32%;
+  z-index: 400;
+  text-align: center;
+  border-right: 1px solid #666;
+  height: 44px;
+  line-height: 44px;
+  margin-right: 1%;
+  padding-right: 1%;
+}
+@media screen and (max-width: 480px) {
+  .v65-yourAccount, .v65-editProfile {
+    width: 32%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .v65-yourAccount, .v65-editProfile {
+    text-align: right;
+    width: 179px;
+    height: 1em;
+    /*12px*/
+    line-height: 1em;
+    /*12px*/
+    margin-top: 12px;
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+}
+.v65-yourAccount a, .v65-editProfile a {
+  color: #fff;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .v65-yourAccount a, .v65-editProfile a {
+    color: #000;
+    display: inline;
+  }
+}
+
+.v65-login, .v65-logout {
+  float: left;
+  position: relative;
+  width: 32%;
+  z-index: 400;
+  text-align: center;
+  border-right: 1px solid #666;
+  line-height: 44px;
+  margin: 0;
+}
+@media screen and (max-width: 480px) {
+  .v65-login, .v65-logout {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .v65-login, .v65-logout {
+    border-right: none;
+    line-height: 12px;
+    margin-top: 12px;
+    width: 50px;
+  }
+}
+.v65-login a, .v65-logout a {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .v65-login a, .v65-logout a {
+    display: inline;
+  }
+}
+
+/*   ===================================================================================================                                                                
+    9. Modal Cart
+======================================================================================================== */
+/* a. Modal Cart
+-------------------------------------------------------------- */
+#v65-modalCart {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  width: 96%;
+  z-index: 300;
+  text-align: right;
+}
+@media screen and (min-width: 768px) {
+  #v65-modalCart {
+    right: 0;
+    width: auto;
+  }
+}
+@media screen break-max-mobile {
+  #v65-modalCart a {
+    display: block;
+    width: 100%;
+  }
+}
+
+#v65-modalCartDropdown {
+  position: absolute;
+  top: 44px;
+  background-color: #FFF;
+  color: #000;
+  display: none;
+  right: 0;
+  text-align: left;
+  width: 100%;
+  line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  #v65-modalCartDropdown {
+    top: 32px;
+    width: 282px;
+  }
+}
+
+#v65-modalCartBody {
+  background-color: #FFF;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  color: #000;
+  font-size: 1em;
+  padding: 10px;
+}
+#v65-modalCartBody p {
+  color: #000;
+}
+#v65-modalCartBody a {
+  color: #000;
+  width: auto;
+  display: inline-block;
+  font-size: 1em;
+}
+@media screen and (max-width: 480px) {
+  #v65-modalCartBody a {
+    display: block;
+    width: 100%;
+  }
+  #v65-modalCartBody a.modalLinkBtn {
+    margin-top: 8px;
+  }
+}
+#v65-modalCartBody a:hover {
+  color: #000;
+}
+
+/* b. Modal Cart Table
+-------------------------------------------------------------- */
+#v65-modalCartTable {
+  margin-bottom: 10px;
+  padding: 0;
+  width: 100%;
+  line-height: normal;
+}
+#v65-modalCartTable th {
+  background-color: #efefef;
+  border-top: 1px solid #ccc;
+  font-size: 0.917em;
+  font-weight: bold;
+  padding: 2px 1px;
+  text-align: left;
+}
+#v65-modalCartTable td {
+  border-top: 1px solid #ccc;
+  font-size: 0.917em;
+  padding: 2px 1px;
+  vertical-align: top;
+}
+#v65-modalCartTable td a {
+  color: #000;
+}
+#v65-modalCartTable td a:hover {
+  color: #000;
+}
+
+#v65-modalCartTableSubtotal td {
+  background-color: #f9f7f3;
+  font-size: 0.917em;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+#v65-modalCartFooter {
+  display: none;
+}
+
+/*   ===================================================================================================                                                                
+     10. Product Global Styles
+======================================================================================================== */
+.v65-product-photoWrapper {
+  position: relative;
+}
+
+.v65-product-photo {
+  margin: 0 auto 1em auto;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.v65-product-photo img {
+  max-width: 100%;
+}
+
+.v65-product-title {
+  font-size: 2em;
+  line-height: 1em;
+  margin-bottom: 0.3em;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+@media screen and (max-width: 480px) {
+  .v65-product-title {
+    font-size: 20px;
+  }
+}
+
+.v65-product-subtitle {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+}
+
+.v65-product-teaser {
+  margin-bottom: 1em;
+}
+
+.v65-product-drilldownLink {
+  margin-bottom: 1em;
+}
+
+.v65-product-actionMessage {
+  color: #900;
+  margin-bottom: 1em;
+}
+
+.v65-product-inCompliantStateMessage {
+  color: #900;
+  margin-bottom: 1em;
+}
+
+.v65-product-availability {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.v65-product-inventoryMessage {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+/* a. Product - Add To Cart
+-------------------------------------------------------------- */
+.v65-product-addToCart {
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 480px) {
+  .v65-product-addToCart {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    clear: both;
+  }
+}
+.v65-product-addToCart form {
+  margin-bottom: 0.5em;
+  padding: 0;
+}
+.v65-product-addToCart fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.v65-product-addToCart legend {
+  display: none;
+}
+
+.v65-product-addToCart-priceWrapper {
+  display: inline;
+  margin-right: 10px;
+}
+@media screen and (max-width: 480px) {
+  .v65-product-addToCart-priceWrapper {
+    float: left;
+    clear: both;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+.v65-product-addToCart-price {
+  display: inline;
+}
+@media screen and (max-width: 480px) {
+  .v65-product-addToCart-price {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+
+.v65-product-addToCart-originalPrice {
+  color: #666;
+  display: inline;
+  letter-spacing: -1;
+  margin-right: 2px;
+  text-decoration: line-through;
+}
+
+.v65-product-addToCart-salePrice {
+  display: inline;
+}
+
+.v65-product-addToCart-unitDescription {
+  display: inline;
+}
+
+.v65-product-addToCart-productSKU {
+  display: none;
+}
+
+.v65-product-addToCart-caseQuantity {
+  display: inline;
+}
+
+.v65-product-addToCart-quantity {
+  display: inline;
+}
+@media screen and (max-width: 480px) {
+  .v65-product-addToCart-quantity input {
+    height: 44px;
+    padding: 0 6px;
+  }
+}
+
+.v65-product-addToCart-button {
+  display: inline;
+}
+@media screen and (max-width: 480px) {
+  .v65-product-addToCart-button button.defaultBtn {
+    font-size: 1.2em;
+    width: 70%;
+    height: 44px;
+    float: right;
+  }
+}
+
+/* b. Add To Cart - Volume Based Pricing
+-------------------------------------------------------------- */
+.v65-product-volumeBasePricing {
+  font-size: 0.9em;
+  width: auto;
+}
+
+.v65-product-volumeBasePricing-description {
+  display: inline;
+  margin-right: 10px;
+}
+
+.v65-product-volumeBasePricing-price {
+  display: inline;
+}
+
+/* c. Product Review Stats
+-------------------------------------------------------------- */
+.v65-product-reviewStats {
+  height: 1.8em;
+  /* 16px */
+  line-height: 1.8em;
+  /* 16px */
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+.v65-product-reviewStats-stars {
+  display: inline;
+  margin-right: 5px;
+}
+.v65-product-reviewStats-stars img {
+  vertical-align: top;
+}
+
+.v65-product-reviewStats-count {
+  display: inline;
+  font-style: italic;
+}
+
+/* d. Social Media Bar
+-------------------------------------------------------------- */
+.v65-product-socialBar {
+  margin-bottom: 2em;
+}
+
+.v65-socialMediaBar-Facebook {
+  float: left;
+  height: 22px;
+  margin-right: 5px;
+  padding: 0;
+}
+
+.v65-socialMediaBar-Twitter {
+  float: left;
+  height: 22px;
+  margin-right: 5px;
+  padding: 0;
+}
+
+.v65-socialMediaBar-ShareThis {
+  float: left;
+  font-size: 11px;
+  height: 22px;
+  margin-right: 5px;
+  padding: 0;
+}
+
+.v65-socialMediaBar-GooglePlusOne {
+  float: left;
+  height: 22px;
+  margin-right: 5px;
+  padding: 0;
+}
+
+.v65-socialMediaBar-Pinterest {
+  float: left;
+  height: 22px;
+  margin-right: 5px;
+  padding: 0;
+}
+
+.v65-socialMediaBar-Email {
+  background: url(../images/store/email_16.png) center left no-repeat;
+  float: left;
+  font-size: 11px;
+  height: 22px;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.v65-socialMediaBar-FacebookLikeButton {
+  float: left;
+  height: 22px;
+  margin-right: 5px;
+  padding: 0;
+}
+
+.v65-socialMediaBar-FacebookLike {
+  clear: both;
+  height: 22px;
+}
+
+/* e. Wine Specs - table format
+-------------------------------------------------------------- */
+.v65-wine-specs .v65-product-attribute {
+  font-size: 0.9em;
+}
+.v65-wine-specs .v65-product-attribute:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.v65-wine-specs .v65-product-attributeLabel {
+  float: left;
+  font-weight: bold;
+  line-height: 1em;
+  margin-right: 3%;
+  text-align: right;
+  width: 47%;
+}
+.v65-wine-specs .v65-product-attributeValue {
+  float: left;
+  line-height: 1em;
+  width: 50%;
+}
+
+/* f. Wine Specs - paragraph format
+-------------------------------------------------------------- */
+.v65-product-attributeLabel {
+  font-weight: bold;
+  display: block;
+}
+
+.v65-product-attributeValue {
+  display: block;
+  margin-bottom: 1em;
+}
+
+/* g. Wine Specs - Professional Reviews
+-------------------------------------------------------------- */
+.v65-professionalReviews {
+  margin-bottom: 1em;
+}
+.v65-professionalReviews .v65-professionalReview {
+  color: #fff;
+  float: left;
+  font-size: 11px;
+  font-weight: bold;
+  height: 18px;
+  line-height: 18px;
+  margin-right: 5px;
+}
+.v65-professionalReviews .v65-product-attributeLabel {
+  display: none;
+}
+.v65-professionalReviews .cgProReview {
+  background: url(/assets/images/store/ico-CG.png);
+  padding-left: 29px;
+  width: 20px;
+}
+.v65-professionalReviews .jhProReview {
+  background: url(/assets/images/store/ico-JH.png);
+  padding-left: 28px;
+  width: 18px;
+}
+.v65-professionalReviews .rpProReview {
+  background: url(/assets/images/store/ico-RP.png);
+  padding-left: 28px;
+  width: 19px;
+}
+.v65-professionalReviews .stProReview {
+  background: url(/assets/images/store/ico-ST.png);
+  padding-left: 29px;
+  width: 18px;
+}
+.v65-professionalReviews .waProReview {
+  background: url(/assets/images/store/ico-WA.png);
+  padding-left: 32px;
+  width: 19px;
+}
+.v65-professionalReviews .wandsProReview {
+  background: url(/assets/images/store/ico-WandS.png);
+  padding-left: 38px;
+  width: 20px;
+}
+.v65-professionalReviews .wbProReview {
+  background: url(/assets/images/store/ico-WB.png);
+  padding-left: 32px;
+  width: 19px;
+}
+.v65-professionalReviews .weProReview {
+  background: url(/assets/images/store/ico-WE.png);
+  padding-left: 30px;
+  width: 20px;
+}
+.v65-professionalReviews .wnProReview {
+  background: url(/assets/images/store/ico-WN.png);
+  padding-left: 32px;
+  width: 19px;
+}
+.v65-professionalReviews .wsProReview {
+  background: url(/assets/images/store/ico-WS.png);
+  padding-left: 31px;
+  width: 19px;
+}
+
+/* h. Related Products
+-------------------------------------------------------------- */
+.v65-product-relatedProducts {
+  /* Product Add To Cart */
+  /*Product Review Stats*/
+}
+.v65-product-relatedProducts .v65-product-photo img {
+  max-width: 40%;
+}
+.v65-product-relatedProducts .v65-product-title {
+  font-size: 1.3em;
+}
+.v65-product-relatedProducts .v65-product-subtitle {
+  font-size: 1.1em;
+}
+.v65-product-relatedProducts .v65-product-addToCart-priceWrapper {
+  display: block;
+  margin-bottom: 5px;
+}
+.v65-product-relatedProducts .v65-product-reviewStats-stars {
+  display: inline;
+  float: none;
+  margin-right: 2px;
+}
+.v65-product-relatedProducts .v65-product-reviewStats-count {
+  display: inline;
+  float: none;
+}
+.v65-product-relatedProducts .v65-product-relatedProducts-title {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.v65-product-relatedProducts .v65-product-relatedProducts-product {
+  width: 100%;
+  margin: 0 0 1.5em;
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .v65-product-relatedProducts .v65-product-relatedProducts-product {
+    float: left;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 580px) {
+  .v65-product-relatedProducts .v65-product-relatedProducts-product {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .v65-product-relatedProducts .v65-product-relatedProducts-product {
+    width: 25%;
+  }
+}
+
+/* i. Product Tabs
+-------------------------------------------------------------- */
+.v65-product-tabs {
+  height: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+@media screen and (max-width: 767px) {
+  .v65-product-tabs {
+    height: 45px;
+  }
+}
+.v65-product-tabs li {
+  float: left;
+  height: 27px;
+  line-height: 27px;
+}
+.v65-product-tabs li a {
+  background: #eee;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  display: inline-block;
+  padding: 0 15px;
+}
+@media screen and (max-width: 767px) {
+  .v65-product-tabs li a {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 10px;
+  }
+}
+.v65-product-tabs li a:hover {
+  background: #f8f8f8;
+  text-decoration: none;
+}
+.v65-product-tabs li.v65-product-tab-active a {
+  color: #000;
+  background: #fff;
+  border-bottom: 0;
+  font-weight: bold;
+  height: 28px;
+}
+.v65-product-tabs li.v65-product-tab-active a:hover {
+  text-decoration: none;
+}
+.v65-product-tabs .last a {
+  border-radius: 0 10px 0 0;
+  border-right: 1px solid #ccc;
+}
+
+.v65-product-tab {
+  display: none;
+}
+.v65-product-tab .v65-product-description {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.v65-product-tab .v65-wine-profile {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.v65-product-tab .v65-productDrilldown-specs {
+  float: right;
+  width: 40%;
+}
+
+.v65-product-tab-active {
+  border: 1px solid #ccc;
+  border-top: 0;
+  display: block;
+  min-height: 150px;
+  /*max-height: 250px;
+  overflow: auto;*/
+  padding: 15px;
+  position: relative;
+}
+
+/* j. Product - Price
+-------------------------------------------------------------- */
+.v65-product-priceWrapper {
+  display: inline;
+  font-weight: bold;
+}
+
+.v65-product-price {
+  display: inline;
+}
+
+.v65-product-price-originalPrice {
+  color: #666;
+  display: inline;
+  letter-spacing: -1;
+  margin-right: 2px;
+  text-decoration: line-through;
+  font-weight: normal;
+}
+
+.v65-product-price-salePrice {
+  display: inline;
+}
+
+.v65-product-price-unitDescription {
+  display: inline;
+}
+
+/*   ===================================================================================================                                                                
+11. Product List 1 Up
+======================================================================================================== */
+.v65-product1Up {
+  margin: 0 0 1.5em;
+}
+.v65-product1Up .v65-product-photo {
+  float: left;
+  width: 25%;
+}
+.v65-product1Up .v65-product-photo img {
+  max-width: 100%;
+}
+.v65-product1Up .v65-product-infoWrapper {
+  float: left;
+  width: 75%;
+}
+
+/*   ===================================================================================================                                                                
+     12. Product List 2 Up
+======================================================================================================== */
+.v65-product2Up {
+  float: left;
+  width: 48%;
+  margin: 0 4% 1.5em 0;
+}
+.v65-product2Up .v65-product-photo {
+  position: relative;
+  float: right;
+  width: 33%;
+}
+@media screen and (max-width: 480px) {
+  .v65-product2Up .v65-addToCartCase {
+    display: none;
+  }
+}
+
+/*   ===================================================================================================                                                                
+     13. Product List 3 Up
+======================================================================================================== */
+.v65-product3Up {
+  float: left;
+  width: 31%;
+  margin: 0 3% 1.5em 0;
+  /* Product Add To Cart */
+  /*Product Review Stats*/
+}
+@media screen and (max-width: 600px) {
+  .v65-product3Up {
+    width: 47%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .v65-product3Up {
+    width: 100%;
+    margin: 0;
+  }
+}
+.v65-product3Up .v65-product-photo img {
+  max-width: 45%;
+}
+.v65-product3Up .v65-product-infoWrapper {
+  text-align: center;
+}
+.v65-product3Up .v65-product-title {
+  font-size: 1.5em;
+}
+.v65-product3Up .v65-product-subtitle {
+  font-size: 1.2em;
+}
+.v65-product3Up .v65-product-addToCart-priceWrapper {
+  display: block;
+  margin-bottom: 5px;
+}
+.v65-product3Up .v65-product-reviewStats-stars {
+  display: inline;
+  float: none;
+  margin-right: 2px;
+}
+.v65-product3Up .v65-product-reviewStats-count {
+  display: inline;
+  float: none;
+}
+
+/*   ===================================================================================================                                                                
+     14. Product List 5 Up
+======================================================================================================== */
+.v65-product5Up {
+  float: left;
+  margin: 0 2% 1.5em 0;
+  width: 18%;
+  /* Product Add To Cart */
+  /*Product Review Stats*/
+}
+@media screen and (max-width: 840px) {
+  .v65-product5Up {
+    width: 23%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .v65-product5Up {
+    width: 31%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .v65-product5Up {
+    width: 47%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .v65-product5Up {
+    width: 100%;
+    margin: 0;
+  }
+}
+.v65-product5Up .v65-product-photo img {
+  max-width: 65%;
+}
+.v65-product5Up .v65-product-infoWrapper {
+  text-align: center;
+}
+.v65-product5Up .v65-product-title {
+  font-size: 1.4em;
+}
+.v65-product5Up .v65-product-subtitle {
+  font-size: 1.1em;
+}
+.v65-product5Up .v65-product-addToCart-priceWrapper {
+  display: block;
+  margin-bottom: 5px;
+}
+.v65-product5Up .v65-product-reviewStats-stars {
+  display: inline;
+  float: none;
+  margin-right: 2px;
+}
+.v65-product5Up .v65-product-reviewStats-count {
+  display: inline;
+  float: none;
+}
+
+/*   ===================================================================================================                                                                
+     15.Product List
+======================================================================================================== */
+.v65-productList {
+  padding: 0 0 1em;
+  width: 100%;
+  /*Customize .v65-product-addToCart */
+  /*Table */
+}
+.v65-productList .v65-product-addToCart {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.v65-productList th {
+  background-color: #ccc;
+  border-bottom: 1px solid #bbb;
+  color: #333;
+  font-weight: bold;
+  padding: 5px;
+  text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .v65-productList th:nth-child(3), .v65-productList th:nth-child(4), .v65-productList th:nth-child(5), .v65-productList th:nth-child(6) {
+    display: none;
+  }
+}
+.v65-productList td {
+  border-bottom: 1px solid #bbb;
+  padding: 0 5px;
+  vertical-align: middle;
+}
+@media screen and (max-width: 480px) {
+  .v65-productList td {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .v65-productList td:nth-child(3), .v65-productList td:nth-child(4), .v65-productList td:nth-child(5), .v65-productList td:nth-child(6) {
+    display: none;
+  }
+}
+.v65-productList td a {
+  color: #000;
+  text-decoration: none;
+}
+.v65-productList td a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.v65-productList tr:hover {
+  background-color: #FFC;
+}
+.v65-productList tr.alternatRow {
+  background-color: #efefef;
+}
+.v65-productList tr.alternatRow:hover {
+  background-color: #FFC;
+}
+.v65-productList .v65-product-addToCart {
+  border: none;
+}
+@media screen and (max-width: 480px) {
+  .v65-productList .v65-product-addToCart .v65-product-addToCart-quantity input {
+    height: 40px;
+    padding: 0;
+    margin-right: 3px;
+  }
+}
+
+/*   ===================================================================================================                                                                
+     16. Product List Store 1 Up
+======================================================================================================== */
+.v65-product1UpStore {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+.v65-product1UpStore .v65-product-photo {
+  float: left;
+  width: 15%;
+  margin-right: 2%;
+}
+.v65-product1UpStore .v65-product-photo img {
+  max-width: 100%;
+}
+.v65-product1UpStore .v65-product-infoWrapper {
+  float: left;
+  width: 37%;
+  margin-right: 3%;
+}
+@media screen and (max-width: 700px) {
+  .v65-product1UpStore .v65-product-infoWrapper {
+    float: right;
+    width: 83%;
+    margin: 0;
+  }
+}
+.v65-product1UpStore .v65-product-title {
+  font-size: 1.6em;
+}
+.v65-product1UpStore .v65-product-subtitle {
+  font-size: 1em;
+}
+.v65-product1UpStore .v65-product-sku {
+  display: inline;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+.v65-product1UpStore .v65-product-brand {
+  display: inline;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+.v65-product1UpStore .v65-wine-region {
+  display: inline;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+.v65-product1UpStore .v65-wine-appellation {
+  display: inline;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+.v65-product1UpStore .v65-wine-type {
+  display: inline;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+.v65-product1UpStore .v65-wine-varietal {
+  display: inline;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+.v65-product1UpStore .v65-product-commerceWrapper {
+  float: left;
+  width: 43%;
+}
+@media screen and (max-width: 700px) {
+  .v65-product1UpStore .v65-product-commerceWrapper {
+    float: right;
+    width: 83%;
+  }
+}
+
+.v65-productCharacteristics {
+  margin-bottom: 1em;
+}
+.v65-productCharacteristics .v65-product-attributeLabel {
+  display: none;
+}
+.v65-productCharacteristics .v65-product-attributeValue {
+  display: inline;
+}
+
+/*   ===================================================================================================                                                                
+     17. Product Groups
+======================================================================================================== */
+.v65-productGroup {
+  margin-bottom: 2em;
+}
+
+.v65-productGroup-title {
+  font-size: 2em;
+  line-height: 1.2;
+  margin-bottom: 0.4em;
+}
+
+.v65-productGroup-teaser {
+  float: left;
+  margin-right: 2%;
+  width: 18%;
+}
+
+.v65-productGroup-products {
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+
+.v65-productGroup-product {
+  float: left;
+  margin: 0 0 1em 2%;
+  position: relative;
+  width: 23%;
+  /* Product Add To Cart */
+}
+@media screen and (max-width: 750px) {
+  .v65-productGroup-product {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .v65-productGroup-product {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .v65-productGroup-product {
+    width: 100%;
+  }
+}
+.v65-productGroup-product .v65-product-title {
+  font-size: 1.3em;
+  line-height: 1.2;
+  margin-bottom: 0.2em;
+}
+.v65-productGroup-product .v65-product-subtitle {
+  font-size: 1.1em;
+  line-height: 1.2;
+  margin-bottom: 0.2em;
+}
+.v65-productGroup-product .v65-product-addToCart-priceWrapper {
+  display: block;
+  margin-bottom: 5px;
+}
+.v65-productGroup-product .v65-product-reviewStats {
+  height: inherit;
+}
+
+/*   ===================================================================================================                                                                
+    18. Related Products
+======================================================================================================== */
+.v65-suggestedProducts {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.v65-suggestedProducts-products {
+  text-align: center;
+  width: 100%;
+}
+
+.v65-suggestedProducts-product {
+  float: left;
+  margin: 0 0 1em 2%;
+  position: relative;
+  width: 18%;
+  /* Product Add To Cart */
+}
+.v65-suggestedProducts-product .v65-product-photo {
+  text-align: center;
+  max-width: 100%;
+}
+.v65-suggestedProducts-product .v65-product-photo img {
+  max-width: 60%;
+}
+.v65-suggestedProducts-product .v65-product-title {
+  font-size: 1.3em;
+  line-height: 1.2;
+  margin-bottom: 0.2em;
+}
+.v65-suggestedProducts-product .v65-product-subtitle {
+  font-size: 1.1em;
+  line-height: 1.2;
+  margin-bottom: 0.2em;
+}
+.v65-suggestedProducts-product .v65-product-addToCart-priceWrapper {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/*   ===================================================================================================                                                                
+     19. Product Sets
+======================================================================================================== */
+.v65-productSet-header {
+  border-top: 3px double #111;
+  border-bottom: 3px double #111;
+  margin-bottom: 2em;
+  padding-bottom: 12px;
+  line-height: 54px;
+}
+@media screen and (min-width: 480px) {
+  .v65-productSet-header {
+    height: 54px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .v65-productSet-header {
+    height: 36px;
+    line-height: 36px;
+    padding: 0;
+  }
+}
+
+.v65-productSet-title {
+  float: left;
+  font-size: 20px;
+}
+@media screen and (max-width: 767px) {
+  .v65-productSet-title {
+    display: none;
+  }
+}
+
+.v65-productSet-priceSummary {
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .v65-productSet-priceSummary {
+    float: right;
+  }
+}
+
+.v65-productSet-price {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.v65-productSet {
+  margin-bottom: 1.5em;
+}
+.v65-productSet .v65-product-photo {
+  border-bottom: 1px solid #ccc;
+  height: 305px;
+  margin-bottom: 1.5em;
+}
+.v65-productSet .v65-product-photo img {
+  max-height: 305px;
+}
+.v65-productSet select {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+.v65-productSet .v65-product-title {
+  font-size: 1.5em;
+}
+.v65-productSet .v65-product-subtitle {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.v65-productSet .v65-product-priceWrapper {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.v65-productSet-item {
+  float: left;
+  margin: 0 3% 0 0;
+  width: 30%;
+}
+@media screen and (max-width: 640px) {
+  .v65-productSet-item {
+    width: 47%;
+    margin: 0 3% 0 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .v65-productSet-item {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.v65-productSet-itemTitle {
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 1em;
+}
+
+.v65-productSet-footer {
+  border-top: 3px double #111;
+  margin-bottom: 1em;
+  line-height: 54px;
+}
+@media screen and (min-width: 768px) {
+  .v65-productSet-footer {
+    height: 54px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .v65-productSet-footer {
+    text-align: right;
+    height: 36px;
+    line-height: 36px;
+  }
+}
+
+/*   ===================================================================================================                                                                
+     20. Product Quick View
+======================================================================================================== */
+.v65-product-quickView {
+  display: none;
+}
+@media screen and (min-width: 650px) {
+  .v65-product-quickView {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 12px;
+    margin-top: -5%;
+    margin-left: -42px;
+    padding: 5px;
+    border: 2px solid #666;
+    min-width: 70px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 649px) {
+  .v65-product-quickView.hover, .v65-product-quickView:hover {
+    display: none;
+  }
+}
+
+.v65-quickView {
+  display: none;
+  /* Product Media */
+  /* Related Products */
+}
+@media screen and (min-width: 650px) {
+  .v65-quickView {
+    position: absolute;
+    background: none repeat scroll 0 0 #fff;
+    border: 4px solid #666;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 10px 3px #ccc;
+    display: none;
+    padding: 16px;
+    margin: 0;
+    z-index: 1000;
+    top: 6%;
+    left: 2%;
+    width: 88%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 700px) {
+  .v65-quickView {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .v65-quickView {
+    width: 92%;
+  }
+}
+@media screen and (min-width: 880px) {
+  .v65-quickView {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 800px;
+    margin: -250px 0 0 -420px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .v65-quickView {
+    margin: -250px 0 0 -380px;
+  }
+}
+.v65-quickView .v65-product-drilldownLink {
+  bottom: 0;
+  left: 10px;
+  position: absolute;
+}
+.v65-quickView .v65-product-photoWrapper {
+  float: left;
+  margin-right: 15px;
+  width: 200px;
+}
+@media screen and (max-width: 880px) {
+  .v65-quickView .v65-product-photoWrapper {
+    width: 25%;
+    margin-right: 1%;
+  }
+}
+.v65-quickView .v65-product-photoWrapper .v65-product-photos-photo {
+  float: left;
+  text-align: center;
+  margin: 0 0 1.5em;
+  padding: 0 0 1.5em;
+  width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .v65-quickView .v65-product-photoWrapper .v65-product-photos-photo {
+    width: 33%;
+    padding: 0;
+  }
+  .v65-quickView .v65-product-photoWrapper .v65-product-photos-photo img {
+    max-width: 100%;
+  }
+}
+.v65-quickView .v65-product-tab-active {
+  max-height: 250px;
+  overflow: auto;
+}
+.v65-quickView .v65-wine-specs {
+  width: 300px;
+}
+.v65-quickView .v65-wine-specs-title {
+  text-align: left;
+}
+.v65-quickView .v65-product-media {
+  width: 300px;
+}
+.v65-quickView .v65-product-relatedProducts-product {
+  float: left;
+  margin: 0 0 1.5em;
+  text-align: center;
+  width: 33%;
+}
+@media screen and (max-width: 767px) {
+  .v65-quickView .v65-product-relatedProducts-product {
+    width: 50%;
+  }
+}
+.v65-quickView .v65-product-relatedProducts .v65-product-photo img {
+  width: 40%;
+}
+.v65-quickView .v65-product-relatedProducts .v65-product-title {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.v65-quickView-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.v65-quickView-close a {
+  background-color: #333;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.v65-quickView-close a:hover {
+  color: #fff;
+  background-color: #666;
+  text-decoration: none;
+}
+
+.v65-quickView-right-content {
+  float: left;
+  width: 585px;
+}
+@media screen and (max-width: 880px) {
+  .v65-quickView-right-content {
+    width: 72%;
+  }
+}
+.v65-quickView-right-content .v65-product-title {
+  font-size: 2em;
+  line-height: 1.2;
+  margin-bottom: 0.2em;
+  text-align: left;
+}
+.v65-quickView-right-content .v65-product-subtitle {
+  font-size: 1.3em;
+}
+
+/*   ===================================================================================================                                                                
+     21. Product Store Drilldown
+======================================================================================================== */
+.v65-productStoreWrapper-Top .v65-product-leftCol {
+  float: left;
+  width: 15%;
+}
+.v65-productStoreWrapper-Top .v65-product-leftCol .v65-product-photos {
+  margin: 0 0 1em;
+}
+@media screen and (max-width: 550px) {
+  .v65-productStoreWrapper-Top .v65-product-leftCol .v65-product-photos {
+    display: none;
+  }
+}
+.v65-productStoreWrapper-Top .v65-product-leftCol .v65-product-photos .v65-product-photos-photo {
+  float: left;
+  text-align: center;
+  margin: 0 0 1.5em;
+  padding: 0 0 1.5em;
+  width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .v65-productStoreWrapper-Top .v65-product-leftCol .v65-product-photos .v65-product-photos-photo {
+    width: 33%;
+    padding: 0;
+  }
+  .v65-productStoreWrapper-Top .v65-product-leftCol .v65-product-photos .v65-product-photos-photo img {
+    max-width: 100%;
+  }
+}
+.v65-productStoreWrapper-Top .v65-product-rightCol {
+  float: left;
+  width: 80%;
+  margin-left: 2%;
+}
+.v65-productStoreWrapper-Top .v65-product-infoWrapper {
+  float: left;
+  margin-top: 0.5em;
+  width: 50%;
+}
+.v65-productStoreWrapper-Top .v65-product-sku {
+  display: inline;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+.v65-productStoreWrapper-Top .v65-product-brand {
+  display: inline;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+.v65-productStoreWrapper-Top .v65-wine-region {
+  display: inline;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+.v65-productStoreWrapper-Top .v65-wine-appellation {
+  display: inline;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+.v65-productStoreWrapper-Top .v65-wine-type {
+  display: inline;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+.v65-productStoreWrapper-Top .v65-wine-varietal {
+  display: inline;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+.v65-productStoreWrapper-Top .v65-product-commerceWrapper {
+  float: left;
+  margin-top: 0.5em;
+  width: 50%;
+}
+@media screen and (max-width: 550px) {
+  .v65-productStoreWrapper-Top .v65-product-commerceWrapper {
+    width: 100%;
+  }
+}
+
+/*   ===================================================================================================                                                                
+     22. Product Drilldown
+======================================================================================================== */
+/*---responsive product wrappers-----
+-----requires custom .htm layout-----
+------------------------------------*/
+.v65-productWrapper {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  /*Product Left Photos*/
+  /*Product Left Column Specs*/
+  /*Product Right - Product Reviews*/
+}
+@media screen and (max-width: 767px) {
+  .v65-productWrapper {
+    padding: 1.5em;
+  }
+}
+.v65-productWrapper .v65-product-photo-wrapper {
+  float: left;
+  width: 32.5%;
+  margin-right: 5%;
+  /*Product Left - Image*/
+}
+@media screen and (max-width: 767px) {
+  .v65-productWrapper .v65-product-photo-wrapper {
+    width: 30%;
+  }
+}
+.v65-productWrapper .v65-product-photo-wrapper .v65-product-photos {
+  margin: 0 0 1em;
+}
+@media screen and (max-width: 480px) {
+  .v65-productWrapper .v65-product-photo-wrapper .v65-product-photos {
+    display: none;
+  }
+}
+.v65-productWrapper .v65-product-photo-wrapper .v65-product-photos:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.v65-productWrapper .v65-product-photo-wrapper .v65-product-photos-photo {
+  float: left;
+  text-align: center;
+  margin: 0 0 1.5em;
+  padding: 0 0 1.5em;
+  width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .v65-productWrapper .v65-product-photo-wrapper .v65-product-photos-photo {
+    width: 33%;
+    padding: 0;
+  }
+  .v65-productWrapper .v65-product-photo-wrapper .v65-product-photos-photo img {
+    max-width: 100%;
+  }
+}
+.v65-productWrapper .v65-product-leftCol {
+  float: left;
+  width: 32.5%;
+  margin-right: 5%;
+}
+@media screen and (max-width: 767px) {
+  .v65-productWrapper .v65-product-leftCol {
+    float: none;
+    width: 100%;
+  }
+}
+.v65-productWrapper .v65-product-leftCol .v65-productDrilldown-specs {
+  padding: 0 0 1em;
+}
+@media screen and (max-width: 767px) {
+  .v65-productWrapper .v65-product-leftCol .v65-productDrilldown-specs .v65-wine-specs {
+    border-bottom: 1px solid #CCC;
+  }
+}
+.v65-productWrapper .v65-product-leftCol .v65-productDrilldown-specs .v65-wine-specs .v65-wine-specs-title {
+  font-size: 1.8em;
+  margin: 0 0 1em;
+  text-align: center;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+@media screen and (max-width: 767px) {
+  .v65-productWrapper .v65-product-leftCol .v65-productDrilldown-specs .v65-wine-specs .v65-wine-specs-title {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 767px) {
+  .v65-productWrapper .v65-product-leftCol .v65-productDrilldown-specs .v65-wine-specs .v65-product-attribute .v65-product-attributeLabel {
+    width: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .v65-productWrapper .v65-product-leftCol .v65-productDrilldown-specs .v65-wine-specs .v65-product-attribute .v65-product-attributeValue {
+    width: auto;
+  }
+}
+.v65-productWrapper .v65-wine-profile .v65-wine-profile-title {
+  font-size: 1.8em;
+  margin: 0 0 1em;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+.v65-productWrapper .v65-product-rightCol {
+  float: right;
+  width: 62.5%;
+  /* Product Media */
+}
+@media screen and (max-width: 767px) {
+  .v65-productWrapper .v65-product-rightCol {
+    float: none;
+    width: 100%;
+  }
+}
+.v65-productWrapper .v65-product-rightCol h1 {
+  margin-bottom: 0;
+}
+.v65-productWrapper .v65-product-rightCol .v65-product-shipDate {
+  margin-bottom: 1em;
+}
+.v65-productWrapper .v65-product-rightCol .v65-product-teaser {
+  margin-bottom: 2em;
+}
+@media screen and (max-width: 480px) {
+  .v65-productWrapper .v65-product-rightCol .v65-product-availability {
+    display: none;
+    clear: both;
+    border-top: 1px solid #ccc;
+    padding-top: .5em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .v65-productWrapper .v65-product-rightCol .v65-product-addToCart .v65-addToCart {
+    clear: both;
+  }
+}
+@media screen and (max-width: 480px) {
+  .v65-productWrapper .v65-product-rightCol .v65-product-addToCart .v65-addToCart fieldset .v65-product-addToCart-priceWrapper {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.v65-productWrapper .v65-product-rightCol .v65-product-media:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.v65-productWrapper .v65-product-rightCol .v65-product-media-thumbnail {
+  float: left;
+  padding-right: 3%;
+  text-align: right;
+  width: 47%;
+}
+.v65-productWrapper .v65-product-rightCol .v65-product-media-title {
+  float: left;
+  font-size: 0.917em;
+  line-height: 26px;
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .v65-productWrapper .v65-product-rightCol .v65-product-socialBar {
+    clear: both;
+    border-top: 1px solid #ccc;
+    padding-top: 2em;
+  }
+}
+.v65-productWrapper .v65-product-rightCol .v65-product-description {
+  padding-bottom: 1em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid #ccc;
+}
+@media screen and (max-width: 767px) {
+  .v65-productWrapper .v65-product-rightCol .v65-product-description {
+    padding-bottom: 1em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid #cccccc;
+  }
+}
+.v65-productWrapper .v65-product-rightCol .v65-product-description-title {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.v65-productWrapper .v65-product-reviews-title {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.v65-productWrapper .v65-product-review-wrapper {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2em;
+  position: relative;
+}
+.v65-productWrapper .v65-product-review-avatar {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.v65-productWrapper .v65-product-review-comment-wrapper {
+  float: left;
+  margin-left: 58px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .v65-productWrapper .v65-product-review-comment-wrapper {
+    float: right;
+    margin-left: 28%;
+    width: 72%;
+  }
+}
+.v65-productWrapper .v65-product-review-reviewerName {
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+}
+.v65-productWrapper .v65-product-review-date {
+  float: left;
+  font-size: 0.9em;
+  font-style: italic;
+  height: 16px;
+  line-height: 16px;
+}
+.v65-productWrapper .v65-product-review-comment {
+  clear: both;
+  padding: 0.5em 0 0 0;
+}
+.v65-productWrapper #captchaText {
+  margin-bottom: 10px;
+}
+
+/*   ===================================================================================================                                                                
+     23. Cart
+======================================================================================================== */
+#v65-cartHelp {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+/* a. Cart Header
+-------------------------------------------------------------- */
+#v65-cartHeader {
+  overflow: hidden;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+#v65-cartHeader .v65-cartCheckOutButtons {
+  margin-top: 15px;
+}
+
+#v65-cartCheckOutCoupons {
+  float: left;
+}
+#v65-cartCheckOutCoupons form {
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  #v65-cartCheckOutCoupons form {
+    width: 250px;
+  }
+}
+#v65-cartCheckOutCoupons fieldset {
+  margin-bottom: 0;
+}
+
+#v65-CouponCode {
+  width: 100px;
+}
+
+#v65-GiftCode {
+  width: 100px;
+}
+
+/* Coupon Summary Table */
+#v65-couponSummaryTable {
+  margin: 0 0 12px;
+  width: 250px;
+}
+#v65-couponSummaryTable th {
+  padding: 4px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+#v65-couponSummaryTable td {
+  padding: 4px;
+  text-align: left;
+}
+
+#v65-couponSummaryTotal td {
+  font-weight: bold;
+  background-color: #f8f1de;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+.v65-cartCheckOutButtons {
+  float: right;
+}
+@media screen and (max-width: 620px) {
+  .v65-cartCheckOutButtons {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .v65-cartCheckOutButtons a {
+    margin: 5px 0;
+  }
+}
+
+/* b. Cart Table
+-------------------------------------------------------------- */
+#v65-cartTable {
+  width: 100%;
+  margin: 0 0 1em;
+  padding: 0;
+}
+#v65-cartTable th {
+  font-weight: bold;
+  background-color: #f9f7f3;
+  border-top: 1px solid #ccc;
+  padding: 0.5em 0.667em;
+}
+#v65-cartTable td {
+  padding: 0.5em 0.667em;
+}
+#v65-cartTable .v65-cartShippingItem {
+  background-color: #e2dfd7;
+  text-align: right;
+}
+#v65-cartTable .v65-cartShippingItemError {
+  background-color: #f96361;
+  text-align: right;
+}
+#v65-cartTable .v65-cartShipping td {
+  background-color: #f9f7f3;
+  border-top: 0;
+}
+#v65-cartTable .v65-cartItemImage {
+  min-width: 44px;
+}
+#v65-cartTable th.v65-cartItemAmount, #v65-cartTable .v65-cartItemImage, #v65-cartTable .v65-cartItemAvailability, #v65-cartTable .cartItemImage, #v65-cartTable .v65-cartItemInStock,
+#v65-cartTable .v65-cartSubtotal-3, #v65-cartTable .v65-cartSubtotal-4, #v65-cartTable .v65-cartTax-3, #v65-cartTable .v65-cartTax-4, #v65-cartTable .v65-cartTotal-3, #v65-cartTable .v65-cartTotal-4 {
+  display: none;
+}
+@media screen and (max-width: 454px) {
+  #v65-cartTable .v65-cartRemoveButton {
+    display: none;
+  }
+}
+@media screen and (max-width: 454px) {
+  #v65-cartTable .right {
+    display: table-cell;
+  }
+}
+@media screen and (min-width: 455px) {
+  #v65-cartTable .right, #v65-cartTable th.v65-cartItemAmount, #v65-cartTable .v65-cartItemImage, #v65-cartTable .v65-cartItemImage, #v65-cartTable .v65-cartSubtotal-3, #v65-cartTable .v65-cartTax-3, #v65-cartTable .v65-cartTotal-3 {
+    display: table-cell;
+  }
+}
+@media screen and (min-width: 545px) {
+  #v65-cartTable .v65-cartItemAvailability, #v65-cartTable .v65-cartItemInStock,
+  #v65-cartTable .v65-cartSubtotal-3, #v65-cartTable .v65-cartSubtotal-4, #v65-cartTable .v65-cartTax-3, #v65-cartTable .v65-cartTax-4, #v65-cartTable .v65-cartTotal-3, #v65-cartTable .v65-cartTotal-4 {
+    display: table-cell;
+  }
+}
+
+.v65-cartItem td {
+  border-top: 1px solid #ccc;
+}
+.v65-cartItem form {
+  width: 80px;
+  margin: 0 auto;
+}
+.v65-cartItem fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.v65-cartItemAmount {
+  text-align: center;
+  overflow: hidden;
+}
+.v65-cartItemAmount .v65-qtyField {
+  text-align: center;
+  margin: 0 0 0.333em;
+  width: 2em;
+}
+.v65-cartItemAmount button {
+  margin: 0;
+}
+
+.v65-cartItemImage {
+  width: 60px;
+  text-align: center;
+}
+
+.v65-cartItemDescription {
+  line-height: 1.6em;
+}
+
+.v65-cartRemoveButton {
+  margin-top: 0.5em;
+}
+
+#v65-cartSubtotal td {
+  background-color: #f9f7f3;
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+}
+
+.v65-cartTax td {
+  background-color: #f9f7f3;
+  font-weight: normal;
+  border-top: 0;
+}
+
+#v65-cartTotal td {
+  background-color: #f8f1de;
+  font-weight: bold;
+  border-top: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#v65-cartStateCode {
+  width: 50px;
+}
+
+/*state drop down select box*/
+#v65-cartPaymentOptions {
+  float: left;
+  padding-top: 4px;
+  height: 28px;
+}
+#v65-cartPaymentOptions img {
+  margin-right: 5px;
+}
+
+/*   ===================================================================================================                                                                
+     24. Checkout
+======================================================================================================== */
+#v65-checkoutStepWrapper {
+  width: 100%;
+  height: 56px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+#v65-checkoutSecureSeal {
+  float: left;
+  width: 100px;
+  height: 56px;
+  overflow: hidden;
+}
+
+#v65-checkoutStatusBar {
+  float: right;
+  width: 755px;
+  overflow: hidden;
+  text-align: right;
+}
+
+#v65-checkoutFormWrapper {
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+@media screen and (max-width: 725px) {
+  #v65-checkoutFormWrapper [v65js=billAddressBlock] {
+    padding: 0;
+  }
+  #v65-checkoutFormWrapper form {
+    width: 100%;
+  }
+  #v65-checkoutFormWrapper textarea {
+    width: 99% !important;
+  }
+  #v65-checkoutFormWrapper input, #v65-checkoutFormWrapper select {
+    height: 44px;
+    min-width: 44px;
+  }
+  #v65-checkoutFormWrapper button.modalBtn {
+    font-size: 12px;
+    height: 44px;
+    width: auto;
+    min-width: 44px;
+  }
+  #v65-checkoutFormWrapper select {
+    width: 99.9%;
+  }
+}
+
+#v65-checkoutFooter {
+  overflow: hidden;
+  clear: both;
+}
+@media screen and (max-width: 640px) {
+  #v65-checkoutFooter .floatRight {
+    float: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  #v65-checkoutFooter button {
+    width: 100%;
+  }
+}
+
+#v65-checkoutSecure {
+  float: left;
+  width: 300px;
+}
+@media screen and (max-width: 640px) {
+  #v65-checkoutSecure {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  form.v65ProcessOrder button {
+    width: 100%;
+  }
+}
+
+#v65-continueOrder {
+  float: right;
+  width: 300px;
+  text-align: right;
+}
+@media screen and (max-width: 640px) {
+  #v65-continueOrder {
+    float: left;
+    margin-top: 1em;
+    text-align: left;
+    width: 100%;
+  }
+  #v65-continueOrder button {
+    width: 100%;
+  }
+}
+
+/*   ===================================================================================================                                                                
+     25. Billing & Shipping
+======================================================================================================== */
+/* a. Mini Cart Summary
+-------------------------------------------------------------- */
+#v65-checkoutCartSummaryWrapper {
+  position: absolute;
+  top: 9px;
+  right: 1px;
+  padding: 10px;
+  width: 320px;
+  background-color: #f7f7f7;
+  border: 1px solid #eeeeee;
+  overflow: hidden;
+}
+@media screen and (max-width: 950px) {
+  #v65-checkoutCartSummaryWrapper {
+    float: right;
+    position: relative;
+    width: 42%;
+  }
+}
+@media screen and (max-width: 725px) {
+  #v65-checkoutCartSummaryWrapper {
+    float: none;
+    margin: 0 0 1em;
+    right: 0;
+    top: 0;
+    width: 96%;
+  }
+}
+
+#v65-checkoutCartSummaryMini {
+  float: left;
+  width: 165px;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+}
+@media screen and (max-width: 900px) {
+  #v65-checkoutCartSummaryMini {
+    float: none;
+    width: 100%;
+  }
+}
+#v65-checkoutCartSummaryMini table {
+  width: 100%;
+  margin: 0 0 12px 0;
+  padding: 0;
+}
+#v65-checkoutCartSummaryMini td {
+  font-size: 11px;
+  padding: 3px 0;
+}
+
+.v65-rowOverline td {
+  border-top: 1px solid #999;
+}
+
+.v65-rowUnderline td {
+  border-bottom: 1px solid #999;
+}
+
+#v65-checkoutCartSummaryMiniBottom {
+  padding: 0;
+  margin: 0;
+}
+
+#v65-checkCartSummaryMoreOptions {
+  float: right;
+  width: 140px;
+  font-size: 11px;
+}
+@media screen and (max-width: 900px) {
+  #v65-checkCartSummaryMoreOptions {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Add Shipping and Add Gift Wrapping Forms */
+#v65-couponFormWrapper legend, #v65-giftCardFormWrapper legend {
+  font-size: 12px;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 725px) {
+  #v65-couponFormWrapper fieldset, #v65-giftCardFormWrapper fieldset {
+    margin: 0 0 1em;
+  }
+  #v65-couponFormWrapper form, #v65-giftCardFormWrapper form {
+    width: 100%;
+  }
+  #v65-couponFormWrapper input, #v65-giftCardFormWrapper input {
+    width: 60% !important;
+  }
+  #v65-couponFormWrapper button.modalBtn, #v65-giftCardFormWrapper button.modalBtn {
+    margin-right: 0;
+    width: 35%;
+  }
+}
+@media screen and (max-width: 385px) {
+  #v65-couponFormWrapper input, #v65-giftCardFormWrapper input {
+    width: 55% !important;
+  }
+  #v65-couponFormWrapper button.modalBtn, #v65-giftCardFormWrapper button.modalBtn {
+    width: auto;
+  }
+}
+#v65-couponFormWrapper div, #v65-giftCardFormWrapper div {
+  font-size: 11px;
+}
+
+/* Add Shipping and Add Gift Wrapping Forms */
+#v65-giftCardFormWrapper legend {
+  font-size: 12px;
+  letter-spacing: normal;
+}
+#v65-giftCardFormWrapper div {
+  font-size: 11px;
+}
+
+/* b. Main Form
+-------------------------------------------------------------- */
+#v65-checkoutFormWrapper {
+  width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #v65-checkoutFormWrapper {
+    width: 98%;
+  }
+}
+#v65-checkoutFormWrapper form {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #v65-checkBilling {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #v65-checkBilling {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  #v65-checkBilling select[name="BillBirthDay"], #v65-checkBilling select[name="BillBirthYear"],
+  #v65-checkBilling select[name="BillBirthMonth"] {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  #v65-checkBilling select[name="BillBirthDay"] {
+    margin: 0 1%;
+  }
+}
+
+#v65-fieldset-wholesalerInfo, #v65-fieldset-billingInfo,
+#v65-fieldset-shippingInfo, #v65-fieldset-shippingOptions,
+#v65-fieldset-paymentMethod, #v65-fieldset-sourceCode,
+#v65-fieldset-usernamePassword {
+  width: 400px;
+}
+@media screen and (max-width: 950px) {
+  #v65-fieldset-wholesalerInfo, #v65-fieldset-billingInfo,
+  #v65-fieldset-shippingInfo, #v65-fieldset-shippingOptions,
+  #v65-fieldset-paymentMethod, #v65-fieldset-sourceCode,
+  #v65-fieldset-usernamePassword {
+    float: left;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 725px) {
+  #v65-fieldset-wholesalerInfo, #v65-fieldset-billingInfo,
+  #v65-fieldset-shippingInfo, #v65-fieldset-shippingOptions,
+  #v65-fieldset-paymentMethod, #v65-fieldset-sourceCode,
+  #v65-fieldset-usernamePassword {
+    margin: 0 0 1em;
+    width: 99%;
+  }
+  #v65-fieldset-wholesalerInfo input, #v65-fieldset-billingInfo input,
+  #v65-fieldset-shippingInfo input, #v65-fieldset-shippingOptions input,
+  #v65-fieldset-paymentMethod input, #v65-fieldset-sourceCode input,
+  #v65-fieldset-usernamePassword input {
+    width: 99% !important;
+  }
+}
+
+#v65-fieldset-paymentMethod div {
+  clear: both;
+}
+
+#v65-checkBilling legend {
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 950px) {
+  #v65-checkBilling .v65-additionalComments {
+    width: 95%;
+    clear: both;
+  }
+}
+#v65-checkBilling select[name=BillBirthMonth] {
+  width: 80px;
+}
+@media screen and (max-width: 480px) {
+  #v65-checkBilling select[name=BillBirthMonth] {
+    width: 32%;
+  }
+}
+#v65-checkBilling select[name=BillBirthDay], #v65-checkBilling select[name=BillBirthYear] {
+  width: 60px;
+}
+@media screen and (max-width: 480px) {
+  #v65-checkBilling select[name=BillBirthDay], #v65-checkBilling select[name=BillBirthYear] {
+    width: 32%;
+  }
+}
+#v65-checkBilling select[name=BillStateCode] {
+  width: 180px;
+}
+#v65-checkBilling select[name=ShipBirthMonth] {
+  width: 80px;
+}
+@media screen and (max-width: 480px) {
+  #v65-checkBilling select[name=ShipBirthMonth] {
+    width: 32%;
+  }
+}
+#v65-checkBilling select[name=ShipBirthDay], #v65-checkBilling select[name=ShipBirthYear] {
+  width: 60px;
+}
+@media screen and (max-width: 480px) {
+  #v65-checkBilling select[name=ShipBirthDay], #v65-checkBilling select[name=ShipBirthYear] {
+    width: 32%;
+  }
+}
+#v65-checkBilling select[name=shipStateCode] {
+  width: 180px;
+}
+#v65-checkBilling select[name=Save] {
+  width: 250px;
+}
+#v65-checkBilling select[name=sourceCode] {
+  width: 175px;
+}
+#v65-checkBilling select[name=CardExpiryMo] {
+  width: 120px;
+}
+#v65-checkBilling select[name=CardExpiryYr] {
+  width: 80px;
+}
+#v65-checkBilling input[name=BillFirstName], #v65-checkBilling input[name=BillLastName], #v65-checkBilling input[name=BillCompany], #v65-checkBilling input[name=BillCity], #v65-checkBilling input[name=BillMainPhone], #v65-checkBilling input[name=BillEmail] {
+  width: 175px;
+}
+#v65-checkBilling input[name=BillAddress] {
+  width: 250px;
+  margin-bottom: 8px;
+}
+#v65-checkBilling input[name=BillAddress2] {
+  width: 250px;
+}
+#v65-checkBilling input[name=BillZipCode] {
+  width: 100px;
+}
+#v65-checkBilling input[name=NickName], #v65-checkBilling input[name=ShipFirstName], #v65-checkBilling input[name=ShipLastName], #v65-checkBilling input[name=ShipCompany], #v65-checkBilling input[name=ShipCity], #v65-checkBilling input[name=ShipMainPhone], #v65-checkBilling input[name=ShipEmail] {
+  width: 175px;
+}
+#v65-checkBilling input[name=ShipAddress] {
+  width: 250px;
+  margin-bottom: 8px;
+}
+#v65-checkBilling input[name=ShipAddress2] {
+  width: 250px;
+}
+#v65-checkBilling input[name=ShipZipCode] {
+  width: 100px;
+}
+#v65-checkBilling input[name=CVV2] {
+  width: 100px;
+}
+#v65-checkBilling textarea[name=OrderNotes] {
+  width: 250px;
+  height: 75px;
+}
+#v65-checkBilling textarea[name=giftMessage] {
+  width: 250px;
+  height: 75px;
+}
+
+@media screen and (max-width: 725px) {
+  #v65-checkBilling select[name="BillStateCode"] {
+    width: 99.9% !important;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  #v65-checkBilling select[name="CardExpiryMo"] {
+    width: 49% !important;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  #v65-checkBilling select[name="CardExpiryYr"] {
+    float: right;
+    width: 49% !important;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  form#v65-checkBilling .v65-additionalComments {
+    margin-left: 0;
+    padding: 15px 5px 0;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  [v65js="v65-creditCardInfo"], [v65js="v65creditCard"] {
+    padding: 5px 0 !important;
+  }
+}
+
+/* c. Review Screen
+-------------------------------------------------------------- */
+#v65-orderSummaryWrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 0 0 1em 0;
+}
+
+#v65-billingSummary {
+  float: left;
+  width: 300px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#v65-shippingSummary {
+  float: left;
+  width: 300px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#v65-reviewCartSummaryWrapper {
+  float: right;
+  width: 165px;
+  padding: 15px;
+  margin: 0;
+  background-color: #f7f7f7;
+  border: 1px solid #eeeeee;
+  overflow: hidden;
+}
+
+/* c. Print Receipt
+-------------------------------------------------------------- */
+.printBody {
+  background-color: #FFF;
+  background-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+.printWrapper {
+  margin: 0 auto;
+  width: 700px;
+}
+@media screen and (max-width: 767px) {
+  .printWrapper {
+    width: 90%;
+    padding: 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .printWrapper {
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+}
+
+.printHeader {
+  height: 150px;
+  width: 700px;
+}
+@media screen and (max-width: 767px) {
+  .printHeader {
+    width: 100%;
+    height: auto;
+  }
+  .printHeader img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.printContent {
+  text-align: left;
+  width: 700px;
+}
+@media screen and (max-width: 767px) {
+  .printContent {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .printContent #v65-cartTable td {
+    padding: 6px 4px;
+  }
+}
+.printContent #v65-cartTable .center {
+  display: block;
+}
+.printContent #v65-cartTable .v65-cartSubtotal-3, .printContent #v65-cartTable .v65-cartTax-3, .printContent #v65-cartTable .v65-cartTotal-3 {
+  display: table-cell;
+}
+
+/*   ===================================================================================================                                                                
+     26. Club
+======================================================================================================== */
+/* a. Club List Component
+-------------------------------------------------------------- */
+.v65-clubTitle {
+  font-size: 16px;
+  margin-bottom: 0.3em;
+}
+
+.v65-clubTeaser {
+  margin-bottom: 12px;
+  padding: 0 0 12px 10px;
+  border-bottom: 1px solid #ccc;
+}
+@media screen and (max-width: 480px) {
+  .v65-clubTeaser {
+    padding: 0 0 12px 0;
+  }
+}
+
+#v65-clubHelp {
+  width: 200px;
+  float: right;
+  margin: 0 0 1em 1em;
+  padding: 0;
+}
+
+/* b. Main Form 
+-------------------------------------------------------------- */
+#v65-clubFormWrapper {
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+#v65-clubFormWrapper form {
+  width: 100%;
+}
+
+#v65-fieldset-clubOptions {
+  width: 400px;
+}
+
+/* Club Sign Up Billing Form Elements */
+#v65-checkBilling input[name=FirstName], #v65-checkBilling input[name=LastName], #v65-checkBilling input[name=Company], #v65-checkBilling input[name=City], #v65-checkBilling input[name=MainPhone], #v65-checkBilling input[name=Email], #v65-checkBilling input[name=Username], #v65-checkBilling input[name=Password], #v65-checkBilling input[name=ConfirmPassword] {
+  width: 175px;
+}
+#v65-checkBilling input[name=Address] {
+  width: 250px;
+  margin-bottom: 8px;
+}
+#v65-checkBilling input[name=Address2] {
+  width: 250px;
+}
+#v65-checkBilling input[name=ZipCode] {
+  width: 100px;
+}
+#v65-checkBilling input[name=shipFirstName], #v65-checkBilling input[name=shipLastName], #v65-checkBilling input[name=shipCompany], #v65-checkBilling input[name=shipCity], #v65-checkBilling input[name=shipMainPhone], #v65-checkBilling input[name=shipEmail] {
+  width: 175px;
+}
+#v65-checkBilling input[name=shipAddress] {
+  width: 250px;
+  margin-bottom: 8px;
+}
+#v65-checkBilling input[name=shipAddress2] {
+  width: 250px;
+}
+#v65-checkBilling input[name=shipZipCode] {
+  width: 100px;
+}
+#v65-checkBilling input[type=checkbox] {
+  float: left;
+  margin: 0.3em 0.3em 0 0.3em;
+}
+#v65-checkBilling select[name=StateCode] {
+  width: 180px;
+}
+#v65-checkBilling select[name=cardExpiryMo] {
+  width: 120px;
+}
+#v65-checkBilling select[name=cardExpiryYr] {
+  width: 80px;
+}
+#v65-checkBilling select[name=BirthMonth], #v65-checkBilling select[name=ShipBirthMonth] {
+  width: 80px;
+}
+@media screen and (max-width: 480px) {
+  #v65-checkBilling select[name=BirthMonth], #v65-checkBilling select[name=ShipBirthMonth] {
+    width: 32%;
+  }
+}
+#v65-checkBilling select[name=BirthDay], #v65-checkBilling select[name=BirthYear], #v65-checkBilling select[name=ShipBirthDay], #v65-checkBilling select[name=ShipBirthYear] {
+  width: 60px;
+}
+@media screen and (max-width: 480px) {
+  #v65-checkBilling select[name=BirthDay], #v65-checkBilling select[name=BirthYear], #v65-checkBilling select[name=ShipBirthDay], #v65-checkBilling select[name=ShipBirthYear] {
+    width: 32%;
+  }
+}
+#v65-checkBilling select[name=shipStateCode] {
+  width: 180px;
+}
+#v65-checkBilling textarea[name=giftMessage] {
+  width: 250px;
+  height: 75px;
+}
+
+/* c. Sign Up Screen
+-------------------------------------------------------------- */
+#v65-signUpClubSummaryWrapper {
+  margin: 0 0 1em;
+  width: 90%;
+  padding: 5%;
+  background-color: #f7f7f7;
+  border: 1px solid #eeeeee;
+  overflow: hidden;
+  clear: both;
+}
+@media screen and (min-width: 725px) {
+  #v65-signUpClubSummaryWrapper {
+    width: 42%;
+    position: absolute;
+    top: 9px;
+    right: 1px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #v65-signUpClubSummaryWrapper {
+    width: 350px;
+  }
+}
+
+fieldset#v65-fieldset-choices .v65-clubChoices {
+  margin-bottom: 0.6em;
+  width: 100%;
+  margin-right: 2%;
+}
+
+.v65-clubChoices {
+  margin-bottom: 0.6em;
+  float: left;
+  width: 21%;
+  margin-right: 2%;
+}
+
+.v65-form fieldset div.v65-clubChoices-title, .v65-clubChoices-title {
+  font-size: 1.1em;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.v65-form fieldset div.v65-clubChoices-description {
+  margin-bottom: 0.4em;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.v65-clubChoices-title-min {
+  font-size: 0.917em;
+  font-weight: normal;
+}
+
+.v65-clubChoices-title-max {
+  font-size: 0.917em;
+  font-weight: normal;
+}
+
+.v65-form .v65-clubChoices-select {
+  width: 40px;
+  margin-right: 5px;
+}
+
+/* d. Review Screen
+-------------------------------------------------------------- */
+#v65-clubSummaryWrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 0 0 1em 0;
+}
+
+#v65-clubChoiceSummary {
+  width: 100%;
+  padding: 0;
+  margin: 0 0 1.5em;
+  overflow: hidden;
+}
+
+#v65-clubBillingSummary {
+  float: left;
+  width: 250px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+@media screen and (max-width: 970px) {
+  #v65-clubBillingSummary {
+    width: 44%;
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #v65-clubBillingSummary {
+    float: inherit;
+    width: 90%;
+    padding: 5%;
+  }
+}
+
+#v65-clubShippingSummary {
+  float: left;
+  width: 250px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+@media screen and (max-width: 970px) {
+  #v65-clubShippingSummary {
+    width: 45%;
+    padding: 2.5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #v65-clubShippingSummary {
+    float: inherit;
+    width: 90%;
+    padding: 5%;
+  }
+}
+
+#v65-reviewClubSummaryWrapper {
+  float: right;
+  width: 300px;
+  padding: 20px;
+  margin: 0;
+  background-color: #f7f7f7;
+  border: 1px solid #eee;
+  overflow: hidden;
+  font-size: 0.95em;
+}
+@media screen and (max-width: 970px) {
+  #v65-reviewClubSummaryWrapper {
+    float: inherit;
+    width: 90%;
+    padding: 5%;
+  }
+}
+
+/*   ===================================================================================================                                                                
+     27. Member Area
+======================================================================================================== */
+/* a. Login Form
+-------------------------------------------------------------- */
+#v65-LoginFormWrapper form {
+  text-align: left;
+}
+#v65-LoginFormWrapper legend {
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+#v65-LoginFormWrapper fieldset {
+  border: 1px solid #ccc;
+}
+#v65-LoginFormWrapper div {
+  margin: 0 0 4px 0;
+  overflow: hidden;
+  padding: 2px 5px 5px 5px;
+}
+
+#v65-loginForm input[type="checkbox"] {
+  float: left;
+  margin: 0.3em 0.3em 0 0.3em;
+}
+
+/* b. Main Form
+-------------------------------------------------------------- */
+#v65-memberFormWrapper {
+  /* Member SignUp Form Elements */
+}
+#v65-memberFormWrapper form {
+  text-align: left;
+  width: 400px;
+}
+@media screen and (max-width: 480px) {
+  #v65-memberFormWrapper form {
+    width: 100%;
+  }
+}
+#v65-memberFormWrapper legend {
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+#v65-memberFormWrapper fieldset {
+  border: 1px solid #ccc;
+}
+@media screen and (min-width: 768px) {
+  #v65-memberFormWrapper fieldset {
+    width: 400px;
+  }
+}
+#v65-memberFormWrapper div {
+  margin: 0 0 4px 0;
+  overflow: hidden;
+  padding: 2px 5px 5px 5px;
+}
+#v65-memberFormWrapper .v65-additionalComments {
+  float: right;
+}
+#v65-memberFormWrapper select[name="BirthDay"], #v65-memberFormWrapper select[name="BirthYear"], #v65-memberFormWrapper select[name="BirthMonth"] {
+  width: 32%;
+}
+#v65-memberFormWrapper select[name="BirthDay"] {
+  margin: 0 1%;
+}
+#v65-memberFormWrapper select[name="CardExpiryMo"] {
+  width: 49%;
+}
+#v65-memberFormWrapper select[name="CardExpiryYr"] {
+  margin-left: 1%;
+  width: 48%;
+}
+@media screen and (min-width: 768px) {
+  #v65-memberFormWrapper select[name=BirthMonth] {
+    width: 80px;
+  }
+  #v65-memberFormWrapper select[name=BirthDay], #v65-memberFormWrapper select[name=BirthYear] {
+    width: 60px;
+  }
+  #v65-memberFormWrapper select[name=StateCode] {
+    width: 180px;
+  }
+  #v65-memberFormWrapper select[name=CardExpiryMo] {
+    width: 120px;
+  }
+  #v65-memberFormWrapper select[name=CardExpiryYr] {
+    width: 80px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 480px) {
+  #v65-memberFormWrapper select[name=BirthMonth] {
+    width: 32%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 480px) {
+  #v65-memberFormWrapper select[name=BirthDay], #v65-memberFormWrapper select[name=BirthYear] {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #v65-memberFormWrapper input {
+    width: 98%;
+    margin: 0;
+    padding: 0;
+  }
+  #v65-memberFormWrapper input[type=checkbox] {
+    float: left;
+    width: 22px;
+    margin: 0.3em 0.3em 0 0.3em;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 480px) {
+  #v65-memberFormWrapper input[type=checkbox] {
+    float: left;
+    margin: 0.3em 0.3em 0 0.3em;
+  }
+}
+#v65-memberFormWrapper input[name=Address], #v65-memberFormWrapper input[name=captchaText] {
+  margin-bottom: 0.667em;
+}
+@media screen and (min-width: 768px) {
+  #v65-memberFormWrapper input[name=FirstName], #v65-memberFormWrapper input[name=LastName], #v65-memberFormWrapper input[name=Company], #v65-memberFormWrapper input[name=City], #v65-memberFormWrapper input[name=MainPhone], #v65-memberFormWrapper input[name=Email], #v65-memberFormWrapper input[name=Username], #v65-memberFormWrapper input[name=Password], #v65-memberFormWrapper input[name=confirmPassword] {
+    width: 175px;
+  }
+  #v65-memberFormWrapper input[name=Address] {
+    width: 250px;
+    margin-bottom: 8px;
+  }
+  #v65-memberFormWrapper input[name=Address2] {
+    width: 250px;
+  }
+  #v65-memberFormWrapper input[name=ZipCode] {
+    width: 100px;
+  }
+  #v65-memberFormWrapper input[type=checkbox] {
+    float: left;
+    margin: 0.3em 0.3em 0 0.3em;
+  }
+}
+@media screen and (max-width: 480px) {
+  #v65-memberFormWrapper label {
+    height: 22px;
+    line-height: 22px;
+    margin: 0.3em 0.3em 0 0.3em;
+  }
+}
+@media screen and (max-width: 480px) {
+  #v65-memberFormWrapper button.defaultBtn {
+    width: 100%;
+  }
+}
+
+/* c. Club List
+	-------------------------------------------------------------- */
+.v65-memberClubDescription {
+  padding-left: 20px;
+}
+
+/* Member Address Book */
+#v65-memberAddressBook {
+  margin-bottom: 1em;
+}
+#v65-memberAddressBook th {
+  background-color: #ccc;
+  color: #333;
+  font-weight: bold;
+  font-size: 0.95em;
+  padding: 3px;
+  border-bottom: 1px solid #bbb;
+}
+@media screen and (max-width: 480px) {
+  #v65-memberAddressBook th {
+    font-size: 0.8em;
+    padding: 0;
+  }
+}
+#v65-memberAddressBook td {
+  font-size: 0.95em;
+  padding: 3px;
+  border-bottom: 1px solid #bbb;
+}
+#v65-memberAddressBook td a {
+  color: #000;
+  text-decoration: none;
+}
+#v65-memberAddressBook td a:hover {
+  color: #000;
+  text-decoration: none;
+}
+#v65-memberAddressBook tr:hover {
+  background-color: #FFC;
+}
+#v65-memberAddressBook tr .alt {
+  background-color: #efefef;
+}
+#v65-memberAddressBook tr .alt:hover {
+  background-color: #FFC;
+}
+
+/* d. Member Orders
+-------------------------------------------------------------- */
+#v65-memberOrders {
+  margin-bottom: 1em;
+}
+#v65-memberOrders th {
+  background-color: #ccc;
+  color: #333;
+  font-weight: bold;
+  font-size: 0.95em;
+  padding: 3px;
+  border-bottom: 1px solid #bbb;
+}
+@media screen and (max-width: 480px) {
+  #v65-memberOrders th:nth-child(1), #v65-memberOrders th:nth-child(4), #v65-memberOrders th:nth-child(5), #v65-memberOrders th:nth-child(6) {
+    display: none;
+  }
+}
+#v65-memberOrders td {
+  font-size: 0.95em;
+  padding: 2px 0;
+  border-bottom: 1px solid #bbb;
+}
+@media screen and (max-width: 480px) {
+  #v65-memberOrders td:nth-child(1), #v65-memberOrders td:nth-child(4), #v65-memberOrders td:nth-child(5), #v65-memberOrders td:nth-child(6) {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  #v65-memberOrders td:nth-child(2) {
+    width: 21%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #v65-memberOrders td:nth-child(8) {
+    width: 50%;
+  }
+  #v65-memberOrders td:nth-child(8) a {
+    width: 43%;
+    margin: 5% 0;
+  }
+}
+#v65-memberOrders td a {
+  color: #000;
+  text-decoration: none;
+}
+#v65-memberOrders td a:hover {
+  color: #000;
+  text-decoration: none;
+}
+#v65-memberOrders tr:hover {
+  background-color: #FFC;
+}
+#v65-memberOrders tr .alt {
+  background-color: #efefef;
+}
+#v65-memberOrders tr .alt:hover {
+  background-color: #FFC;
+}
+
+/* e. Member Orders Drilldown
+-------------------------------------------------------------- */
+#v65-memberOrderSummaryWrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 0 0 1em 0;
+}
+
+#v65-memberbillingSummary {
+  float: left;
+  width: 49%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#v65-memberShippingSummary {
+  float: left;
+  width: 49%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* f. Member Allocations
+-------------------------------------------------------------- */
+.v65-memberAllocationWrapper {
+  overflow: hidden;
+  border-bottom: 1px solid #999;
+  margin: 0 0 1em;
+  padding: 0 0 1em;
+}
+
+.v65-memberAllocationDetails {
+  position: relative;
+  margin: 0 0 1em;
+  padding: 0;
+  overflow: hidden;
+  min-height: 216px;
+}
+
+.v65-memberAllocationImage {
+  text-align: center;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .v65-memberAllocationImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+  }
+}
+
+.v65-memberAllocationTeaser {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .v65-memberAllocationTeaser {
+    position: relative;
+    margin: 0 0 0 140px;
+    padding: 0;
+    width: inherit;
+  }
+}
+
+.v65-storeAllocationSKU {
+  font-size: 11px;
+  color: #333;
+}
+
+.v65-memberAllocationTable {
+  float: right;
+  border: 1px solid #ccc;
+  margin: 0 0 1.5em;
+  padding: 4px;
+  font-size: 10px;
+  width: 250px;
+}
+@media screen and (max-width: 480px) {
+  .v65-memberAllocationTable {
+    width: 100%;
+  }
+}
+.v65-memberAllocationTable th {
+  font-weight: bold;
+  vertical-align: bottom;
+  text-align: center;
+}
+.v65-memberAllocationTable td {
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+  text-align: center;
+}
+.v65-memberAllocationTable td .label {
+  font-weight: bold;
+  text-align: right;
+}
+.v65-memberAllocationTable td .lastRow {
+  border-bottom: 0;
+}
+.v65-memberAllocationTable input {
+  text-align: center;
+}
+
+/*minium quantity row*/
+/* g. Member Allocations History
+-------------------------------------------------------------- */
+.v65-memberAllocationHistoryWrapper {
+  overflow: hidden;
+  border-bottom: 1px solid #999;
+  margin: 0 0 1.5em;
+  padding: 0 0 0.5em;
+}
+
+.v65-memberAllcoationHistoryTitle {
+  font-size: 1.6em;
+  margin: 0 0 0.2em;
+  color: #333;
+}
+
+.v65-memberAllcoationHistoryDates {
+  margin: 0 0 0.5em;
+}
+
+.v65-memberAllcoationHistoryStartDate {
+  display: inline-block;
+  margin-right: 8px;
+  border-right: 1px solid #ccc;
+}
+
+.v65-memberAllcoationHistoryEndDate {
+  display: inline-block;
+}
+
+.v65-memberAllcoationHistoryDateLabel {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.v65-memberAllcoationHistoryDateValue {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.v65-memberAllocationHistoryTable {
+  width: 100%;
+  margin: 0;
+  padding: 6px;
+  font-size: 10px;
+}
+.v65-memberAllocationHistoryTable th {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  vertical-align: bottom;
+  text-align: center;
+  background-color: #efefef;
+  color: #555;
+}
+.v65-memberAllocationHistoryTable td {
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+  text-align: center;
+}
+.v65-memberAllocationHistoryTable td .label {
+  font-weight: bold;
+  text-align: right;
+}
+.v65-memberAllocationHistoryTable td .lastRow {
+  border-bottom: 0;
+}
+
+/*   ===================================================================================================                                                                
+     28. Modal PopUp Layout
+======================================================================================================== */
+#v65-modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  text-align: left;
+}
+@media screen and (max-width: 767px) {
+  #v65-modalContainer {
+    position: absolute;
+  }
+}
+
+#v65-modalViel {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000%;
+  z-index: 102;
+}
+@media screen and (min-width: 768px) {
+  #v65-modalViel {
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    -moz-opacity: 0.75;
+  }
+}
+
+#v65-modalContentWrapper {
+  border: 1px solid #666;
+  background-color: #ffffff;
+  position: relative;
+  left: 50%;
+  top: 20%;
+  margin: 0 0 0 -237px;
+  width: 474px;
+  z-index: 103;
+}
+@media screen and (max-width: 767px) {
+  #v65-modalContentWrapper {
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+#v65-modalContentWrapperLarge {
+  border: 1px solid #666;
+  background-color: #fff;
+  position: relative;
+  left: 50%;
+  top: 20%;
+  margin: 0 0 0 -437px;
+  width: 874px;
+  z-index: 103;
+}
+
+#v65-modalContentHeader {
+  background-color: #777;
+  /*width: 464px;*/
+  overflow: hidden;
+  text-align: right;
+  padding: 10px;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  #v65-modalContentHeader {
+    height: 27px;
+    padding: 6px 10px 0 0;
+  }
+}
+
+#v65-modalContent {
+  padding: 15px;
+  margin: 0px;
+}
+@media screen and (max-width: 480px) {
+  #v65-modalContent .defaultBtn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #v65-modalContent form {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  #v65-modalContent input[type=text], #v65-modalContent input[type=Password] {
+    width: 100% !important;
+  }
+}
+
+/*Modal Site Login*/
+#v65-siteLoginForm {
+  width: 212px;
+  margin: 0 20px 0 0;
+  float: left;
+}
+
+#v65-siteLoginRightContent {
+  float: left;
+  width: 212px;
+}
+
+#v65-modalAgeVerification {
+  border: 1px solid #666;
+  background-color: #fff;
+  position: relative;
+  left: 50%;
+  top: 20%;
+  margin: 0 0 0 -237px;
+  width: 474px;
+  z-index: 103;
+}
+
+/*   ===================================================================================================                                                                
+     29. Form Builder
+======================================================================================================== */
+/* This wrapper provides: Outline, position, margin, padding, alignment to a form built using the formbuilder */
+.v65-form {
+  width: 250px;
+  margin: 0 0 1em;
+  /*Margin + Block are there for checkout area.*/
+}
+@media screen and (max-width: 480px) {
+  .v65-form {
+    width: 100%;
+  }
+}
+.v65-form fieldset {
+  display: block;
+  padding: 0 5px 10px 5px;
+  margin: 0 0 12px 0;
+  border: 1px solid #ccc;
+  /*default width is 225px;*/
+  /* Forms - Label Beside Variant */
+}
+@media screen and (max-width: 480px) {
+  .v65-form fieldset {
+    padding: 0;
+  }
+}
+.v65-form fieldset div {
+  overflow: hidden;
+  padding: 5px;
+  overflow: hidden;
+}
+.v65-form fieldset .formatBeside label {
+  float: left;
+  width: 65px;
+  text-align: right;
+  padding: 0 5px 0 0;
+}
+.v65-form fieldset .formatBeside input[type=text], .v65-form fieldset .formatBeside input[type=password] {
+  padding: 0;
+  margin: 0;
+  width: 150px;
+}
+.v65-form fieldset .formatBeside textarea, .v65-form fieldset .formatBeside select {
+  font-family: Tahoma, Geneva, sans-serif;
+  line-height: 1.5;
+  width: 155px;
+  font-size: 1em;
+}
+@media screen and (max-width: 480px) {
+  .v65-form fieldset .formatBeside textarea, .v65-form fieldset .formatBeside select {
+    width: 99%;
+  }
+}
+.v65-form legend {
+  font-size: 1.17em;
+  margin: 0;
+  padding: 0 5px;
+}
+.v65-form label {
+  display: block;
+  /*This is here so that on a vertical form the extra label doesn't add an additional line break */
+}
+.v65-form label .submitLabel {
+  font-size: 4px;
+  line-height: 4px;
+}
+.v65-form .formErrorMessage {
+  font-style: italic;
+  font-weight: normal;
+  color: #C66;
+}
+.v65-form input[type=text], .v65-form input[type=password] {
+  padding: 0;
+  margin: 0;
+  width: 220px;
+}
+@media screen and (max-width: 480px) {
+  .v65-form input[type=text], .v65-form input[type=password] {
+    width: 99%;
+  }
+}
+.v65-form textarea, .v65-form select {
+  font-family: Tahoma, Geneva, sans-serif;
+  line-height: 1.5;
+  width: 225px;
+  font-size: 1em;
+}
+@media screen and (max-width: 480px) {
+  .v65-form textarea, .v65-form select {
+    width: 99%;
+  }
+}
+
+.v65-formLeft {
+  float: left;
+  margin: 0 1em 1em 0;
+  width: 250px;
+}
+
+.v65-formRight {
+  margin: 0 0 1em 0;
+  width: 100%;
+}
+@media screen and (min-width: 500px) {
+  .v65-formRight {
+    float: right;
+    margin: 0 0 1em 1em;
+    width: 250px;
+  }
+}
+
+.v65-formCenter {
+  margin: 0 auto 1em;
+  width: 250px;
+}
+
+.v65-formError {
+  color: #C00;
+}
+
+/* REQUIRED BUTTON STYLES: */
+button {
+  border: 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+  height: 44px;
+  line-height: 44px;
+  min-width: 44px;
+  overflow: visible;
+  /* removes extra side padding in IE */
+  padding: 0;
+  position: relative;
+}
+button::-moz-focus-inner {
+  border: none;
+  /* overrides extra padding in Firefox */
+}
+button span {
+  display: block;
+  padding: 0 0.7em;
+  /* 0 8px; */
+  position: relative;
+  white-space: nowrap;
+}
+button.largeBtn, button.defaultBtn, button.modalBtn {
+  background-color: #369;
+  text-align: center;
+}
+button.largeBtn span, button.defaultBtn span, button.modalBtn span {
+  color: #fff;
+}
+button.largeBtn:hover, button.defaultBtn:hover, button.modalBtn:hover {
+  background-color: #69c;
+}
+button.altLargeBtn, button.altBtn, button.altModalBtn {
+  background-color: #919191;
+  font-size: 1em;
+  text-align: center;
+}
+button.altLargeBtn span, button.altBtn span, button.altModalBtn span {
+  color: #fff;
+}
+button.altLargeBtn:hover, button.altBtn:hover, button.altModalBtn:hover {
+  background-color: #acacac;
+}
+button.largeBtn, button.altLargeBtn {
+  font-size: 1.3em;
+  /* 16px; */
+}
+@media screen and (min-width: 768px) {
+  button.largeBtn, button.altLargeBtn {
+    height: 2em;
+    line-height: 2em;
+  }
+}
+button.defaultBtn, button.altBtn {
+  font-size: 1em;
+  /* 12px; */
+}
+@media screen and (min-width: 768px) {
+  button.defaultBtn, button.altBtn {
+    height: 2em;
+    line-height: 2em;
+  }
+}
+button.modalBtn, button.altModalBtn {
+  font-size: 0.833em;
+  /* 10px; */
+}
+@media screen and (min-width: 768px) {
+  button.modalBtn, button.altModalBtn {
+    height: 1.7em;
+    line-height: 1.7em;
+  }
+}
+
+a.largeLinkBtn, a.linkBtn, a.modalLinkBtn, a.linkAltBtn, a.modalLinkAltBtn {
+  border: 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  min-width: 44px;
+  padding: 0;
+  position: relative;
+}
+@media screen and (max-width: 480px) {
+  a.largeLinkBtn, a.linkBtn, a.modalLinkBtn, a.linkAltBtn, a.modalLinkAltBtn {
+    width: 99%;
+  }
+}
+a.largeLinkBtn span, a.linkBtn span, a.modalLinkBtn span, a.linkAltBtn span, a.modalLinkAltBtn span {
+  display: block;
+  padding: 0 0.7em;
+  /* 0 8px; */
+  position: relative;
+  white-space: nowrap;
+}
+a.largeLinkBtn, a.linkBtn, a.modalLinkBtn {
+  background-color: #369;
+  text-align: center;
+}
+a.largeLinkBtn span, a.linkBtn span, a.modalLinkBtn span {
+  color: #fff;
+}
+a.largeLinkBtn:hover, a.linkBtn:hover, a.modalLinkBtn:hover {
+  background-color: #69c;
+  text-decoration: none;
+}
+a.linkAltBtn, a.modalLinkAltBtn {
+  background-color: #919191;
+  font-size: 1em;
+  text-align: center;
+}
+a.linkAltBtn span, a.modalLinkAltBtn span {
+  color: #fff;
+}
+a.linkAltBtn:hover, a.modalLinkAltBtn:hover {
+  background-color: #acacac;
+  text-decoration: none;
+}
+a.largeLinkBtn {
+  font-size: 1.3em;
+  /* 16px; */
+}
+@media screen and (min-width: 768px) {
+  a.largeLinkBtn {
+    height: 2em;
+    line-height: 2em;
+  }
+}
+a.linkBtn, a.linkAltBtn {
+  font-size: 1em;
+  /* 12px; */
+}
+@media screen and (min-width: 768px) {
+  a.linkBtn, a.linkAltBtn {
+    height: 2em;
+    line-height: 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  a.modalLinkBtn, a.modalLinkAltBtn {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  a.modalLinkBtn, a.modalLinkAltBtn {
+    font-size: 0.833em;
+    /* 10px; */
+    height: 1.7em;
+    line-height: 1.7em;
+  }
+}
+
+/*   ===================================================================================================                                                                
+     30. Misc
+======================================================================================================== */
+.firstItem {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.lastItem {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.v65-last {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: 0;
+}
+
+/* CSS Document */
+/* ====================================================================================================				
+	Vin65 Screen .SCSS
+==================================================================================================== */
+/* CSS Document */
+/* ====================================================================================================
+	Table of Content
+	1. Theme Settings
+	2. Typography - Copy into admin.css
+	3. Header
+	4. Navigation
+		a. Navigation
+		b. Sub Navigation
+	
+	5. Content
+		a. Homepage Styles
+		b. Page Styles
+
+	6 Blog Template
+	7. Print Template
+	8. Buttons
+	9. Footer
+	10. Vin65 Overrides
+		a. User Tools
+		b. Homepage Product Group
+		c. Checkout Overrides
+		d. Default SASS Product List
+		e. Default SASS Product Drilldown
+*/
+/*   ===================================================================================================
+     2. Typography - These get copied into the admin.css
+======================================================================================================== */
+body {
+  background-color: white;
+  font-size: 12px;
+  color: black;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  line-height: 1.5em;
+}
+
+a {
+  color: #369;
+  text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6, p, table, ul, ol {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+ul, ol, dl, p, table, pre {
+  margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 0.6em;
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 1.2;
+  margin: 0.25em  0 0.5em;
+}
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 0.6em;
+}
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+img {
+  border: none;
+}
+
+form {
+  margin-bottom: 1em;
+}
+
+legend {
+  color: #111;
+}
+
+hr {
+  background-color: #666;
+  border: 0;
+  color: #666;
+  height: 1px;
+}
+
+/*   ===================================================================================================
+     3. Header
+======================================================================================================== */
+.header {
+  width: 100%;
+  z-index: 100;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: 180px;
+    position: relative;
+  }
+}
+
+.logo {
+  height: auto;
+  display: block;
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo {
+    height: 160px;
+    float: left;
+    width: 240px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .logo {
+    height: 160px;
+    float: left;
+    width: 240px;
+    text-align: left;
+  }
+}
+.logo img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .cart {
+    display: none;
+  }
+}
+
+#productSearch {
+  float: right;
+  margin: 50px 0 0 0;
+  width: 250px;
+}
+@media screen and (max-width: 767px) {
+  #productSearch {
+    width: 100%;
+    margin: 3% 0;
+  }
+}
+#productSearch fieldset {
+  border: none;
+}
+#productSearch #v65-searchWidgetInput input {
+  width: 150px;
+  float: left;
+  margin: 0 5px 0 0;
+}
+@media screen and (max-width: 767px) {
+  #productSearch #v65-searchWidgetInput input {
+    width: 65%;
+    margin: 0 2%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #productSearch .defaultBtn {
+    width: 25%;
+  }
+}
+
+/*   ===================================================================================================
+     4. Navigation
+======================================================================================================== */
+/* ----- Link to footer navigation ----- */
+.menuLink {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .menuLink {
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 15px;
+    text-shadow: 0 1px 3px rgba(220, 220, 220, 0.5);
+  }
+}
+.menuLink:hover, .menuLink:focus, .menuLink:active {
+  text-decoration: none;
+}
+
+/* ----- a. Main Menu ----- */
+.mainMenu {
+  font-size: 13px;
+  height: 100%;
+  width: 100%;
+  z-index: 101;
+}
+@media screen and (max-width: 767px) {
+  .mainMenu {
+    clear: both;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .mainMenu {
+    float: right;
+    height: 24px;
+    width: 65%;
+    position: relative;
+    margin: 80px 0 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mainMenu {
+    float: right;
+    height: 24px;
+    width: 640px;
+    position: relative;
+    margin: 80px 0 30px;
+  }
+}
+.mainMenu ul {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  /*home link is hidden for mobile*/
+  			/* Option to display the first three items, home is hidden above for mobile
+  			@media screen and (max-width: 550px) {
+    				li:nth-child(n+5){display:none;
+    				}
+  			}*/
+}
+@media screen and (min-width: 768px) {
+  .mainMenu ul {
+    float: right;
+    margin: 0;
+    text-align: left;
+  }
+}
+.mainMenu ul li {
+  margin: 0;
+  padding: 0;
+  height: 45px;
+  line-height: 45px;
+  display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .mainMenu ul li {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 25px;
+    margin: 0 0 0 35px;
+    position: relative;
+    display: inline;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mainMenu ul li {
+    float: left;
+    margin: 0 0 0 55px;
+    position: relative;
+    display: inline;
+  }
+}
+.mainMenu ul li a {
+  color: black;
+  display: block;
+  height: 44px;
+  line-height: 44px;
+  margin: 0 8px;
+  padding: 0 6px;
+  position: relative;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .mainMenu ul li a {
+    height: 32px;
+    line-height: 32px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+}
+.mainMenu ul li a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+.mainMenu ul li:hover ul {
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .mainMenu ul li:hover ul {
+    display: block;
+  }
+}
+.mainMenu ul li ul {
+  background-color: #fff;
+  display: none;
+  left: -10px;
+  position: absolute;
+  top: 32px;
+  width: 180px;
+}
+.mainMenu ul li ul li {
+  background-color: #fff;
+  display: block;
+  float: none;
+  margin: 0;
+  text-align: left;
+  width: 180px;
+}
+.mainMenu ul li ul li a {
+  background-color: #fff;
+  color: #666;
+  display: block;
+  float: none;
+  height: 28px;
+  line-height: 28px;
+  margin: 0;
+  padding: 0 0 0 10px;
+  text-align: left;
+  text-transform: none;
+  width: 170px;
+}
+.mainMenu ul li ul li a:hover {
+  color: #000;
+}
+.mainMenu ul li.v65-home {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .mainMenu ul li.v65-home {
+    display: inline-block;
+  }
+}
+.mainMenu ul li.v65-pageAParent {
+  color: black;
+}
+.mainMenu ul li.v65-selected {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* ----- b. Sub Menu ----- */
+.subMenu {
+  height: 100%;
+  width: 100%;
+  clear: both;
+}
+@media screen and (min-width: 768px) {
+  .subMenu {
+    border-right: 1px solid #ccc;
+    float: left;
+    margin: 6% 4% 0 0;
+    padding-right: 2%;
+    width: 17.8%;
+    clear: left;
+  }
+}
+.subMenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .subMenu ul {
+    border-top: 1px solid #999;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subMenu ul {
+    margin: 0 0 2% 1%;
+    padding: 0;
+  }
+}
+.subMenu ul li {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .subMenu ul li {
+    border-bottom: 1px solid #999;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .subMenu ul li {
+    line-height: 2;
+    display: list-item;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subMenu ul li a {
+    display: block;
+    font-size: 1em;
+    line-height: 3em;
+  }
+}
+.subMenu ul li ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  border-bottom: 3px solid #CCC;
+}
+@media screen and (min-width: 768px) {
+  .subMenu ul li ul {
+    margin-left: 10px;
+    width: 160px;
+    border: none;
+  }
+}
+.subMenu ul li .v65-pageAParent {
+  color: #000;
+}
+.subMenu ul li .v65-leftSelected {
+  color: #000;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .subMenu h3 {
+    display: none;
+  }
+}
+
+/*   ===================================================================================================
+     5. Content
+======================================================================================================== */
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: 950px;
+  }
+}
+
+/* ----- a. Homepage Styles ----- */
+.homepageContent {
+  background: #fff;
+  box-shadow: 0 0 20px #cccccc;
+}
+
+@media screen and (max-width: 480px) {
+  .homepageText {
+    padding: 3%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .homepageText {
+    padding: 3%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .homepageText {
+    float: left;
+    width: 55%;
+    padding: 3% 3% 3% 2%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .homepageText {
+    float: left;
+    width: 470px;
+    padding: 30px 30px 30px 20px;
+    margin: 0 0 20px;
+  }
+}
+
+.homepageProductGroup {
+  border-left: 1px solid #ccc;
+  margin: 75px 0 20px;
+}
+@media screen and (max-width: 480px) {
+  .homepageProductGroup {
+    padding: 3%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .homepageProductGroup {
+    padding: 3%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .homepageProductGroup {
+    float: left;
+    width: 33%;
+    padding: 0 3%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .homepageProductGroup {
+    float: left;
+    width: 400px;
+    padding: 0 0 30px 20px;
+  }
+}
+.homepageProductGroup .v65-product-photo {
+  width: auto;
+  text-align: left;
+  margin: 0 auto 2em auto;
+}
+@media screen and (max-width: 1023px) {
+  .homepageProductGroup .v65-product-photo {
+    float: left;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .homepageProductGroup .v65-product-photo {
+    float: left;
+    text-align: center;
+  }
+}
+.homepageProductGroup .v65-product-photo img {
+  max-width: 60%;
+}
+@media screen and (max-width: 480px) {
+  .homepageProductGroup .v65-addToCartCase {
+    display: none;
+  }
+}
+
+#slider {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* ----- b. Page Styles ----- */
+.content {
+  background: #fff;
+  box-shadow: 0 0 20px #cccccc;
+  padding: 30px;
+}
+@media screen and (max-width: 767px) {
+  .content {
+    box-shadow: none;
+    padding: 0;
+    border-top: 2px solid #CCC;
+  }
+}
+
+.contentWide {
+  background: #fff;
+  box-shadow: 0 0 20px #cccccc;
+  padding: 30px;
+}
+@media screen and (max-width: 767px) {
+  .contentWide {
+    box-shadow: none;
+    padding: 3%;
+    border-top: 2px solid #CCC;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contentWide .subMenu {
+    display: none;
+  }
+}
+
+.contentCart {
+  background: #fff;
+  box-shadow: 0 0 20px #cccccc;
+  padding: 30px;
+}
+@media screen and (max-width: 767px) {
+  .contentCart {
+    box-shadow: none;
+    padding: 0.2em;
+    border-top: 2px solid #CCC;
+  }
+}
+
+.pageContent {
+  float: right;
+  width: 75%;
+}
+@media screen and (max-width: 767px) {
+  .pageContent {
+    width: 94%;
+    padding: 3%;
+  }
+}
+
+/*   ===================================================================================================
+     6. Blog Template
+======================================================================================================== */
+.blogContent {
+  padding: 5%;
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  .blogContent {
+    width: 65%;
+    padding: 5%;
+    float: left;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .blogContent {
+    width: 520px;
+    padding: 20px 25px 0 0;
+    float: left;
+  }
+}
+
+.blogRightWrapper {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .blogRightWrapper {
+    display: block;
+    width: 20%;
+    padding: 20px 0 0 0;
+    float: right;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .blogRightWrapper {
+    float: right;
+    padding: 20px 0 0 0;
+    width: 325px;
+  }
+}
+.blogRightWrapper ul {
+  list-style: none;
+  margin: 0 0 1em;
+  padding: 0;
+}
+.blogRightWrapper ul li {
+  font-size: 11px;
+  margin: 0 0 0 10px;
+}
+
+.blogFilterLeft {
+  display: none;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .blogFilterLeft {
+    width: auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .blogFilterLeft {
+    display: block;
+    float: left;
+    padding: 0 25px 0 0;
+    width: 150px;
+  }
+}
+
+.blogFilterRight {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .blogFilterRight {
+    width: auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .blogFilterRight {
+    display: block;
+    float: left;
+    width: 150px;
+  }
+}
+
+/*   ===================================================================================================
+     7. Print Template
+======================================================================================================== */
+/*   ===================================================================================================
+     8. Buttons
+======================================================================================================== */
+button.defaultBtn, button.modalBtn, button.largeBtn {
+  background: #336699;
+  border: 1px solid #163655;
+  border-radius: 0.385em;
+  color: #fff;
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  min-width: 3em;
+}
+button.defaultBtn span, button.modalBtn span, button.largeBtn span {
+  color: #fff;
+  border-radius: 0.385em;
+}
+button.defaultBtn:hover, button.modalBtn:hover, button.largeBtn:hover {
+  background: #407fbf;
+}
+button.altBtn, button.altModalBtn, button.altLargeBtn {
+  background: #cccccc;
+  border: 1px solid #888;
+  border-radius: 0.385em;
+  color: #fff;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  min-width: 3em;
+}
+button.altBtn span, button.altModalBtn span, button.altLargeBtn span {
+  background: #cccccc;
+  border-radius: 0.385em;
+}
+button.altBtn:hover, button.altModalBtn:hover, button.altLargeBtn:hover {
+  background: #e6e6e6;
+}
+button.altBtn:hover span, button.altModalBtn:hover span, button.altLargeBtn:hover span {
+  background: #e6e6e6;
+}
+
+a.linkBtn, a.modalLinkBtn, a.largeLinkBtn, a.fullWidthBtn {
+  background: #336699;
+  border: 1px solid #163655;
+  border-radius: 0.385em;
+  color: #fff;
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  min-width: 3em;
+}
+a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span, a.fullWidthBtn span {
+  color: #fff;
+  background: #336699;
+  border-radius: 0.385em;
+}
+a.linkBtn:hover, a.modalLinkBtn:hover, a.largeLinkBtn:hover, a.fullWidthBtn:hover {
+  background: #407fbf;
+  text-decoration: none;
+}
+a.linkBtn:hover span, a.modalLinkBtn:hover span, a.largeLinkBtn:hover span, a.fullWidthBtn:hover span {
+  background: #407fbf;
+}
+a.fullWidthBtn {
+  display: block;
+  font-size: 16px;
+  max-width: 100%;
+  text-align: center;
+  width: 100%;
+}
+a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
+  background: #cccccc;
+  border: 1px solid #888;
+  border-radius: 0.385em;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  min-width: 3em;
+}
+a.linkAltBtn span, a.modalLinkAltBtn span, a.modalLinkAltBtn span {
+  background: #cccccc;
+  border-radius: 0.385em;
+  color: #000;
+}
+a.linkAltBtn:hover, a.modalLinkAltBtn:hover, a.modalLinkAltBtn:hover {
+  background: #e6e6e6;
+}
+a.linkAltBtn:hover span, a.modalLinkAltBtn:hover span, a.modalLinkAltBtn:hover span {
+  background: #e6e6e6;
+}
+a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
+  min-width: auto;
+}
+
+/*   ===================================================================================================
+     9. Footer	
+======================================================================================================== */
+.footer {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    color: black;
+    padding: 1.5em 0;
+    text-align: center;
+  }
+}
+.footer a {
+  color: black;
+}
+
+/* Footer Nav
+-----------------------------------------------*/
+.footerNav {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .footerNav {
+    background: none;
+  }
+}
+.footerNav ul {
+  border-top: 3px solid #ccc;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .footerNav ul {
+    border: none;
+    text-align: center;
+  }
+}
+.footerNav ul li {
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .footerNav ul li {
+    display: inline;
+    padding: 0 5px;
+    border: none;
+  }
+}
+.footerNav ul li a {
+  font-size: 1em;
+  line-height: 3em;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .footerNav ul li a {
+    color: black;
+    display: inline-block;
+    font-size: 0.917em;
+    position: relative;
+  }
+  .footerNav ul li a:hover {
+    color: #333333;
+  }
+}
+
+/* Mobile Footer Tools
+-----------------------------------------------*/
+.footerTools {
+  background: #000;
+  width: 100%;
+}
+.footerTools ul {
+  border-top: 1px solid #555;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .footerTools ul {
+    border: none;
+  }
+}
+.footerTools ul li {
+  line-height: 2.5em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .footerTools ul li {
+    border: none;
+  }
+}
+.footerTools ul li img {
+  vertical-align: text-top;
+}
+.footerTools ul li a {
+  line-height: 2.5em;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .footerTools ul li a {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footerTools ul li.phone, .footerTools ul li.email, .footerTools ul li.map {
+    display: none;
+  }
+}
+.footerTools ul li.legal {
+  border-bottom: 0;
+  font-size: 0.875em;
+  line-height: 3em;
+}
+@media screen and (max-width: 767px) {
+  .footerTools ul li.legal {
+    background-color: #000;
+    color: #555;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footerTools ul li.legal {
+    float: left;
+    display: block;
+  }
+}
+.footerTools ul li.accolade {
+  font-size: 0.875em;
+  line-height: 3em;
+}
+@media screen and (max-width: 767px) {
+  .footerTools ul li.accolade {
+    background-color: #000;
+    color: #555;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footerTools ul li.accolade {
+    float: left;
+    display: block;
+  }
+}
+.footerTools ul li.accolade a {
+  color: #555;
+}
+@media screen and (min-width: 768px) {
+  .footerTools ul li.accolade a {
+    color: #000;
+  }
+}
+.footerTools a {
+  color: #ccc;
+}
+
+/*   ===================================================================================================
+     10. Vin65 Overrides
+======================================================================================================== */
+/* ----- b. Homepage Product Group ----- */
+.homepageProductGroup .v65-productGroup-products {
+  text-align: left;
+  width: 100%;
+}
+
+/* Heading 2 Styling */
+.homepageProductGroup .v65-productGroup-title {
+  color: #333;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 26px;
+  line-height: 1.2;
+  margin: 0.25em  0 0.5em;
+}
+@media screen and (max-width: 480px) {
+  .homepageProductGroup .v65-productGroup-title {
+    font-size: 22px;
+  }
+}
+
+.homepageProductGroup .v65-productGroup-teaser {
+  float: none;
+  margin: 0;
+  width: 100%;
+}
+
+.homepageProductGroup .v65-productGroup-product {
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+/* ----- c. Checkout Overrides ----- */
+#v65-signUpClubSummaryWrapper {
+  margin-bottom: 20px;
+}
+
+/* ----- Fix for product sorting  ----- */
+.v65-product-sortBy {
+  float: left;
+  text-align: left;
+  width: 50%;
+}
+
+.v65-product-sortBy form {
+  padding: 0;
+  margin: 0;
+}
+
+.v65-product-sortBy form select {
+  width: 130px;
+}
+
+/* ----- Fix for overflow on FB sharing widget on mobile  ----- */
+@media screen and (max-width: 767px) {
+  .v65-socialMediaBar-FacebookLike {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .v65-product2Up {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .v65-product2Up .v65-product-inventoryMessage {
+    display: none;
+  }
+}
+.v65-product2Up .v65-product-addToCart {
+  clear: both;
+}
+@media screen and (max-width: 480px) {
+  .v65-product2Up .v65-product-socialBar {
+    display: none;
+  }
+}
+
+.twitterWrapper {
+  width: 300px;
+  float: left;
+  margin: 0 0 20px 20px;
+  clear: both;
+}
+@media screen and (max-width: 767px) {
+  .twitterWrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5%;
+  }
+}
+
+.v65-clubTitle {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+.v65-productBadge {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,1183 @@
+@charset "utf-8";
+@import "compass";
+
+
+/* CSS Document */
+/* ====================================================================================================
+	Table of Content
+	1. Theme Settings
+	2. Typography - Copy into admin.css
+	3. Header
+	4. Navigation
+		a. Navigation
+		b. Sub Navigation
+	
+	5. Content
+		a. Homepage Styles
+		b. Page Styles
+
+	6 Blog Template
+	7. Print Template
+	8. Buttons
+	9. Footer
+	10. Vin65 Overrides
+		a. User Tools
+		b. Homepage Product Group
+		c. Checkout Overrides
+		d. Default SASS Product List
+		e. Default SASS Product Drilldown
+*/
+
+//   ===================================================================================================
+//      1.a Theme Settings
+// =====================================================================================================
+
+$backgroundColor: #fff; // Website Background Color
+$fontColor: #000; // General Font Color
+$outsideFontColor: #000; //Font Color outside the container
+$outsideFontColorHover: #333; // Hover font color outside the wrapper
+$navigationColor: #000; // Main Navigation Color
+$boxShadowColor: #ccc; // Box Shadow Color
+$fontFamily: "Lucida Sans Unicode", "Lucida Grande", sans-serif; // Default Font Family
+$websiteWidth: 90%;
+
+$mainButtonColor: #369;
+$altButtonColor: #ccc;
+$fontFamilyButton: "Lucida Sans Unicode", "Lucida Grande", sans-serif; // Default Font Family for Buttons
+
+//   ===================================================================================================
+//      1.b Responsive Breakpoints
+// =====================================================================================================
+
+$break-max-mobile: "and (max-width : 480px)";
+$break-mobile: "and (min-width : 320px) and (max-width : 480px)";
+$break-max-tablet: "and (max-width : 767px)";
+$break-min-tablet: "and (min-width : 768px)";
+$break-tablet: "and (min-width : 768px) and (max-width : 1023px)";
+$break-max-desktop: "and (max-width : 1023px)";
+$break-min-desktop: "and (min-width : 1024px)";
+
+
+/*   ===================================================================================================
+     2. Typography - These get copied into the admin.css
+======================================================================================================== */
+
+body{
+	background-color: $backgroundColor;
+	font-size: 12px;
+	color: $fontColor;
+	font-family: $fontFamily;
+	line-height: 1.5em;
+}
+
+a{ 
+	color: #369;
+	text-decoration: none;
+	&:hover, &:focus, &:active{
+		text-decoration: underline;
+	}
+}
+
+h1,h2,h3,h4,h5,h6,p,table,ul,ol { 
+	margin-top: 0;
+	padding-top: 0;
+}
+
+ul, ol, dl, p, table, pre { 
+	margin-bottom: 1em;
+}
+
+#{headings(1,6)}{
+	color: #333;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: normal;
+	margin: 0;
+}
+
+	h1 { 
+		font-size: 32px;
+		line-height: 1.2;
+		margin-bottom: 0.6em;
+
+		@media screen #{$break-max-mobile}{
+			font-size: 26px;
+		}
+	}
+
+	h2 { 
+		font-size: 26px;
+		line-height: 1.2;
+		margin: 0.25em  0 0.5em;
+
+		@media screen #{$break-max-mobile}{
+			font-size: 22px;
+		}
+	}
+		
+	h3 { 
+		font-size: 22px;
+		line-height: 1.2;
+		margin-bottom: 0.6em;
+
+		@media screen #{$break-max-mobile}{
+			font-size: 20px;
+		}
+	}
+		
+	h4 { 
+		font-size: 18px;
+		line-height: 1.2;
+	}
+		
+	h5 { 
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+	h6 { 
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+img{
+	border:none;
+}
+
+form { 
+	margin-bottom: 1em;
+}
+	
+legend { 
+	color: #111;
+}
+	
+hr { 
+	background-color: #666;
+	border: 0;
+	color: #666;
+	height: 1px;
+}
+
+/*   ===================================================================================================
+     3. Header
+======================================================================================================== */
+
+.header{
+	width: 100%;
+	z-index: 100;
+	@media screen #{$break-min-tablet} {
+		height: 180px;
+		position: relative;	
+	}
+}
+
+	.logo{
+		height: auto;
+		display: block;
+		text-align: center;
+		width:40%;
+		margin:0 auto;
+			@media screen #{$break-tablet} {
+				height: 160px;
+				float: left;
+				width: 240px;
+				text-align:left;	
+			}
+			@media screen #{$break-min-desktop} {
+				height: 160px;
+				float: left;
+				width: 240px;
+				text-align:left;	
+			}
+
+			img{
+				max-width: 100%;
+				@media screen #{$break-max-tablet}{ }
+			}
+	}
+
+	.cart {
+		@media screen #{$break-max-mobile}{
+			display: none;
+		}
+	}
+
+	#productSearch{
+		float:right;
+		margin:50px 0 0 0;
+		width:250px;
+
+		@media screen #{$break-max-tablet}{
+			width:100%;
+			margin:3% 0;
+		}
+
+		fieldset{
+			border:none;
+		}
+
+		#v65-searchWidgetInput{
+			input{
+				width:150px;
+				float:left;
+				margin:0 5px 0 0;
+
+				@media screen #{$break-max-tablet}{
+					width:65%;
+					margin:0 2%;
+				}
+			}
+		}
+
+		.defaultBtn{
+			@media screen #{$break-max-tablet}{
+				width:25%;
+			}
+		} 
+	}
+
+/*   ===================================================================================================
+     4. Navigation
+======================================================================================================== */
+	
+
+/* ----- Link to footer navigation ----- */
+	.menuLink {
+		display:none;
+			@media screen #{$break-max-tablet}{
+				color: #fff;
+				display: block;
+				float: left;
+				font-size: 16px;
+				height: 45px;
+				line-height: 45px;
+				padding-left: 15px;
+				text-shadow: 0 1px 3px rgba(220, 220, 220, 0.5)
+				}
+
+				&:hover, &:focus, &:active{
+					text-decoration: none;
+					}
+		}
+
+
+/* ----- a. Main Menu ----- */
+
+.mainMenu{
+	font-size: 13px;
+	height:100%;
+	width: 100%;
+	z-index: 101;
+		@media screen #{$break-max-tablet}{
+			clear:both;
+			text-align: center;
+			}
+		@media screen #{$break-tablet}{
+			float:right;
+			height: 24px;
+			width: 65%;//640px
+			position: relative;
+			margin: 80px 0 30px;//27px if product search at top
+			}
+		@media screen #{$break-min-desktop}{
+			float:right;
+			height: 24px;
+			width: 640px;
+			position: relative;
+			margin: 80px 0 30px;
+		}
+
+	ul{
+		margin: 0;
+		padding: 0;
+		display: inline;
+			@media screen #{$break-min-tablet}{
+				float:right;
+				margin:0;
+				text-align: left;
+			}
+
+		li{
+			margin: 0;
+			padding: 0;
+			height: 45px;
+			line-height: 45px;
+			display: inline-block;
+			@media screen #{$break-min-tablet}{
+				float:left;
+				height: 28px;
+				line-height: 28px;
+				margin: 0 25px;
+				margin: 0 0 0 35px;
+				position:relative;
+				display: inline;
+			}
+			@media screen #{$break-min-desktop}{
+				float:left;
+				margin: 0 0 0 55px;
+				position:relative;
+				display: inline;
+			}
+
+			a{
+				color: $outsideFontColor;
+				display:block;
+				height: 44px;
+				line-height: 44px;
+				margin: 0 8px;
+				padding: 0 6px;
+				position: relative;
+				text-decoration: none;
+				@media screen #{$break-min-tablet}{
+					height:32px;
+					line-height: 32px;
+					display: inline-block;
+					margin: 0;
+					padding: 0;
+					}
+
+				&:hover{
+					color: $outsideFontColorHover;
+					text-decoration: none;
+				}
+			}
+			// Drop Down
+			&:hover ul{
+				display:none;
+				background-color: #fff;
+				border: 1px solid #ccc;
+				font-size: 12px;
+				@media screen #{$break-min-tablet}{
+					display: block;
+				}
+			}
+			ul{
+				background-color: #fff;
+				display: none;
+				left: -10px;
+				position: absolute;
+				top: 32px;
+				width: 180px;
+
+				li{
+					background-color: #fff;
+					display: block;
+					float: none;
+					margin: 0;		
+					text-align: left;
+					width: 180px;
+
+					a{
+						background-color: #fff;
+						color: #666;
+						display: block;
+						float: none;
+						height: 28px;
+						line-height: 28px;
+						margin: 0;
+						padding: 0 0 0 10px;
+						text-align: left;
+						text-transform: none;
+						width: 170px;
+
+						&:hover{
+							color: #000;
+						}
+					}
+				}
+			}
+			// End Drop Down
+
+		}
+			/*home link is hidden for mobile*/
+			li.v65-home {
+				display: none;
+				@media screen #{$break-min-desktop}{display:inline-block;}
+			}
+			li.v65-pageAParent{
+				color: #000
+			}
+			li.v65-selected{
+				font-weight: bold;
+				text-decoration: underline;
+			}
+			/* Option to display the first three items, home is hidden above for mobile
+			@media screen and (max-width: 550px) {
+  				li:nth-child(n+5){display:none;
+  				}
+			}*/
+	}
+}
+
+/* ----- b. Sub Menu ----- */
+.subMenu{
+	height:100%;
+	width: 100%;
+	clear: both;
+	@media screen #{$break-min-tablet}{
+		border-right: 1px solid #ccc;
+		float: left;
+		margin: 6% 4% 0 0; //60px 40px 0 0
+		padding-right: 2%; //20px
+		width: 17.8%; // 170px
+		clear: left;
+	}
+
+	ul{
+		margin:0;
+		padding:0;
+		list-style: none;
+		width: 100%; // 160px
+		@media screen #{$break-max-tablet}{border-top:1px solid #999;}	
+		@media screen #{$break-min-tablet}{
+			margin: 0 0 2% 1%; //0 0 1em 10px
+			padding: 0;
+			}
+		li{
+			margin:0;
+			padding:0;
+			@media screen #{$break-max-tablet}{
+				border-bottom:1px solid #999; 
+				text-align: center;
+			}
+			@media screen #{$break-min-desktop}{
+				line-height: 2;
+				display: list-item;
+			}
+
+			a{ 
+				@media screen #{$break-max-tablet}{
+					display:block;
+					font-size:1em; 
+					line-height:3em;
+				}
+
+
+				&:hover{
+
+				}
+			}
+			ul{
+				margin:0;
+				padding:0;
+				list-style: none;
+				width: 100%; // 160px
+				border-bottom:3px solid #CCC;		
+				@media screen #{$break-min-tablet}{
+					margin-left: 10px;
+					width: 160px;
+					border:none;
+				}		
+			}
+
+			.v65-pageAParent {
+				color: #000;
+			}
+			.v65-leftSelected{
+				color: #000;
+				font-weight: bold;
+			}
+		}
+	}
+
+	h3{
+		@media screen #{$break-max-tablet}{display:none;}
+	}
+}
+
+
+/*   ===================================================================================================
+     5. Content
+======================================================================================================== */
+
+
+.wrapper{
+	margin: 0 auto;
+	position: relative;
+		@media screen #{$break-max-desktop}{
+		width:100%;
+	  	}
+	  	@media screen #{$break-tablet}{
+		width:90%;
+	  	}
+	  	@media screen #{$break-min-desktop}{
+		width:950px;
+	  	}
+
+}
+
+
+/* ----- a. Homepage Styles ----- */
+	.homepageContent{
+		background: #fff;
+		box-shadow: 0 0 20px $boxShadowColor;
+	}
+
+	.homepageText{
+		  	@media screen #{$break-max-mobile}{
+		  	padding: 3%;
+		  	margin: 0;
+		  	}
+		  	@media screen #{$break-max-desktop}{
+		  	padding: 3%;
+		  	margin: 0;
+		  	}
+		  	@media screen #{$break-tablet}{
+		  	float: left;
+			width: 55%;
+			padding: 3% 3% 3% 2%;
+		  	}
+		  	@media screen #{$break-min-desktop}{
+		  	float: left;
+			width: 470px;
+			padding: 30px 30px 30px 20px;
+			margin: 0 0 20px;
+		  	}
+	}
+
+	.homepageProductGroup { 
+		border-left: 1px solid #ccc;
+		margin: 75px 0 20px;
+			@media screen #{$break-max-mobile}{
+		  	padding:3%;
+		  	margin: 0;
+		  	}
+		  	@media screen #{$break-max-desktop}{
+		  	padding:3%;
+		  	}
+		  	@media screen #{$break-tablet}{
+		  	float: left;
+			width: 33%;
+			padding: 0 3%;
+		  	}
+		  	@media screen #{$break-min-desktop}{
+		  	float: left;
+			width: 400px;
+			padding: 0 0 30px 20px;
+		  	}		
+	
+		.v65-product-photo {
+			width: auto;
+			text-align: left;
+			margin:0 auto 2em auto; 
+			@media screen #{$break-max-desktop}{
+				float:left;
+			}
+			
+			@media screen #{$break-min-desktop}{
+				float:left;
+				text-align: center;
+			}
+
+			img {
+				max-width: 60%;
+			}
+		}
+
+		.v65-addToCartCase{
+			@media screen #{$break-max-mobile}{
+				display:none;
+			}
+		}
+
+	}
+
+	#slider{
+		height: 100%;
+		overflow: hidden;
+		width: 100%;
+	}
+
+/* ----- b. Page Styles ----- */
+
+	.content{
+		background: #fff;
+		box-shadow: 0 0 20px $boxShadowColor;
+		padding: 30px;
+		@media screen #{$break-max-tablet}{
+			box-shadow: none;
+			padding:0;
+			border-top: 2px solid #CCC;
+		}
+	}
+
+	.contentWide{
+		background: #fff;
+		box-shadow: 0 0 20px $boxShadowColor;
+		padding: 30px;
+		@media screen #{$break-max-tablet}{
+			box-shadow: none;
+			padding:3%;
+			border-top: 2px solid #CCC;
+
+		}
+
+		.subMenu{
+			@media screen #{$break-min-tablet}{
+				display:none;
+			}
+		}
+	}
+
+	.contentCart{
+		background: #fff;
+		box-shadow: 0 0 20px $boxShadowColor;
+		padding: 30px;
+		@media screen #{$break-max-tablet}{
+			box-shadow: none;
+			padding:0.2em;
+			border-top: 2px solid #CCC;
+
+		}
+	}
+
+	.pageContent{
+		float: right;
+		width: 75%; //650px
+			@media screen #{$break-max-tablet}{
+			width:94%;
+			padding:3%;
+			}
+	}
+
+/*   ===================================================================================================
+     6. Blog Template
+======================================================================================================== */
+
+	.blogContent{	
+		padding: 5%;
+		width: 90%;
+		@media screen #{$break-min-tablet}{
+		width: 65%;
+		padding: 5%;
+		float: left;
+		}
+		@media screen #{$break-min-desktop}{
+		width: 520px;
+		padding: 20px 25px 0 0;
+		float: left;
+		}
+	
+	}
+
+	.blogRightWrapper { 
+		display:none;
+		@media screen #{$break-min-tablet}{
+			display: block;
+			width: 20%;
+			padding: 20px 0 0 0;
+			float: right;
+		}
+		@media screen #{$break-min-desktop}{
+			float: right;
+			padding: 20px 0 0 0;
+			width: 325px;
+		}
+
+		ul{
+			list-style: none;
+			margin: 0 0 1em;
+			padding: 0;
+
+			li{
+				font-size: 11px;
+				margin: 0 0 0 10px;
+			}
+		}
+	}
+
+	.blogFilterLeft {
+		display:none;
+		padding:0;
+		@media screen #{$break-min-tablet}{
+			width:auto;
+			display: block;
+		}
+		@media screen #{$break-min-desktop}{
+			display: block;
+			float: left;
+			padding: 0 25px 0 0;
+			width: 150px;
+		}			
+	}
+
+	.blogFilterRight { 
+		display:none;
+		@media screen #{$break-min-tablet}{
+			width:auto;
+			display: block;
+		} 
+		@media screen #{$break-min-desktop}{
+			display: block;
+			float: left;
+			width: 150px;
+		}		
+	}
+
+/*   ===================================================================================================
+     7. Print Template
+======================================================================================================== */
+
+.printBody { 
+}
+	
+.printWrapper { 
+
+}
+	
+	.printHeader { 
+		
+
+		img{
+				
+		}
+	}
+		
+	.printContent { 
+
+		}
+
+		#v65-cartTable{
+			
+			td{
+				
+			}
+		} 	
+
+/*   ===================================================================================================
+     8. Buttons
+======================================================================================================== */
+button{
+	&.defaultBtn,  &.modalBtn,  &.largeBtn{
+		background:$mainButtonColor;
+		border: 1px solid #163655;
+		border-radius: 0.385em; // 5px;
+		color: #fff;
+		text-align: center;
+		font-family: $fontFamilyButton;
+		min-width: 3em; // 48px;
+		span{
+			color: #fff;
+			border-radius: 0.385em; // 5px;
+		}
+		&:hover{
+			background:lighten($mainButtonColor, 10%);
+			span{
+			}
+		}
+	}
+
+	&.altBtn, &.altModalBtn, &.altLargeBtn{
+		background:$altButtonColor;
+		border: 1px solid #888;
+		border-radius: 0.385em; // 5px;
+		color: #fff;
+		font-family: $fontFamilyButton;
+		min-width: 3em; // 48px;
+		span{
+			background:$altButtonColor;
+			border-radius: 0.385em; // 5px;
+		}
+		&:hover{
+			background: lighten($altButtonColor, 10%);
+			span{
+				background: lighten($altButtonColor, 10%);
+			}
+		}
+
+	}
+}
+
+a{
+	&.linkBtn, &.modalLinkBtn, &.largeLinkBtn, &.fullWidthBtn{
+		background:$mainButtonColor;
+		border: 1px solid #163655;
+		border-radius: 0.385em; // 5px;
+		color: #fff;
+		text-align: center;
+		font-family: $fontFamilyButton;
+		min-width: 3em; // 48px;
+		span{
+			color: #fff;
+			background:$mainButtonColor;
+			border-radius: 0.385em; // 5px;
+		}
+		&:hover{
+			background:lighten($mainButtonColor, 10%);
+			text-decoration: none;
+
+			span{
+				background:lighten($mainButtonColor, 10%);
+			}
+		}
+	}
+
+	&.fullWidthBtn{
+		display: block;
+		font-size: 16px;
+		max-width: 100%;
+		text-align: center;
+		width: 100%;
+	}
+
+	&.linkAltBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+		background:$altButtonColor;
+		border: 1px solid #888;
+		border-radius: 0.385em; // 5px;
+		font-family: $fontFamilyButton;
+		min-width: 3em; // 48px;
+		span{
+			background:$altButtonColor;
+			border-radius: 0.385em; // 5px;
+			color: #000;
+		}
+		&:hover{
+			background: lighten($altButtonColor, 10%);
+			span{
+				background: lighten($altButtonColor, 10%);
+			}
+		}
+	}
+
+	&.modalLinkBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+		min-width: auto;
+	}
+}
+
+/*   ===================================================================================================
+     9. Footer	
+======================================================================================================== */
+
+.footer{
+	width: 100%;
+	@media screen #{$break-min-tablet}{
+		color: $outsideFontColor;
+		padding: 1.5em 0;
+		text-align: center;
+		}
+
+		a{
+			color:$outsideFontColor;
+		}
+
+	}
+
+
+			
+		/* Footer Nav
+		-----------------------------------------------*/
+		.footerNav {
+			width: 100%;
+				@media screen #{$break-max-tablet}{
+					background: none;	
+				}  
+			
+
+			ul{ 
+				border-top: 3px solid #ccc;
+				list-style: none;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				@media screen #{$break-min-tablet}{
+					border: none;
+					text-align: center;	
+					} 
+
+				li{ 
+					border-bottom: 1px solid #ccc;
+					margin: 0;
+					padding: 0;
+					text-align: center;
+					width: 100%;
+					background-color: #fff;
+					@media screen #{$break-min-tablet}{
+						display: inline;
+						padding:0 5px;
+						border:none;
+						}
+
+					a{ 
+						font-size: 1em;
+						line-height: 3em;
+						display: block;
+						@media screen #{$break-min-tablet}{
+							color: $outsideFontColor;
+							display: inline-block;
+							font-size: 0.917em;
+							position: relative;
+							&:hover{
+							color: $outsideFontColorHover;
+							}  
+						}
+					}
+				}
+			}
+		} 
+
+		/* Mobile Footer Tools
+		-----------------------------------------------*/
+		.footerTools {
+			background: #000;
+			width: 100%;
+
+			ul{ 
+				border-top: 1px solid #555;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				 	@media screen #{$break-min-tablet}{
+				 		border:none;
+				 	}
+
+				li{ 
+					line-height: 2.5em; 
+					margin: 0;
+					padding: 0;
+					text-align: center;
+					width: 100%;
+						@media screen #{$break-min-tablet}{
+				 		border:none;
+				 		} 
+
+						img {
+							vertical-align:text-top;
+						}
+
+						a { 
+							line-height: 2.5em;
+							display: block;
+								@media screen #{$break-min-tablet}{
+									display:inline-block;
+								} 
+						} 
+
+					}
+
+				li.phone, li.email, li.map{ 
+					@media screen #{$break-min-tablet}{
+						display:none;}
+					}
+
+				li.legal {
+					border-bottom: 0;
+					font-size: 0.875em;
+					line-height: 3em;
+						@media screen #{$break-max-tablet}{
+						background-color:#000;
+						color: #555;	
+						}
+						@media screen #{$break-min-tablet}{
+							float:left;
+							display: block;
+						}
+					}
+
+				li.accolade {
+					font-size: 0.875em;
+					line-height: 3em;
+						@media screen #{$break-max-tablet}{
+						background-color:#000;
+						color: #555;	
+						}
+						@media screen #{$break-min-tablet}{
+							float:left;
+							display: block;
+						}
+
+						a {
+							color: #555;
+							@media screen #{$break-min-tablet}{
+								color: #000;	
+							}	
+						}
+
+					}
+
+			}
+
+			 a{color: #ccc;
+				}
+
+		}
+
+
+/*   ===================================================================================================
+     10. Vin65 Overrides
+======================================================================================================== */
+
+
+	
+/* ----- b. Homepage Product Group ----- */
+
+.homepageProductGroup .v65-productGroup-products{
+	text-align: left;
+	width: 100%;
+}
+
+	/* Heading 2 Styling */
+	.homepageProductGroup .v65-productGroup-title{
+		color: #333;
+		font-family: "Times New Roman", Times, serif;
+		font-size: 26px;
+		line-height: 1.2;
+		margin: 0.25em  0 0.5em;
+
+		@media screen #{$break-max-mobile}{
+			font-size: 22px;
+		}
+	}
+
+	.homepageProductGroup .v65-productGroup-teaser{
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+	
+	.homepageProductGroup .v65-productGroup-product{
+		margin: 0 0 1em;
+		width: 100%;
+	}
+
+/* ----- c. Checkout Overrides ----- */
+
+#v65-fieldset-paymentMethod{
+}
+
+form#v65-checkBilling .v65-additionalComments {
+}
+ 
+#v65-signUpClubSummaryWrapper {
+	margin-bottom: 20px;
+}
+
+
+/* ----- Fix for product sorting  ----- */
+
+
+		.v65-product-sortBy { 
+			float: left; 
+			text-align: left; 
+			width: 50%; 
+			}
+			
+			.v65-product-sortBy form { 
+				padding: 0; 
+				margin: 0; 
+				}
+				
+			.v65-product-sortBy form select { 
+				width: 130px; 
+				}
+
+/* ----- Fix for overflow on FB sharing widget on mobile  ----- */
+
+.v65-socialMediaBar-FacebookLike { 
+	@media screen #{$break-max-tablet}{
+		width:100%;
+		overflow: hidden;
+		}
+	}
+
+// d. Responsive Product List
+.v65-product2Up{ 
+	@media screen and (max-width: 570px){
+		width:100%;
+	}
+
+	.v65-product-title{
+		a{
+
+		}
+	}
+	.v65-product-photo{
+		a{
+			img{
+
+			}
+		}
+	}
+	.v65-product-teaser{
+		p{
+
+		}
+	}
+	.v65-product-drilldownLink{
+		a{
+
+		}
+	}
+	.v65-productreviewStats{
+
+	}
+	.v65-product-inventoryMessage{
+			@media screen #{$break-max-mobile}{
+				display:none;
+			}
+		.v65-product-inventoryMessage-inStock{
+
+		}
+	}
+	.v65-product-addToCart{ clear:both;
+		.v65-addToCart{
+			fieldset{
+				legend{}
+				.v65-product-addToCart-priceWrapper{
+					.v65-product-addToCart-price{
+
+					}
+					.v65-product-addToCart-unitDescription{
+
+					}
+					.v65-product-addToCart-productSKU{
+
+					}
+				}
+				.v65-product-addToCart-quantity{
+					input{
+
+					}
+				}
+				.v65-product-addToCart-button{
+					button{
+						span{
+
+						}
+					}
+				}
+			}
+		}
+		.v65-addToCartCase{
+
+		}
+	}
+	.v65-product-socialBar{
+		@media screen #{$break-max-mobile}{
+			display:none;
+		}
+	}
+}
+
+.twitterWrapper {
+ 	width: 300px;
+  	float: left;
+  	margin: 0 0 20px 20px;
+  	clear: both;
+
+  	@media screen #{$break-max-tablet}{
+	  	width: 90%;
+	    margin: 0 auto;
+	    padding: 5%;
+	  }
+}
+
+.v65-clubTitle {
+	 font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+	}
+
+.v65-productBadge {
+	position:absolute;
+	top:0;
+	left:0;
+}
