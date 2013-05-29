@@ -3,43 +3,31 @@
 <head>
   
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<v65:metaTags></v65:metaTags>
-	
-	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 	
 	<link rel="Shortcut Icon" href="../favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="../apple-touch-icon.png"/>
-    
+	
 	<!--//Vin65 QuickLaunch//-->
-	<script type="text/javascript">
-		var qlCode='vin65template1:vin65cloud';
-		var qlLayoutType='Homepage';
-	</script>
 	<script type="text/javascript" src="http://quicklaunch.vin65.com/quicklaunch.js"></script>
-	<!--//Vin65 QuickLaunch//-->   
-	
-	<v65:js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js">
-	
-	<v65:css files="/assets/nivo/nivo-slider.css,/assets/css/screen.min.css">
-	<!--[if lte IE 7]><v65:css files="/assets/css/ie7.css"><![endif]-->
-	<!--[if IE 8]><v65:css files="/assets/css/ie8.css"><![endif]-->
-	
-	<!--//Respond.js is a polyfill so  media queries work on IE8 and older browers//-->  
-	<script src="/assets/js/respond.min.js"></script>
+	<!--//Vin65 QuickLaunch//-->
+
+	<!--[if lt IE 9]><script src="/assets/js/respond.min.js"></script><![endif]-->
 
 </head>
-<body class="printBody">
+<body class="print">
 
-	<div class="printWrapper">
-		<div class="printHeader"><img src="../assets/images/email/header.gif" alt="<v65:websiteName></v65:websiteName>" width="700" height="150"></div>
-		
-		<div class="printContent">
-			<v65:mainContent></v65:mainContent>
-		</div>	
-	</div>
+	<img src="../assets/images/email/header.gif" alt="<v65:websiteName></v65:websiteName>" />
+	<v65:mainContent></v65:mainContent>
+
+	<p style="text-align: center;">
+		<span style="font-weight: bold;">Template 12</span><br>
+		111 North Street, Our City, CA (707) 888-9090
+	</p>
 	
 	<!--//Vin65 QuickLaunchFooter//-->
-	<script src="http://assets.vin65.com/js/vin65Footer.js" type="text/javascript"></script>     
+	<script src="http://assets.vin65.com/js/vin65Footer.js" type="text/javascript"></script>
 	<!--//Vin65 QuickLaunchFooter//-->
 
 </body>
