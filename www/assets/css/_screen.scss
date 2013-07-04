@@ -1,62 +1,262 @@
 @charset "utf-8";
 @import "compass";
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic");
 
 
 /* CSS Document */
 /* ====================================================================================================
-	Table of Content
-	1. Theme Settings
+	Table of Contents
+	1. Theme Settings & Themes 
 	2. Typography - Copy into admin.css
 	3. Header
-	4. Navigation
-		a. Navigation
-		b. Sub Navigation
-	
-	5. Content
-		a. Homepage Styles
-		b. Page Styles
+		a. Header Outer
+		b. User Tools
 
-	6 Blog Template
-	7. Print Template
-	8. Buttons
-	9. Footer
-	10. Vin65 Overrides
-		a. User Tools
-		b. Homepage Product Group
-		c. Checkout Overrides
-		d. Default SASS Product List
-		e. Default SASS Product Drilldown
+	4. Navigation
+		a. Main Navigation
+		b. Mobile Navigation
+		c. Sub Menu
+		d. Left Navigation
+
+	5. Content
+		a. Global Site Structure
+		b. Home Page Styles
+		c. Call to Action Styles
+		d. Interior Page Styles
+
+	6 Footer
+	7. Blog
+	8. Print
+	9. Buttons
+	10. v65 Overrides
+		a. Home Page Product Group Overrides
+		b. Checkout Overrides
+		c. Responsive Product
+		d. Product Page
+			i. 1 Up
+			ii. 2 Up
+			iii. 3 Up
+			iv. 5 Up 
+		e. Misc
+
+	11. Generic Content Styling
+		a. Generic Content
 */
 
 //   ===================================================================================================
-//      1.a Theme Settings
+//      1.a Theme Settings - These shouldnt change
 // =====================================================================================================
 
 $backgroundColor: #fff; // Website Background Color
-$fontColor: #000; // General Font Color
+$fontColor: #333; // General Font Color
 $outsideFontColor: #000; //Font Color outside the container
 $outsideFontColorHover: #333; // Hover font color outside the wrapper
 $navigationColor: #000; // Main Navigation Color
 $boxShadowColor: #ccc; // Box Shadow Color
-$fontFamily: "Lucida Sans Unicode", "Lucida Grande", sans-serif; // Default Font Family
+$fontFamily: 'Lato', sans-serif; // Default Font Family
 $websiteWidth: 90%;
 
-$mainButtonColor: #369;
-$altButtonColor: #ccc;
-$fontFamilyButton: "Lucida Sans Unicode", "Lucida Grande", sans-serif; // Default Font Family for Buttons
+$fontFamilyButton: 'Lato', sans-serif; // Default Font Family for Buttons
+
+//   ===================================================================================================
+//      Summer Theme
+// =====================================================================================================
+
+// $linkColor: #FBAF3F; //General Link Color
+// $footerFont: #fff; // Controls the color of fonts in the footer
+// $winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
+
+// $mainButtonColor: #66CDAA; // Main Button Style
+// $altButtonColor: #ccc; // Alternate Button Style
+// $footerButton: #FBAF3F; // Styles any Main Buttons in the Footer
+
+// $headerBackgroundColor: #66CDAA; // Home Page Banner background color
+// $ourWinesBorderColor: #1a2632; // Home Page Our Wines top border color
+// $ourWinesBackgroundColor: #1a2632; // Home Page Our Wines background color
+// $footerUpperBackgroundColor: #66CDAA; // Upper Footer background color
+// $footerLowerBackgroundColor: #999; // Lower Footer background color
+// $mobileNavBackgroundColor: #333; // Mobile Nav background color
+// $borderBottomColor: #FBAF3F; // Main Nav Underline Color
+// $borderEventsColor: #FBAF3F; // Events Container Color
+
+//   ===================================================================================================
+//      Red Theme 
+// =====================================================================================================
+
+// $linkColor: #146F7F; //General Link Color
+// $footerFont: #fff; // Controls the color of fonts in the footer
+// $winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
+
+// $mainButtonColor: #146F7F; // Main Button Style
+// $altButtonColor: #ccc; // Alternate Button Style
+// $footerButton: #146F7F; // Styles any Main Buttons in the Footer
+
+// $headerBackgroundColor: #B21900; // Home Page Banner background color
+// $ourWinesBorderColor: #7F0705; // Home Page Our Wines top border color
+// $ourWinesBackgroundColor: #7F0700; // Home Page Our Wines background color
+// $footerUpperBackgroundColor: #B21900; // Upper Footer background color
+// $footerLowerBackgroundColor: #999; // Lower Footer background color
+// $mobileNavBackgroundColor: #333; // Mobile Nav background color
+// $borderBottomColor: #146F7F; // Main Nav Underline Color
+// $borderEventsColor: #146F7F; // Events Container Color
+
+//   ===================================================================================================
+//      Green Theme 
+// =====================================================================================================
+
+// $linkColor: #667F00; //General Link Color
+// $footerFont: #fff; // Controls the color of fonts in the footer
+// $winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
+
+// $mainButtonColor: #AECC00; // Main Button Style
+// $altButtonColor: #ccc; // Alternate Button Style
+// $footerButton: #667F00; // Styles any Main Buttons in the Footer
+
+// $headerBackgroundColor: #A2CC00; // Home Page Banner background color
+// $ourWinesBorderColor: #677F06; // Home Page Our Wines top border color
+// $ourWinesBackgroundColor: #677F06; // Home Page Our Wines background color
+// $footerUpperBackgroundColor: #A2CC00; // Upper Footer background color
+// $footerLowerBackgroundColor: #999; // Lower Footer background color
+// $mobileNavBackgroundColor: #333; // Mobile Nav background color
+// $borderBottomColor: #CBFF00; // Main Nav Underline Color
+// $borderEventsColor: #CBFF00; // Events Container Color
+
+//   ===================================================================================================
+//      Pink Theme 
+// =====================================================================================================
+
+// $linkColor: #64ADCC; //General Link Color
+// $footerFont: #fff; // Controls the color of fonts in the footer
+// $winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
+
+// $mainButtonColor: #64ADCC; // Main Button Style
+// $altButtonColor: #ccc; // Alternate Button Style
+// $footerButton: #64ADCC; // Styles any Main Buttons in the Footer
+
+// $headerBackgroundColor: #CC64B1; // Home Page Banner background color
+// $ourWinesBorderColor: #7F4470; // Home Page Our Wines top border color
+// $ourWinesBackgroundColor: #7F3E6F; // Home Page Our Wines background color
+// $footerUpperBackgroundColor: #CC64B1; // Upper Footer background color
+// $footerLowerBackgroundColor: #999; // Lower Footer background color
+// $mobileNavBackgroundColor: #333; // Mobile Nav background color
+// $borderBottomColor: #64ADCC; // Main Nav Underline Color
+// $borderEventsColor: #64ADCC; // Events Container Color
+
+//   ===================================================================================================
+//      Blue Theme 
+// =====================================================================================================
+
+$linkColor: #64ADCC; //General Link Color
+$footerFont: #fff; // Controls the color of fonts in the footer
+$winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
+
+$mainButtonColor: #333; // Main Button Style
+$altButtonColor: #CCC; // Alternate Button Style
+$footerButton: #CCC; // Styles any Main Buttons in the Footer
+
+$headerBackgroundColor: #64ADCC; // Home Page Banner background color
+$ourWinesBorderColor: #3E6C7F; // Home Page Our Wines top border color
+$ourWinesBackgroundColor: #3E6C7F; // Home Page Our Wines background color
+$footerUpperBackgroundColor: #64ADCC; // Upper Footer background color
+$footerLowerBackgroundColor: #999; // Lower Footer background color
+$mobileNavBackgroundColor: #333; // Mobile Nav background color
+$borderBottomColor: #64ADCC; // Main Nav Underline Color
+$borderEventsColor: #64ADCC; // Events Container Color
+
+//   ===================================================================================================
+//      Brown Theme
+// =====================================================================================================
+
+// $linkColor: #7EBFB9; //General Link Color
+// $footerFont: #fff; // Controls the color of fonts in the footer
+// $winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
+
+// $mainButtonColor: #786964; // Main Button Style
+// $altButtonColor: #ccc; // Alternate Button Style
+// $footerButton: #7EBFB9; // Styles any Main Buttons in the Footer
+
+// $headerBackgroundColor: #20120A; // Home Page Banner background color
+// $ourWinesBorderColor: #7EBFB9; // Home Page Our Wines top border color
+// $ourWinesBackgroundColor: #7EBFB9; // Home Page Our Wines background color
+// $footerUpperBackgroundColor: #20120A; // Upper Footer background color
+// $footerLowerBackgroundColor: #999; // Lower Footer background color
+// $mobileNavBackgroundColor: #333; // Mobile Nav background color
+// $borderBottomColor: #7EBFB9; // Main Nav Underline Color
+// $borderEventsColor: #7EBFB9; // Events Container Color
+
+//   ===================================================================================================
+//      White Theme 
+// =====================================================================================================
+
+// $linkColor: #3E6C7F; //General Link Color
+// $footerFont: #000; // Controls the color of fonts in the footer
+// $winesFonts: #000; // Controls the color of fonts in the Our Wines section on the home page
+
+// $mainButtonColor: #333; // Main Button Style
+// $altButtonColor: #CCC; // Alternate Button Style
+// $footerButton: #333; // Styles any Main Buttons in the Footer
+
+// $headerBackgroundColor: #CCC; // Home Page Banner background color
+// $ourWinesBorderColor: #CCC; // Home Page Our Wines top border color
+// $ourWinesBackgroundColor: #CCC; // Home Page Our Wines background color
+// $footerUpperBackgroundColor: #CCC; // Upper Footer background color
+// $footerLowerBackgroundColor: #999; // Lower Footer background color
+// $mobileNavBackgroundColor: #333; // Mobile Nav background color
+// $borderBottomColor: #000; // Main Nav Underline Color
+// $borderEventsColor: #000; // Events Container Color
+
+//   ===================================================================================================
+//      Black Theme 
+// =====================================================================================================
+
+// $linkColor: #39CEFF; //General Link Color
+// $footerFont: #fff; // Controls the color of fonts in the footer
+// $winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
+
+// $mainButtonColor: #39CEFF; // Main Button Style
+// $altButtonColor: #CCC; // Alternate Button Style
+// $footerButton: #39CEFF; // Styles any Main Buttons in the Footer
+
+// $headerBackgroundColor: #333; // Home Page Banner background color
+// $ourWinesBorderColor: #666; // Home Page Our Wines top border color
+// $ourWinesBackgroundColor: #666; // Home Page Our Wines background color
+// $footerUpperBackgroundColor: #666; // Upper Footer background color
+// $footerLowerBackgroundColor: #999; // Lower Footer background color
+// $mobileNavBackgroundColor: #333; // Mobile Nav background color
+// $borderBottomColor: #39CEFF; // Main Nav Underline Color
+// $borderEventsColor: #39CEFF; // Events Container Color
+
+//   ===================================================================================================
+//      Easter 
+// =====================================================================================================
+
+// $linkColor: #00DBEE; //General Link Color
+// $footerFont: #fff; // Controls the color of fonts in the footer
+// $winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
+
+// $mainButtonColor: #EB0089; // Main Button Style
+// $altButtonColor: #ccc; // Alternate Button Style
+// $footerButton: #EB0089; // Styles any Main Buttons in the Footer
+
+// $headerBackgroundColor: #0095A2; // Home Page Banner background color
+// $ourWinesBorderColor: #EB0089; // Home Page Our Wines top border color
+// $ourWinesBackgroundColor: #EB0089; // Home Page Our Wines background color
+// $footerUpperBackgroundColor: #0095A2; // Upper Footer background color
+// $footerLowerBackgroundColor: #999; // Lower Footer background color
+// $mobileNavBackgroundColor: #333; // Mobile Nav background color
+// $borderBottomColor: #00DBEE; // Main Nav Underline Color
+// $borderEventsColor: #00DBEE; // Events Container Color
 
 //   ===================================================================================================
 //      1.b Responsive Breakpoints
 // =====================================================================================================
 
-$break-max-mobile: "and (max-width : 480px)";
-$break-mobile: "and (min-width : 320px) and (max-width : 480px)";
-$break-max-tablet: "and (max-width : 767px)";
-$break-min-tablet: "and (min-width : 768px)";
-$break-tablet: "and (min-width : 768px) and (max-width : 1023px)";
-$break-max-desktop: "and (max-width : 1023px)";
-$break-min-desktop: "and (min-width : 1024px)";
-
+$break-max-mobile: "and (max-width : 580px)";
+$break-max-tablet: "and (max-width : 768px)";
+$break-min-tablet: "and (min-width : 767px)";
+$break-tablet: "and (min-width : 768px) and (max-width : 1024px)";
+$break-max-desktop: "and (max-width : 1024px)";
+$break-min-desktop: "and (min-width : 1025px)";
 
 /*   ===================================================================================================
      2. Typography - These get copied into the admin.css
@@ -64,14 +264,14 @@ $break-min-desktop: "and (min-width : 1024px)";
 
 body{
 	background-color: $backgroundColor;
-	font-size: 12px;
+	font-size: 13px;
 	color: $fontColor;
 	font-family: $fontFamily;
-	line-height: 1.5em;
+	line-height: 1.8em;
 }
 
 a{ 
-	color: #369;
+	color: $linkColor;
 	text-decoration: none;
 	&:hover, &:focus, &:active{
 		text-decoration: underline;
@@ -89,8 +289,8 @@ ul, ol, dl, p, table, pre {
 
 #{headings(1,6)}{
 	color: #333;
-	font-family: "Times New Roman", Times, serif;
-	font-weight: normal;
+	font-family: $fontFamily;
+	font-weight: 200;
 	margin: 0;
 }
 
@@ -99,14 +299,14 @@ ul, ol, dl, p, table, pre {
 		line-height: 1.2;
 		margin-bottom: 0.6em;
 
-		@media screen #{$break-max-mobile}{
-			font-size: 26px;
+		@media screen #{$break-max-tablet}{
+			font-size: 24px;
 		}
 	}
 
 	h2 { 
 		font-size: 26px;
-		line-height: 1.2;
+		line-height: 1.2em;
 		margin: 0.25em  0 0.5em;
 
 		@media screen #{$break-max-mobile}{
@@ -135,7 +335,7 @@ ul, ol, dl, p, table, pre {
 	}
 
 	h6 { 
-		font-size: 14px;
+		font-size: 12px;
 		line-height: 1.5;
 	}
 
@@ -158,16 +358,24 @@ hr {
 	height: 1px;
 }
 
+strong {
+	font-weight: 200;
+}
+
 /*   ===================================================================================================
      3. Header
 ======================================================================================================== */
-
-.header{
+/* ----- a. Header Outer ---- */
+header{
 	width: 100%;
 	z-index: 100;
+	padding: 20px 0;
+
 	@media screen #{$break-min-tablet} {
-		height: 180px;
 		position: relative;	
+	}
+	@media screen #{$break-max-tablet} {
+		padding: 0;
 	}
 }
 
@@ -177,26 +385,28 @@ hr {
 		text-align: center;
 		width:40%;
 		margin:0 auto;
-			@media screen #{$break-tablet} {
-				height: 160px;
+			@media screen and (min-width : 768px) and (max-width : 1023px) {
+				float: left;
+				width: 240px;
+				text-align:left;
+			}
+			@media screen and (min-width : 1024px) {
 				float: left;
 				width: 240px;
 				text-align:left;	
 			}
-			@media screen #{$break-min-desktop} {
-				height: 160px;
-				float: left;
-				width: 240px;
-				text-align:left;	
+			@media screen #{$break-max-tablet} {
+				margin: 0 auto 10px;
+				padding-top: 75px;
+
 			}
 
 			img{
 				max-width: 100%;
-				@media screen #{$break-max-tablet}{ }
+				@media screen and (max-width : 767px){ }
 			}
 	}
-
-	.cart {
+.cart {
 		@media screen #{$break-max-mobile}{
 			display: none;
 		}
@@ -236,127 +446,138 @@ hr {
 		} 
 	}
 
+/* ----- b. User Tools ----- */
+
+#user-tools {
+
+	@media screen #{$break-max-tablet}{
+			background: #333;
+			width: 100%;
+			min-height: 45px;
+			-webkit-box-shadow: 2px 2px 2px 2px #333;
+			box-shadow: 2px 2px 2px 2px #333;
+		}
+
+	.v65-yourAccount, .v65-editProfile {
+		width: 30%;
+	}
+	.v65-login, .v65-logout {
+		width: 20%;
+	}
+	#v65-modalCart {
+		@media screen #{$break-max-mobile}{
+			width: 90%;
+		}
+	}
+
+}
+
+/* ---- c. Mobile Navigation ----- */
+
+#mobile-header {
+    display: none;
+}
+@media screen #{$break-max-tablet}{
+    #mobile-header {
+        display: block;
+        float: left;
+        width: 13%;
+        box-sizing: border-box;
+		padding: 9px 0 0 5px;
+    }
+}
+
 /*   ===================================================================================================
      4. Navigation
 ======================================================================================================== */
 	
-
-/* ----- Link to footer navigation ----- */
-	.menuLink {
-		display:none;
-			@media screen #{$break-max-tablet}{
-				color: #fff;
-				display: block;
-				float: left;
-				font-size: 16px;
-				height: 45px;
-				line-height: 45px;
-				padding-left: 15px;
-				text-shadow: 0 1px 3px rgba(220, 220, 220, 0.5)
-				}
-
-				&:hover, &:focus, &:active{
-					text-decoration: none;
-					}
-		}
-
-
-/* ----- a. Main Menu ----- */
-
-.mainMenu{
+/* ----- a. Main Navigation ----- */
+nav{
 	font-size: 13px;
-	height:100%;
 	width: 100%;
 	z-index: 101;
-		@media screen #{$break-max-tablet}{
-			clear:both;
-			text-align: center;
-			}
-		@media screen #{$break-tablet}{
-			float:right;
-			height: 24px;
-			width: 65%;//640px
-			position: relative;
-			margin: 80px 0 30px;//27px if product search at top
-			}
-		@media screen #{$break-min-desktop}{
-			float:right;
-			height: 24px;
-			width: 640px;
-			position: relative;
-			margin: 80px 0 30px;
+	height: 24px;
+	width: 100%;
+	position: relative;
+	margin: 40px 0 0 0;
+		@media screen #{$break-max-mobile}{
+			display: none;
 		}
-
+		@media screen #{$break-max-tablet}{
+			display: none;
+		}
+		@media screen #{$break-tablet}{
+		}
 	ul{
 		margin: 0;
 		padding: 0;
-		display: inline;
+		display: inline-block;
 			@media screen #{$break-min-tablet}{
 				float:right;
 				margin:0;
 				text-align: left;
 			}
-
 		li{
 			margin: 0;
 			padding: 0;
-			height: 45px;
+			height: 26px;
 			line-height: 45px;
 			display: inline-block;
 			@media screen #{$break-min-tablet}{
 				float:left;
-				height: 28px;
+				height: 26px;
 				line-height: 28px;
-				margin: 0 25px;
 				margin: 0 0 0 35px;
 				position:relative;
 				display: inline;
 			}
 			@media screen #{$break-min-desktop}{
 				float:left;
-				margin: 0 0 0 55px;
+				margin: 0 0 0 40px;
 				position:relative;
 				display: inline;
 			}
-
 			a{
-				color: $outsideFontColor;
+				font-family: $fontFamily;
+				font-weight: 300;
+				font-size: 13px;
+				text-transform: uppercase;
+				color: #666;;
 				display:block;
-				height: 44px;
+				height: 26px;
 				line-height: 44px;
-				margin: 0 8px;
+				margin: 0 4px;
 				padding: 0 6px;
 				position: relative;
 				text-decoration: none;
 				@media screen #{$break-min-tablet}{
-					height:32px;
+					height:26px;
 					line-height: 32px;
 					display: inline-block;
 					margin: 0;
 					padding: 0;
-					}
+				}
 
 				&:hover{
 					color: $outsideFontColorHover;
 					text-decoration: none;
+					border-bottom: 3px solid $borderBottomColor;
 				}
 			}
 			// Drop Down
 			&:hover ul{
-				display:none;
+				display: block;
 				background-color: #fff;
 				border: 1px solid #ccc;
 				font-size: 12px;
-				@media screen #{$break-min-tablet}{
-					display: block;
+				@media screen #{$break-tablet}{
+					display: none;
 				}
 			}
 			ul{
 				background-color: #fff;
 				display: none;
-				left: -10px;
 				position: absolute;
-				top: 32px;
 				width: 180px;
 
 				li{
@@ -382,6 +603,7 @@ hr {
 
 						&:hover{
 							color: #000;
+							text-decoration: underline;
 						}
 					}
 				}
@@ -391,8 +613,8 @@ hr {
 		}
 			/*home link is hidden for mobile*/
 			li.v65-home {
-				display: none;
-				@media screen #{$break-min-desktop}{display:inline-block;}
+				display: inline-block;
+				border-bottom: 3px solid $borderBottomColor;
 			}
 			li.v65-pageAParent{
 				color: #000
@@ -409,18 +631,16 @@ hr {
 	}
 }
 
-/* ----- b. Sub Menu ----- */
+/* ----- c. Sub Menu ----- */
 .subMenu{
-	height:100%;
-	width: 100%;
-	clear: both;
-	@media screen #{$break-min-tablet}{
-		border-right: 1px solid #ccc;
-		float: left;
-		margin: 6% 4% 0 0; //60px 40px 0 0
-		padding-right: 2%; //20px
-		width: 17.8%; // 170px
-		clear: left;
+	border-right: 1px solid #ccc;
+	float: left;
+	margin: 1% 3% 0 2%; //60px 40px 0 0
+	padding-right: 2%; //20px
+	width: 17.8%; // 170px
+	@media screen #{$break-max-tablet}{
+		width: 95%;
+		margin: 0 0 0 3%;	
 	}
 
 	ul{
@@ -461,8 +681,7 @@ hr {
 				margin:0;
 				padding:0;
 				list-style: none;
-				width: 100%; // 160px
-				border-bottom:3px solid #CCC;		
+				width: 100%; // 160px	
 				@media screen #{$break-min-tablet}{
 					margin-left: 10px;
 					width: 160px;
@@ -484,93 +703,128 @@ hr {
 		@media screen #{$break-max-tablet}{display:none;}
 	}
 }
-
-
 /*   ===================================================================================================
      5. Content
 ======================================================================================================== */
 
+/* ----- a. Global Site Structure ----- */
 
-.wrapper{
-	margin: 0 auto;
+.outer {
 	position: relative;
-		@media screen #{$break-max-desktop}{
-		width:100%;
-	  	}
-	  	@media screen #{$break-tablet}{
-		width:90%;
-	  	}
-	  	@media screen #{$break-min-desktop}{
-		width:950px;
-	  	}
-
 }
 
+.container {
+	margin: 0 auto;
+	width: 1024px;
 
-/* ----- a. Homepage Styles ----- */
+	@media screen #{$break-max-desktop}{
+		width: 100%;
+	}
+}
+/* ----- b. Homepage Styles ----- */
+
+.bannerHome {
+	background: $headerBackgroundColor;
+	width: 100%;
+
+	@media screen #{$break-max-tablet}{
+		
+	}
+}
+
+.bannerInterior {
+	background: $headerBackgroundColor;
+	height: 3px;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+#slider{
+	height: 80%;
+	overflow: hidden;
+	width: 100%;
+}
+
+.altBanner {
+	width: 100%;
+}
 	.homepageContent{
 		background: #fff;
 		box-shadow: 0 0 20px $boxShadowColor;
 	}
-
 	.homepageText{
-		  	@media screen #{$break-max-mobile}{
-		  	padding: 3%;
-		  	margin: 0;
+		float: left;
+		margin-left: 15px;
+			img {
+		  		width: 100%;
 		  	}
-		  	@media screen #{$break-max-desktop}{
-		  	padding: 3%;
-		  	margin: 0;
+		  	@media screen #{$break-max-mobile}{
+			  	padding: 3%;
+			  	margin: 0;
+			  	width: 90%;
+		  	}
+		  	@media screen #{$break-max-tablet}{
+			  	padding: 0 3% 3% 2%;
+			  	width: 95%;
+				margin: 0;
 		  	}
 		  	@media screen #{$break-tablet}{
-		  	float: left;
-			width: 55%;
-			padding: 3% 3% 3% 2%;
+			  	padding: 3% 0% 0 2%;
+			  	width: 50%;
+				margin: 0;
 		  	}
 		  	@media screen #{$break-min-desktop}{
-		  	float: left;
-			width: 470px;
-			padding: 30px 30px 30px 20px;
-			margin: 0 0 20px;
+			  	padding: 30px 30px 30px 20px;
+				width: 55%;
+				margin: 0;
 		  	}
 	}
 
 	.homepageProductGroup { 
-		border-left: 1px solid #ccc;
-		margin: 75px 0 20px;
+		float: left;
 			@media screen #{$break-max-mobile}{
-		  	padding:3%;
-		  	margin: 0;
-		  	}
-		  	@media screen #{$break-max-desktop}{
-		  	padding:3%;
+			  	padding:3%;
+			  	margin: 0;
 		  	}
 		  	@media screen #{$break-tablet}{
-		  	float: left;
-			width: 33%;
-			padding: 0 3%;
+			  	padding: 3% 3% 0 3%;
+			  	width: 40%;
+		  	}
+		  	@media screen #{$break-max-tablet}{
+				padding: 3% 3% 0 3%;
 		  	}
 		  	@media screen #{$break-min-desktop}{
-		  	float: left;
-			width: 400px;
-			padding: 0 0 30px 20px;
-		  	}		
+			  	padding: 30px 0 0;
+				width: 40%;
+		  	}
+		.v65-productGroup-title {
+			display: none;
+		}
+		.v65-product-title {
+			a {
+				@media screen #{$break-max-mobile}{
+					font-size: 22px;
+				}
+			}
+		}
+		.v65-product-teaser {
+			width: 90%;
+		}		
 	
 		.v65-product-photo {
-			width: auto;
-			text-align: left;
-			margin:0 auto 2em auto; 
-			@media screen #{$break-max-desktop}{
-				float:left;
-			}
-			
-			@media screen #{$break-min-desktop}{
-				float:left;
-				text-align: center;
+			float: left;
+			width: 25%;
+		}
+		.v65-productGroup-products {
+
+			@media screen #{$break-min-tablet}{
+				width: 95%;		
 			}
 
-			img {
-				max-width: 60%;
+		}
+		.v65-product-quickView {
+			@media screen #{$break-max-desktop}{
+				display: none!important;
 			}
 		}
 
@@ -579,16 +833,157 @@ hr {
 				display:none;
 			}
 		}
+		.homepageProductGroup .v65-product-photo img {
+			max-width: 100%;
+		}		
 
 	}
+/* ----- c. Home Page Call To Action Styling ----- */
+.ctaLeft {
+	float: left; 
 
-	#slider{
-		height: 100%;
-		overflow: hidden;
+	@media screen #{$break-min-tablet}{
+		padding-left: 3%;
+	}
+	@media screen #{$break-max-tablet}{
+		padding-left: 2%;
+	}
+
+}
+.ctaRight {
+	float: left;
+	margin-left: 4%;
+
+	@media screen #{$break-min-tablet}{
+		padding-right: 3%;
+		margin-left: 1%;
+	}
+	@media screen #{$break-max-tablet}{
+		margin-left: 5%;
+	}
+
+}
+
+.About, .Wines {
+	@media screen #{$break-tablet}{
+		width: 29%;
+	}
+	@media screen #{$break-min-desktop}{
+		width: 45%;
+	}
+}
+
+.aboutHome {
+	padding: 30px 0;
+}
+
+.ourWinesHome {
+	border-top: 5px solid $ourWinesBorderColor;
+	background:$ourWinesBackgroundColor;
+	padding: 30px 0;
+	p {
+		color: $winesFonts;
+	}
+	h2 {
+		color: $winesFonts;
+	}
+	@media screen #{$break-max-tablet}{
 		width: 100%;
 	}
+}
+.eventsHome {
+	padding: 30px 0;
+	h2 {
+		@media screen #{$break-max-tablet}{
+			margin-left: 10px;
+		}
+	}
+}
+/* Home Page Events Styling */
+	.Event {
+		background: #F1F1F2;
+		min-height:100px;
+		padding: 0;
+		@media screen #{$break-min-desktop}{
+			width: 48%;
+		}
+		@media screen #{$break-max-desktop}{
+			margin-bottom: 10px;
+			width: 95%;
+	  	}
 
-/* ----- b. Page Styles ----- */
+		@media screen #{$break-max-tablet}{
+			width: 95%;
+			margin: 0 0 10px 10px;
+	  	}
+	  	@media screen #{$break-max-mobile}{
+			width: 95%;
+			margin: 0 0 10px 10px;
+	  	}
+
+		.upperEvents {
+			padding: 10px 0;
+			.date {
+				border-left: 3px solid $borderEventsColor;
+				width: 15%;
+				display: inline-block;
+				padding-left: 10px;
+
+				@media screen #{$break-max-mobile}{
+					width: 30%;
+			  	}
+
+
+				p {
+					margin: 0;
+					line-height: 20px;
+					font-weight: 200;
+					strong {
+						font-size: 32px;
+						line-height: 30px;
+					}
+
+				}
+			}
+
+			.eventName {
+				display: inline-block;
+				width: 75%;
+				padding-left: 10px;
+
+				@media screen #{$break-max-mobile}{
+					width: 50%;
+			  	}
+
+				p {
+					line-height: 11px;
+					@media screen #{$break-max-mobile}{
+					line-height: 20px;
+			  	}
+
+					strong {
+						font-weight: 400;
+						font-size: 19px;
+					}
+				}
+			}
+		}
+		.middleEvents {
+			padding: 10px;
+			background: #fff;		
+			p {
+
+			}
+		}
+		.lowerEvents {
+			text-align: right;
+			a {
+				margin-right: 5px;
+			}
+		}
+	}
+
+/* ----- d. Page Styles ----- */
 
 	.content{
 		background: #fff;
@@ -602,9 +997,8 @@ hr {
 	}
 
 	.contentWide{
-		background: #fff;
-		box-shadow: 0 0 20px $boxShadowColor;
 		padding: 30px;
+		margin-bottom: 30px;
 		@media screen #{$break-max-tablet}{
 			box-shadow: none;
 			padding:3%;
@@ -634,6 +1028,7 @@ hr {
 	.pageContent{
 		float: right;
 		width: 75%; //650px
+		margin-bottom: 30px;
 			@media screen #{$break-max-tablet}{
 			width:94%;
 			padding:3%;
@@ -641,7 +1036,196 @@ hr {
 	}
 
 /*   ===================================================================================================
-     6. Blog Template
+     6. Footer	
+======================================================================================================== */
+
+.footerUpper {
+	background: $footerUpperBackgroundColor;
+	padding: 30px 0;
+
+	p {
+		color: $footerFont;
+	}
+	a {
+		color: $footerFont;
+		text-decoration: underline;
+	}
+	h2 {
+		color: $footerFont;
+	}
+	.left {
+		float: left;
+		margin-right: 45px;
+		width: 25%;
+		border-right: 1px solid #fff;
+		@media screen #{$break-max-tablet}{
+			width: 90%;
+			border: none;
+			text-align: center;
+		}
+		@media screen #{$break-max-desktop}{
+			margin-left: 10px;
+		}
+	}
+	.right {
+		float: left;
+		width: 40%;
+		text-align: left;
+		@media screen #{$break-max-tablet}{
+			width: 90%;
+			text-align: center;
+
+		}
+
+		.v65-podTitle {
+			@extend h2 
+		}
+		ul {
+			padding: 0;
+			list-style: none;
+
+			li {
+				display: inline;
+
+				a {
+
+					i {
+						font-size: 24px;
+					}
+				}
+			}
+		}
+	}
+	button.defaultBtn {
+		background: $footerButton!important;
+	}
+	#v65-subscribeWidget {
+		margin-top: 15px;
+		input {
+				@media screen #{$break-max-mobile} {
+					width: 120px;
+					height: 50px;
+				}
+				@media screen #{$break-tablet} {
+					width: 135px;
+				}
+			}
+			button {
+				@media screen #{$break-max-mobile} {
+
+				}
+
+			}
+	}
+}
+
+.footerLower {
+	background: $mobileNavBackgroundColor;
+}
+
+.footerRight {
+	float: right;
+	@media screen #{$break-max-mobile}{
+		width: 10%;
+
+	} 
+
+	.backToTop {
+		display: block;
+		width: 25px;
+		height: 29px;
+		margin-top: 20px;
+		background:url("/assets/images/upButton.png");
+		text-indent: -99999px;
+
+		&:hover {
+			background:url("/assets/images/upButtonH.png");
+		}
+	}
+}
+
+footer{
+	width: 100%;
+	@media screen #{$break-min-tablet}{
+	color: $outsideFontColor;
+	}
+}
+	
+		/* Footer Nav
+		-----------------------------------------------*/
+		.footerLeft {
+			float: left;
+			color: #fff;
+				@media screen #{$break-tablet}{
+					background: none;
+					width: 85%;	
+				}
+				@media screen #{$break-max-mobile}{
+					width: 85%;
+					border: none;
+					text-align: center;
+					padding-left: 5px;
+				}
+				@media screen #{$break-max-desktop}{
+					margin-left: 10px;
+				} 
+			a {
+
+				color: #fff;
+				font-size: 12px;
+				margin-left: 3px;
+			}
+			p {
+				font-size: 10px;
+			}
+			
+			ul{ 
+				list-style: none;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				display: inline;
+				@media screen #{$break-min-tablet}{
+					border: none;
+					} 
+
+				li{ 
+					margin: 0;
+					padding: 0;
+					width: 100%;
+					@media screen #{$break-min-tablet}{
+						display: inline;
+						padding-right: 5px;
+						border:none;
+					}
+
+					a{ 
+						font-size: 1em;
+						line-height: 3em;
+						display: block;
+						color: #fff;
+						@media screen #{$break-min-tablet}{
+							display: inline;
+							font-size: 0.917em;
+							position: relative;
+							&:hover{
+							color: #8bf0bd;
+							}  
+						}
+					}
+				}
+			}
+		} 
+
+#v65-subscribeWidget input {
+	width: 200px;
+	height: 40px;
+	border: none;
+	background: #FAFAFA;
+}
+
+/*   ===================================================================================================
+     7. Blog Template
 ======================================================================================================== */
 
 	.blogContent{	
@@ -715,50 +1299,67 @@ hr {
 	}
 
 /*   ===================================================================================================
-     7. Print Template
+     8. Print Template
 ======================================================================================================== */
 
-.printBody { 
+.printBody {
+	background-color: $headerBackgroundColor;
+	background-image: none;
+	margin: 0;
+	padding: 0;
 }
-	
-.printWrapper { 
 
-}
-	
-	.printHeader { 
-		
-
-		img{
-				
-		}
+	.printWrapper {
+		margin: 20px auto;
+		width: 730px;
+		background: #fff;
+		-webkit-box-shadow: 1px 1px 3px 2px #999;
+		box-shadow: 1px 1px 3px 2px #999;
 	}
-		
-	.printContent { 
+
+		.printHeader {
+			height: 150px;
+			width: 730px;
+			margin-bottom: 15px;
+			border-bottom: 1px solid #999;
 
 		}
 
-		#v65-cartTable{
-			
-			td{
-				
+		.printContent {
+			text-align: left;
+			width: 700px;
+			padding: 10px;
+		}
+		.receiptFooter {
+			text-align: center;
+			padding-bottom: 5px;
+			strong {
+				font-weight: 600;
 			}
-		} 	
+		}
+
+#v65-cartSubtotal td, .v65-cartTax td, #v65-cartTable th {
+	background-color: #F1F1F1;
+}
+
+#v65-cartTotal td {
+	background-color: #CCC;
+}
 
 /*   ===================================================================================================
-     8. Buttons
+     9. Buttons
 ======================================================================================================== */
+
 button{
 	&.defaultBtn,  &.modalBtn,  &.largeBtn{
 		background:$mainButtonColor;
-		border: 1px solid #163655;
-		border-radius: 0.385em; // 5px;
 		color: #fff;
 		text-align: center;
 		font-family: $fontFamilyButton;
-		min-width: 3em; // 48px;
+		min-width: 9em; // 48px;
+		min-height: 40px;
 		span{
 			color: #fff;
-			border-radius: 0.385em; // 5px;
 		}
 		&:hover{
 			background:lighten($mainButtonColor, 10%);
@@ -770,13 +1371,11 @@ button{
 	&.altBtn, &.altModalBtn, &.altLargeBtn{
 		background:$altButtonColor;
 		border: 1px solid #888;
-		border-radius: 0.385em; // 5px;
 		color: #fff;
 		font-family: $fontFamilyButton;
 		min-width: 3em; // 48px;
 		span{
 			background:$altButtonColor;
-			border-radius: 0.385em; // 5px;
 		}
 		&:hover{
 			background: lighten($altButtonColor, 10%);
@@ -791,16 +1390,14 @@ button{
 a{
 	&.linkBtn, &.modalLinkBtn, &.largeLinkBtn, &.fullWidthBtn{
 		background:$mainButtonColor;
-		border: 1px solid #163655;
-		border-radius: 0.385em; // 5px;
 		color: #fff;
 		text-align: center;
 		font-family: $fontFamilyButton;
-		min-width: 3em; // 48px;
+		min-width: 10em; // 48px;
+		padding: 5px 0;
 		span{
 			color: #fff;
 			background:$mainButtonColor;
-			border-radius: 0.385em; // 5px;
 		}
 		&:hover{
 			background:lighten($mainButtonColor, 10%);
@@ -822,14 +1419,14 @@ a{
 
 	&.linkAltBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
 		background:$altButtonColor;
-		border: 1px solid #888;
-		border-radius: 0.385em; // 5px;
+		color: #fff;
+		text-align: center;
 		font-family: $fontFamilyButton;
-		min-width: 3em; // 48px;
+		min-width: 10em; // 48px;
+		padding: 5px 2px;
 		span{
 			background:$altButtonColor;
-			border-radius: 0.385em; // 5px;
-			color: #000;
+			color: #fff;
 		}
 		&:hover{
 			background: lighten($altButtonColor, 10%);
@@ -844,182 +1441,31 @@ a{
 	}
 }
 
-/*   ===================================================================================================
-     9. Footer	
-======================================================================================================== */
-
-.footer{
-	width: 100%;
-	@media screen #{$break-min-tablet}{
-		color: $outsideFontColor;
-		padding: 1.5em 0;
-		text-align: center;
-		}
-
-		a{
-			color:$outsideFontColor;
-		}
-
-	}
-
-
-			
-		/* Footer Nav
-		-----------------------------------------------*/
-		.footerNav {
-			width: 100%;
-				@media screen #{$break-max-tablet}{
-					background: none;	
-				}  
-			
-
-			ul{ 
-				border-top: 3px solid #ccc;
-				list-style: none;
-				width: 100%;
-				margin: 0;
-				padding: 0;
-				@media screen #{$break-min-tablet}{
-					border: none;
-					text-align: center;	
-					} 
-
-				li{ 
-					border-bottom: 1px solid #ccc;
-					margin: 0;
-					padding: 0;
-					text-align: center;
-					width: 100%;
-					background-color: #fff;
-					@media screen #{$break-min-tablet}{
-						display: inline;
-						padding:0 5px;
-						border:none;
-						}
-
-					a{ 
-						font-size: 1em;
-						line-height: 3em;
-						display: block;
-						@media screen #{$break-min-tablet}{
-							color: $outsideFontColor;
-							display: inline-block;
-							font-size: 0.917em;
-							position: relative;
-							&:hover{
-							color: $outsideFontColorHover;
-							}  
-						}
-					}
-				}
-			}
-		} 
-
-		/* Mobile Footer Tools
-		-----------------------------------------------*/
-		.footerTools {
-			background: #000;
-			width: 100%;
-
-			ul{ 
-				border-top: 1px solid #555;
-				list-style: none;
-				margin: 0;
-				padding: 0;
-				width: 100%;
-				 	@media screen #{$break-min-tablet}{
-				 		border:none;
-				 	}
-
-				li{ 
-					line-height: 2.5em; 
-					margin: 0;
-					padding: 0;
-					text-align: center;
-					width: 100%;
-						@media screen #{$break-min-tablet}{
-				 		border:none;
-				 		} 
-
-						img {
-							vertical-align:text-top;
-						}
-
-						a { 
-							line-height: 2.5em;
-							display: block;
-								@media screen #{$break-min-tablet}{
-									display:inline-block;
-								} 
-						} 
-
-					}
-
-				li.phone, li.email, li.map{ 
-					@media screen #{$break-min-tablet}{
-						display:none;}
-					}
-
-				li.legal {
-					border-bottom: 0;
-					font-size: 0.875em;
-					line-height: 3em;
-						@media screen #{$break-max-tablet}{
-						background-color:#000;
-						color: #555;	
-						}
-						@media screen #{$break-min-tablet}{
-							float:left;
-							display: block;
-						}
-					}
-
-				li.accolade {
-					font-size: 0.875em;
-					line-height: 3em;
-						@media screen #{$break-max-tablet}{
-						background-color:#000;
-						color: #555;	
-						}
-						@media screen #{$break-min-tablet}{
-							float:left;
-							display: block;
-						}
-
-						a {
-							color: #555;
-							@media screen #{$break-min-tablet}{
-								color: #000;	
-							}	
-						}
-
-					}
-
-			}
-
-			 a{color: #ccc;
-				}
-
-		}
-
 
 /*   ===================================================================================================
      10. Vin65 Overrides
 ======================================================================================================== */
 
-
 	
-/* ----- b. Homepage Product Group ----- */
+/* ----- a. Homepage Product Group ----- */
+
+.v65-productGroup {
+	margin: 0;
+}
+
+.v65-product-addToCart {
+	margin: 0;
+}
 
 .homepageProductGroup .v65-productGroup-products{
 	text-align: left;
 	width: 100%;
+	font-family: $fontFamily;	
 }
 
 	/* Heading 2 Styling */
 	.homepageProductGroup .v65-productGroup-title{
-		color: #333;
-		font-family: "Times New Roman", Times, serif;
+		color: #333;	
 		font-size: 26px;
 		line-height: 1.2;
 		margin: 0.25em  0 0.5em;
@@ -1033,14 +1479,30 @@ a{
 		float: none;
 		margin: 0;
 		width: 100%;
+		display: none;
 	}
 	
 	.homepageProductGroup .v65-productGroup-product{
 		margin: 0 0 1em;
 		width: 100%;
 	}
+	.homepageProductGroup .v65-productGroup-product .v65-product-title {
+		font-family: $fontFamily;	
+		font-size: 28px;
+		font-weight: 200;
+		margin-bottom: 15px;
+		line-height: 25px;
+		 a {
+		 	color: #333;
+		 }
 
-/* ----- c. Checkout Overrides ----- */
+		@media screen #{$break-min-desktop}{
+			width: 250px;
+		}
+
+	}
+
+/* ----- b. Checkout Overrides ----- */
 
 #v65-fieldset-paymentMethod{
 }
@@ -1054,7 +1516,6 @@ form#v65-checkBilling .v65-additionalComments {
 
 
 /* ----- Fix for product sorting  ----- */
-
 
 		.v65-product-sortBy { 
 			float: left; 
@@ -1080,7 +1541,8 @@ form#v65-checkBilling .v65-additionalComments {
 		}
 	}
 
-// d. Responsive Product List
+// c. Responsive Product List
+
 .v65-product2Up{ 
 	@media screen and (max-width: 570px){
 		width:100%;
@@ -1172,8 +1634,156 @@ form#v65-checkBilling .v65-additionalComments {
 	  }
 }
 
+/* -------- d. Product Page Over Rides -----------*/
+
+.v65-product-sortBy {
+	width: 25%;
+}
+
+.v65-product-pagination {
+	width: 75%;
+}
+
+.v65-product-quickView {
+	@media screen #{$break-max-desktop}{
+		display: none!important;
+	}
+}
+
+.v65Left {
+	float: left;
+	margin: 0 10px;
+}
+.v65Right {
+	float: left;
+	margin-left: 2%;
+}
+
+	/* 1-Up Layout */
+	.v65-product1Up {
+		background: #F1F1F2;
+		position: relative;
+		border: 1px solid #E2E2E2;
+
+		.v65-product-title {
+			float: left;
+			width: 95%;
+			margin: 10px 0 10px 10px;
+
+			a {
+				color: #666;
+				font-weight: 300;
+			}
+		}
+
+		.v65-product-photo {
+			float: right;
+			width: 24%;
+			background: #fff;
+			margin: 0;
+		}
+		.v65-product-teaser {
+			width: 80%;
+			margin: 0 0 5px 10px;
+
+		}
+		.v65-product-reviewStats {
+			margin: 0 0 5px 10px;
+
+		}
+		.v65-product-inventoryMessage {
+			margin: 0 0 5px 10px;
+		}
+		.v65-product-addToCart-priceWrapper {
+			display: block;
+		}
+		.v65-product-addToCart {
+			clear: none;
+			margin-left: 10px;
+		}
+		.v65-product-socialBar {
+			padding: 5px 0 5px 5px;
+			height: 0px;
+		}
+	}
+	/* 2-Up Layout */
+	.v65-product2Up {
+		background: #F1F1F2;
+		position: relative;
+		border: 1px solid #E2E2E2;
+		width: 47%;
+		@media screen #{$break-max-tablet}{
+			width: 95%;
+		}
+
+		.v65-product-title {
+			float: left;
+			width: 73%;
+			margin: 10px 0 10px 10px;
+
+			a {
+				color: #666;
+				font-weight: 300;
+			}
+		}
+
+		.v65-product-photo {
+			width: 24%;
+			background: #fff;
+			margin: 0;
+			@media screen #{$break-max-tablet}{
+			width: 23%;
+			}
+		}
+		.v65-product-teaser {
+			width: 68%;
+			margin: 0 0 5px 10px;
+
+		}
+		.v65-product-reviewStats {
+			margin: 0 0 5px 10px;
+
+		}
+		.v65-product-inventoryMessage {
+			margin: 0 0 5px 10px;
+		}
+		.v65-product-addToCart-priceWrapper {
+			display: block;
+		}
+		.v65-product-addToCart {
+			clear: none;
+			margin-left: 10px;
+		}
+		.v65-product-socialBar {
+			padding: 5px 0 5px 5px;
+			height: 0px;
+		}
+	} 
+	/* 3-Up Display */
+	.v65-product3Up {
+		.v65-product-title {
+			a {
+				color: #666;
+				font-weight: 300;
+			}
+		}
+
+	}
+	/* 5-Up Display */
+	.v65-product5Up {
+		.v65-product-title {
+			a {
+				color: #666;
+				font-weight: 300;
+			}
+		}
+
+	}
+
+/* ----- e. Misc Template Specific Overrides -----*/
+
 .v65-clubTitle {
-	 font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+	font-family: $fontFamily;	
 	}
 
 .v65-productBadge {
@@ -1181,3 +1791,53 @@ form#v65-checkBilling .v65-additionalComments {
 	top:0;
 	left:0;
 }
+
+#v65-modalCartTable th {
+	background-color: #fff;
+}
+
+.v65-product-quickView {
+	border-radius: 0;
+}
+
+
+/*   ===================================================================================================
+     11. Default Generic Content
+======================================================================================================== */
+
+
+/* ----- a. Generic Content -----*/
+
+.bannerText {
+	float: left;
+	padding-top: 6%;
+	position: relative;
+	text-align: right;
+	width: 57%;
+	img {
+		max-width: 100%;
+	}
+	@media screen #{$break-max-tablet}{
+		padding: 6% 6%;
+		text-align: center;
+		width: 87%;
+	}
+
+}
+
+.bannerImage {
+	float: left;
+	max-height: 375px;
+	padding-top: 2%;
+	position: relative;
+	text-align: center;
+	width: 43%;
+	img {
+		max-width: 100%;
+	}
+	@media screen #{$break-max-tablet}{
+		display: none;
+	  	
+	}
+}
+

@@ -119,11 +119,11 @@ a.nivo-nextNav {
 	display:inline-block;
 	width:22px;
 	height:22px;
-	background:url(bullets.png) no-repeat;
+	background:url(bullet.svg) no-repeat;
 	color:transparent;
 	border:0;
 	margin: 0 2px;
 }
 .nivo-controlNav a.active {
-	background-position:0 -22px;
+	background:url(bulletActive.svg) no-repeat;
 }

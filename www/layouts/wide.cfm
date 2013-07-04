@@ -1,4 +1,5 @@
-<cfoutput> <!DOCTYPE html>
+<cfoutput> 
+<!DOCTYPE html>
 <html>
 <head>
   
@@ -90,4 +91,5 @@
 <cf_vin65GlobalFooterAssets>
 
 </body>
-</html> </cfoutput>
+</html>
+ </cfoutput>
