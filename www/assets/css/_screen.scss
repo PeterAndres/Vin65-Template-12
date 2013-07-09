@@ -62,7 +62,7 @@ $fontFamilyButton: 'Lato', sans-serif; // Default Font Family for Buttons
 //      Summer Theme
 // =====================================================================================================
 
-// $linkColor: #FBAF3F; //General Link Color
+// $linkColor: #d35400; //General Link Color
 // $footerFont: #fff; // Controls the color of fonts in the footer
 // $winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
 
@@ -146,43 +146,43 @@ $fontFamilyButton: 'Lato', sans-serif; // Default Font Family for Buttons
 //      Blue Theme 
 // =====================================================================================================
 
-$linkColor: #64ADCC; //General Link Color
-$footerFont: #fff; // Controls the color of fonts in the footer
-$winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
+// $linkColor: #64ADCC; //General Link Color
+// $footerFont: #fff; // Controls the color of fonts in the footer
+// $winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
 
-$mainButtonColor: #333; // Main Button Style
-$altButtonColor: #CCC; // Alternate Button Style
-$footerButton: #CCC; // Styles any Main Buttons in the Footer
+// $mainButtonColor: #333; // Main Button Style
+// $altButtonColor: #CCC; // Alternate Button Style
+// $footerButton: #CCC; // Styles any Main Buttons in the Footer
 
-$headerBackgroundColor: #64ADCC; // Home Page Banner background color
-$ourWinesBorderColor: #3E6C7F; // Home Page Our Wines top border color
-$ourWinesBackgroundColor: #3E6C7F; // Home Page Our Wines background color
-$footerUpperBackgroundColor: #64ADCC; // Upper Footer background color
-$footerLowerBackgroundColor: #999; // Lower Footer background color
-$mobileNavBackgroundColor: #333; // Mobile Nav background color
-$borderBottomColor: #64ADCC; // Main Nav Underline Color
-$borderEventsColor: #64ADCC; // Events Container Color
+// $headerBackgroundColor: #64ADCC; // Home Page Banner background color
+// $ourWinesBorderColor: #3E6C7F; // Home Page Our Wines top border color
+// $ourWinesBackgroundColor: #3E6C7F; // Home Page Our Wines background color
+// $footerUpperBackgroundColor: #64ADCC; // Upper Footer background color
+// $footerLowerBackgroundColor: #999; // Lower Footer background color
+// $mobileNavBackgroundColor: #333; // Mobile Nav background color
+// $borderBottomColor: #64ADCC; // Main Nav Underline Color
+// $borderEventsColor: #64ADCC; // Events Container Color
 
 //   ===================================================================================================
 //      Brown Theme
 // =====================================================================================================
 
-// $linkColor: #7EBFB9; //General Link Color
-// $footerFont: #fff; // Controls the color of fonts in the footer
-// $winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
+$linkColor: #7EBFB9; //General Link Color
+$footerFont: #fff; // Controls the color of fonts in the footer
+$winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
 
-// $mainButtonColor: #786964; // Main Button Style
-// $altButtonColor: #ccc; // Alternate Button Style
-// $footerButton: #7EBFB9; // Styles any Main Buttons in the Footer
+$mainButtonColor: #786964; // Main Button Style
+$altButtonColor: #ccc; // Alternate Button Style
+$footerButton: #7EBFB9; // Styles any Main Buttons in the Footer
 
-// $headerBackgroundColor: #20120A; // Home Page Banner background color
-// $ourWinesBorderColor: #7EBFB9; // Home Page Our Wines top border color
-// $ourWinesBackgroundColor: #7EBFB9; // Home Page Our Wines background color
-// $footerUpperBackgroundColor: #20120A; // Upper Footer background color
-// $footerLowerBackgroundColor: #999; // Lower Footer background color
-// $mobileNavBackgroundColor: #333; // Mobile Nav background color
-// $borderBottomColor: #7EBFB9; // Main Nav Underline Color
-// $borderEventsColor: #7EBFB9; // Events Container Color
+$headerBackgroundColor: #20120A; // Home Page Banner background color
+$ourWinesBorderColor: #7EBFB9; // Home Page Our Wines top border color
+$ourWinesBackgroundColor: #7EBFB9; // Home Page Our Wines background color
+$footerUpperBackgroundColor: #20120A; // Upper Footer background color
+$footerLowerBackgroundColor: #999; // Lower Footer background color
+$mobileNavBackgroundColor: #333; // Mobile Nav background color
+$borderBottomColor: #7EBFB9; // Main Nav Underline Color
+$borderEventsColor: #7EBFB9; // Events Container Color
 
 //   ===================================================================================================
 //      White Theme 
@@ -227,7 +227,7 @@ $borderEventsColor: #64ADCC; // Events Container Color
 // $borderEventsColor: #39CEFF; // Events Container Color
 
 //   ===================================================================================================
-//      Easter 
+//      ULTRA BRIGHT - Probably not the theme you are looking for.
 // =====================================================================================================
 
 // $linkColor: #00DBEE; //General Link Color
@@ -264,7 +264,7 @@ $break-min-desktop: "and (min-width : 1025px)";
 
 body{
 	background-color: $backgroundColor;
-	font-size: 13px;
+	font-size: 75%;
 	color: $fontColor;
 	font-family: $fontFamily;
 	line-height: 1.8em;
@@ -340,7 +340,8 @@ ul, ol, dl, p, table, pre {
 	}
 
 img{
-	border:none;
+	height: auto!important;
+	max-width: 100%;
 }
 
 form { 
@@ -389,21 +390,27 @@ header{
 				float: left;
 				width: 240px;
 				text-align:left;
+				margin-left: 10px;
 			}
 			@media screen and (min-width : 1024px) {
 				float: left;
 				width: 240px;
-				text-align:left;	
+				text-align:left;
+				margin-top: 10px;
+				margin-left: 10px;	
 			}
 			@media screen #{$break-max-tablet} {
-				margin: 0 auto 10px;
-				padding-top: 75px;
-
+				margin: 0 auto 0;
+				float: none;
 			}
-
+			@media screen #{$break-max-mobile} {
+				margin-bottom: 1.5%;
+			}
+			@media screen and (max-width : 767px){ 
+				width: 65%;
+			}
 			img{
 				max-width: 100%;
-				@media screen and (max-width : 767px){ }
 			}
 	}
 .cart {
@@ -450,26 +457,50 @@ header{
 
 #user-tools {
 
-	@media screen #{$break-max-tablet}{
+	@media screen #{$break-max-mobile}{
 			background: #333;
 			width: 100%;
 			min-height: 45px;
 			-webkit-box-shadow: 2px 2px 2px 2px #333;
 			box-shadow: 2px 2px 2px 2px #333;
-		}
+			position: fixed;
+	}
+	@media screen #{$break-max-desktop}{
+		margin: 0 19px 25px 0;
+	}
 
 	.v65-yourAccount, .v65-editProfile {
 		width: 30%;
 	}
 	.v65-login, .v65-logout {
 		width: 20%;
+		@media screen #{$break-max-desktop}{
+			line-height: 24px;
+		}
+		@media screen #{$break-max-mobile}{
+			line-height: 4em;
+		}
+
 	}
 	#v65-modalCart {
 		@media screen #{$break-max-mobile}{
 			width: 90%;
 		}
+		@media screen #{$break-max-desktop}{
+			line-height: 50px;	
+			right: 10px;
+		}
 	}
 
+}
+.spacer {
+	display: none;
+	@media screen #{$break-max-mobile}{
+		display: block;
+		width: 100%;
+		height: 75px;
+
+    }
 }
 
 /* ---- c. Mobile Navigation ----- */
@@ -477,7 +508,7 @@ header{
 #mobile-header {
     display: none;
 }
-@media screen #{$break-max-tablet}{
+@media screen #{$break-max-mobile}{
     #mobile-header {
         display: block;
         float: left;
@@ -494,19 +525,21 @@ header{
 /* ----- a. Main Navigation ----- */
 nav{
 	font-size: 13px;
-	width: 100%;
 	z-index: 101;
 	height: 24px;
 	width: 100%;
 	position: relative;
-	margin: 40px 0 0 0;
+	margin: 50px 0 0 0;
 		@media screen #{$break-max-mobile}{
 			display: none;
 		}
-		@media screen #{$break-max-tablet}{
-			display: none;
+		@media screen #{$break-max-desktop}{
+			margin-bottom: 30px;
+			margin-top: 0;
+			text-align: center;
 		}
 		@media screen #{$break-tablet}{
+
 		}
 	ul{
 		margin: 0;
@@ -516,6 +549,10 @@ nav{
 				float:right;
 				margin:0;
 				text-align: left;
+			}
+			@media screen #{$break-max-tablet}{
+				float: none;
+				margin-left: 20px;
 			}
 		li{
 			margin: 0;
@@ -527,7 +564,7 @@ nav{
 				float:left;
 				height: 26px;
 				line-height: 28px;
-				margin: 0 0 0 35px;
+				margin: 0  0 0 40px;
 				position:relative;
 				display: inline;
 			}
@@ -544,7 +581,7 @@ nav{
 				text-transform: uppercase;
 				color: #666;;
 				display:block;
-				height: 26px;
+				height: 30px;
 				line-height: 44px;
 				margin: 0 4px;
 				padding: 0 6px;
@@ -567,18 +604,16 @@ nav{
 			// Drop Down
 			&:hover ul{
 				display: block;
-				background-color: #fff;
-				border: 1px solid #ccc;
 				font-size: 12px;
-				@media screen #{$break-tablet}{
-					display: none;
-				}
 			}
 			ul{
 				background-color: #fff;
 				display: none;
 				position: absolute;
 				width: 180px;
+				background-color: #fff;
+				border: 1px solid #ccc;
+				margin: 0;
 
 				li{
 					background-color: #fff;
@@ -593,7 +628,7 @@ nav{
 						color: #666;
 						display: block;
 						float: none;
-						height: 28px;
+						height: 26px;
 						line-height: 28px;
 						margin: 0;
 						padding: 0 0 0 10px;
@@ -604,6 +639,7 @@ nav{
 						&:hover{
 							color: #000;
 							text-decoration: underline;
+							border: none;
 						}
 					}
 				}
@@ -614,14 +650,12 @@ nav{
 			/*home link is hidden for mobile*/
 			li.v65-home {
 				display: inline-block;
-				border-bottom: 3px solid $borderBottomColor;
 			}
 			li.v65-pageAParent{
 				color: #000
 			}
-			li.v65-selected{
-				font-weight: bold;
-				text-decoration: underline;
+			li a.v65-selected{
+				border-bottom: 3px solid $borderBottomColor;
 			}
 			/* Option to display the first three items, home is hidden above for mobile
 			@media screen and (max-width: 550px) {
@@ -635,14 +669,17 @@ nav{
 .subMenu{
 	border-right: 1px solid #ccc;
 	float: left;
-	margin: 1% 3% 0 2%; //60px 40px 0 0
-	padding-right: 2%; //20px
-	width: 17.8%; // 170px
+	margin: 1% 3% 3% 0; 
+	padding-right: 2%;
+	width: 15.8%; 
 	@media screen #{$break-max-tablet}{
 		width: 95%;
-		margin: 0 0 0 3%;	
+		margin: 0 0 30px 3%;
+		border-right: none;	
 	}
-
+	@media screen #{$break-max-desktop}{
+		margin: 1% 1% 3% 2%; 
+	}
 	ul{
 		margin:0;
 		padding:0;
@@ -791,7 +828,7 @@ nav{
 			  	width: 40%;
 		  	}
 		  	@media screen #{$break-max-tablet}{
-				padding: 3% 3% 0 3%;
+				padding: 30px 3% 0 3%;
 		  	}
 		  	@media screen #{$break-min-desktop}{
 			  	padding: 30px 0 0;
@@ -814,6 +851,7 @@ nav{
 		.v65-product-photo {
 			float: left;
 			width: 25%;
+			margin-right: 3%;
 		}
 		.v65-productGroup-products {
 
@@ -841,36 +879,39 @@ nav{
 /* ----- c. Home Page Call To Action Styling ----- */
 .ctaLeft {
 	float: left; 
+	width: 49%;
 
-	@media screen #{$break-min-tablet}{
-		padding-left: 3%;
+	@media screen #{$break-max-desktop}{
+		padding-left: 10px;
+		box-sizing: border-box;
 	}
 	@media screen #{$break-max-tablet}{
-		padding-left: 2%;
+		width: 95%;
+	}
+	img {
+		width: 100%!important;
 	}
 
 }
 .ctaRight {
 	float: left;
-	margin-left: 4%;
+	width: 49%;
+	padding-left: 20px;
+	box-sizing: border-box;
 
 	@media screen #{$break-min-tablet}{
-		padding-right: 3%;
-		margin-left: 1%;
 	}
 	@media screen #{$break-max-tablet}{
-		margin-left: 5%;
+		width: 95%;
+	}
+	img {
+		width: 100%!important;
+		margin-top: 20px;
 	}
 
 }
 
 .About, .Wines {
-	@media screen #{$break-tablet}{
-		width: 29%;
-	}
-	@media screen #{$break-min-desktop}{
-		width: 45%;
-	}
 }
 
 .aboutHome {
@@ -908,17 +949,8 @@ nav{
 			width: 48%;
 		}
 		@media screen #{$break-max-desktop}{
-			margin-bottom: 10px;
+			margin: 0 0 10px 10px!important;
 			width: 95%;
-	  	}
-
-		@media screen #{$break-max-tablet}{
-			width: 95%;
-			margin: 0 0 10px 10px;
-	  	}
-	  	@media screen #{$break-max-mobile}{
-			width: 95%;
-			margin: 0 0 10px 10px;
 	  	}
 
 		.upperEvents {
@@ -1002,7 +1034,6 @@ nav{
 		@media screen #{$break-max-tablet}{
 			box-shadow: none;
 			padding:3%;
-			border-top: 2px solid #CCC;
 
 		}
 
@@ -1032,6 +1063,10 @@ nav{
 			@media screen #{$break-max-tablet}{
 			width:94%;
 			padding:3%;
+			margin-bottom: 0;
+			}
+			@media screen #{$break-max-desktop}{
+			padding-right: 2%;
 			}
 	}
 
@@ -1058,27 +1093,24 @@ nav{
 		margin-right: 45px;
 		width: 25%;
 		border-right: 1px solid #fff;
-		@media screen #{$break-max-tablet}{
-			width: 90%;
+		@media screen #{$break-max-mobile}{
+			width: 100%;
 			border: none;
 			text-align: center;
-		}
-		@media screen #{$break-max-desktop}{
-			margin-left: 10px;
 		}
 	}
 	.right {
 		float: left;
 		width: 40%;
 		text-align: left;
-		@media screen #{$break-max-tablet}{
-			width: 90%;
+		@media screen #{$break-max-mobile}{
+			width: 100%;
 			text-align: center;
 
 		}
 
 		.v65-podTitle {
-			@extend h2 
+			@extend h2
 		}
 		ul {
 			padding: 0;
@@ -1096,6 +1128,11 @@ nav{
 			}
 		}
 	}
+	.v65-podTitle {
+		@media screen #{$break-max-mobile}{
+			margin-left: 7px;
+		}
+	}
 	button.defaultBtn {
 		background: $footerButton!important;
 	}
@@ -1103,11 +1140,11 @@ nav{
 		margin-top: 15px;
 		input {
 				@media screen #{$break-max-mobile} {
-					width: 120px;
+					width: 25%;
 					height: 50px;
 				}
-				@media screen #{$break-tablet} {
-					width: 135px;
+				@media screen #{$break-max-tablet} {
+					width: 40%;
 				}
 			}
 			button {
@@ -1175,8 +1212,12 @@ footer{
 				font-size: 12px;
 				margin-left: 3px;
 			}
-			p {
-				font-size: 10px;
+			.accolade {
+					font-size: 9px;
+					margin-bottom: 5px;
+				a {
+					font-size: 9px;
+				}
 			}
 			
 			ul{ 
@@ -1218,12 +1259,11 @@ footer{
 		} 
 
 #v65-subscribeWidget input {
-	width: 200px;
+	width: 150px;
 	height: 40px;
 	border: none;
 	background: #FAFAFA;
 }
-
 /*   ===================================================================================================
      7. Blog Template
 ======================================================================================================== */
@@ -1356,7 +1396,7 @@ button{
 		color: #fff;
 		text-align: center;
 		font-family: $fontFamilyButton;
-		min-width: 9em; // 48px;
+		min-width: 40%;
 		min-height: 40px;
 		span{
 			color: #fff;
@@ -1393,7 +1433,7 @@ a{
 		color: #fff;
 		text-align: center;
 		font-family: $fontFamilyButton;
-		min-width: 10em; // 48px;
+		min-width: 7em; // 48px;
 		padding: 5px 0;
 		span{
 			color: #fff;
@@ -1422,7 +1462,7 @@ a{
 		color: #fff;
 		text-align: center;
 		font-family: $fontFamilyButton;
-		min-width: 10em; // 48px;
+		min-width: 7em; // 48px;
 		padding: 5px 2px;
 		span{
 			background:$altButtonColor;
@@ -1840,4 +1880,43 @@ form#v65-checkBilling .v65-additionalComments {
 	  	
 	}
 }
+
+/* ----- d. Column Styles ----- */
+.colWrapper {
+	margin-bottom: 2em;
+	width: 100%;
+}
+
+	.colWrapper:before,.colWrapper:after { content:""; display:table; }
+	.colWrapper:after { clear:both; }
+
+
+	.col2 { 
+		float: left;
+		margin-left: 6%;
+		width: 47%;
+	}
+
+	.col2:first-child { 
+		float: left;
+		margin-left: 0%;
+		width: 47%;
+	}
+
+	@media screen and (max-width: 580px) {
+
+		.col2 { 
+			float: none;
+			margin-left: 0;
+			margin-bottom: 1.5em;
+			width: 100%;
+		}
+
+		.col2:first-child { 
+			float: none;
+			width: 100%;
+		}
+
+	}
+
 
