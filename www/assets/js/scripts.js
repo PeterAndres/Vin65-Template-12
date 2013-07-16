@@ -3,7 +3,6 @@ var v65 = {
 		init : function(){
 			v65.global.addToCartListener();
 			v65.global.continueShopping();
-			v65.global.mobileMenu();
 			v65.global.navHover();
 			v65.global.responsiveCleanUp();
 		},
@@ -11,6 +10,12 @@ var v65 = {
 			$("[v65js=addToCart]").on("submit",function(){
 				v65.cookies.createCookie("continueShoppingURL", window.location.href);
 			});
+		},
+		backToTop : function(){
+			$('.backToTop').click(function(){
+		    $("html, body").animate({ scrollTop: 0 }, 600);
+		    return false;
+		   });
 		},
 		continueShopping : function(){
 			$(".v65-cartCheckOutButtons a.linkAltBtn, #v65-checkCartSummaryMoreOptions a:contains('Continue shopping')").attr("href", v65.cookies.readCookie("continueShoppingURL"));
@@ -20,7 +25,7 @@ var v65 = {
 				name: 'sidr-main',
 				source: 'nav'
 			});
-		}
+		},
 		navHover : function(){
 			$("nav ul li ul li a").hover(function(){
 				$(this).parent().parent().parent().children("a").toggleClass("hover");
@@ -121,19 +126,12 @@ v65.global.init();
 v65.page.initPhotoGallery();
 
 $(window).load(function () {
+  v65.global.mobileMenu();
+  v65.global.backToTop();
   var browserSize = $(window).width();
 
   if (browserSize > 579) {
 	v65.global.equalize5Up();
   }
-
-});
-
-$(document).ready(function(){
-
-$('.backToTop').click(function(){
-    $("html, body").animate({ scrollTop: 0 }, 600);
-    return false;
-    });
 
 });
