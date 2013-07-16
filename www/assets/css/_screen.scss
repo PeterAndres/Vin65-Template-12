@@ -359,7 +359,7 @@ hr {
 }
 
 strong {
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .hideText{
@@ -398,7 +398,7 @@ header{
 		text-align: center;
 		width:45%;
 		margin:0 auto;
-			@media screen and (min-width : 768px) and (max-width : 1023px) {
+			@media screen and (min-device-width : 768px) and (max-device-width : 1023px) {
 				float: left;
 				width: 240px;
 				text-align:left;
@@ -1320,7 +1320,7 @@ footer{
 		float: left;
 		}
 		@media screen #{$break-min-desktop}{
-		width: 520px;
+		width: 600px;
 		padding: 20px 25px 0 0;
 		float: left;
 		}
@@ -1477,7 +1477,8 @@ a{
 		text-align: center;
 		font-family: $fontFamilyButton;
 		min-width: 7em; // 48px;
-		padding: 5px 0;
+		margin-right: 5px;
+		padding: 8px 20px;
 		span{
 			color: #fff;
 			background:$mainButtonColor;
@@ -1506,7 +1507,8 @@ a{
 		text-align: center;
 		font-family: $fontFamilyButton;
 		min-width: 7em; // 48px;
-		padding: 5px 2px;
+		margin-right: 5px;
+		padding: 8px 20px;
 		span{
 			background:$altButtonColor;
 			color: #fff;
@@ -1937,16 +1939,20 @@ form#v65-checkBilling .v65-additionalComments {
 	.col2 { 
 		float: left;
 		margin-left: 6%;
-		width: 47%;
+		width: 36%;
+
+		.v65-formRight {
+			float: none;
+		}
 	}
 
 	.col2:first-child { 
 		float: left;
 		margin-left: 0%;
-		width: 47%;
+		width: 36%;
 	}
 
-	@media screen and (max-width: 580px) {
+	@media screen and (max-width: 767px) {
 
 		.col2 { 
 			float: none;
