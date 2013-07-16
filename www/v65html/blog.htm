@@ -14,49 +14,37 @@
 	<link rel="stylesheet" href="/assets/css/jquery.sidr.dark.css">
         
 	<!--//Vin65 QuickLaunch//-->
-	<script type="text/javascript">
-		var qlCode='vin65template1:vin65cloud';
-		var qlLayoutType='Homepage';
-	</script>
 	<script type="text/javascript" src="http://quicklaunch.vin65.com/quicklaunch.js"></script>
 	<!--//Vin65 QuickLaunch//-->   
 	
 	<v65:css files="/assets/nivo/nivo-slider.css,/assets/css/screen.min.css">
-	<!--[if IE 8]><v65:css files="/assets/css/ie8.css"><![endif]-->
-	<!--//Respond.js is a polyfill so  media queries work on IE8 and older browers//-->  
 	<!--[if lt IE 9]>
-		<script src="/assets/js/html5shiv.js"></script>
-		<script src="/assets/js/html5shiv-printshiv.js"></script>
+		<v65:js files="/assets/js/html5shiv-printshiv.js"></v65:js>
 	<![endif]-->
-	<script src="/assets/js/respond.min.js"></script>
+	<!-- Respond.js is a polyfill so  media queries work on IE8 and older browers -->
+	<v65:js files="/assets/js/respond.min.js"></v65:js>
 	
 </head>
 <body>
 
-	<!--header-->
-	<div class="outer">
-		<header class="container v65-group">
-			<!--user-tools-->
-				<div id="user-tools">
-					<div id="mobile-header">
-			   			<a id="responsive-menu-button" href="#sidr-main"><img src="/assets/images/mobileIcon.png"/></a>
-					</div>	
-					<v65:modalCart></v65:modalCart>	
-					<v65:login></v65:login>
-				</div>
-			<!--/user-tools-->
-			<div class="spacer">&nbsp;</div>
-					
-			<!--logo-->
-			<a href="/" accesskey="h" class="logo"><img src="../assets/images/logo.png" alt="<v65:websiteName></v65:websiteName>"></a>
-			<!--/logo-->
-					
-			<nav>
-				<v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav>
-			</nav>
-		</header>
-	</div>
-	<!--/header-->
+	<header class="container v65-group">
+		<div id="user-tools">
+			<div id="mobile-header">
+				<a id="responsive-menu-button" href="#sidr-main"><img src="/assets/images/mobileIcon.png"/></a>
+			</div>	
+			<v65:modalCart></v65:modalCart>	
+			<v65:login></v65:login>
+		</div><!--/user-tools-->
+		<!-- <div class="spacer">&nbsp;</div> -->
+
+		 <h1 class="hideText logo"><a href="/" accesskey="h"><v65:websiteName></v65:websiteName></a></h1><!--/logo -->
+				
+		<!-- <a href="/" accesskey="h" class="logo"><img src="../assets/images/logo.png" alt="<v65:websiteName></v65:websiteName>"></a> -->
+				
+		<nav>
+			<v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav>
+		</nav>
+	</header>
 	
 	<!--Banner-->
 	<div class="bannerInterior">
