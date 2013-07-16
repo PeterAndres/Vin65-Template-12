@@ -3,6 +3,7 @@ var v65 = {
 		init : function(){
 			v65.global.addToCartListener();
 			v65.global.continueShopping();
+			v65.global.mobileMenu();
 			v65.global.navHover();
 			v65.global.responsiveCleanUp();
 		},
@@ -14,6 +15,12 @@ var v65 = {
 		continueShopping : function(){
 			$(".v65-cartCheckOutButtons a.linkAltBtn, #v65-checkCartSummaryMoreOptions a:contains('Continue shopping')").attr("href", v65.cookies.readCookie("continueShoppingURL"));
 		},
+		mobileMenu : function(){
+			$('#responsive-menu-button').sidr({
+				name: 'sidr-main',
+				source: 'nav'
+			});
+		}
 		navHover : function(){
 			$("nav ul li ul li a").hover(function(){
 				$(this).parent().parent().parent().children("a").toggleClass("hover");
@@ -130,6 +137,3 @@ $('.backToTop').click(function(){
     });
 
 });
-
-
-
