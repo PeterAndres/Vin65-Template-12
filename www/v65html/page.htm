@@ -46,72 +46,51 @@
 		</nav>
 	</header>
 
-	<!--Banner-->
 	<div class="bannerInterior">
-	</div>
-	<!--/banner-->
+	</div><!--/banner-->
 	
-	<!--Upper Content-->
-	<div class="outer">
-		<section class="container v65-group">
-			<div class="pageContent">
-				<v65:mainContent></v65:mainContent>
-			</div>
-			<div class="subMenu">
-				<v65:pods location="Left Nav Title" type="Title"></v65:pods>
-				<v65:layoutLeftNav></v65:layoutLeftNav>
-			</div>
-		</section>
-	</div>
-	<!--/Upper Content-->
+
+	<section class="container v65-group">
+		<article class="pageContent">
+			<v65:mainContent></v65:mainContent>
+		</article>
+		<aside class="subMenu">
+			<v65:pods location="Left Nav Title" type="Title"></v65:pods>
+			<v65:layoutLeftNav></v65:layoutLeftNav>
+		</aside>
+	</section><!--/Upper Content-->
 	
-	<!--footerUpper-->
+	<footer>
 		<div class="footerUpper">
-			<div class="outer">
-				<section class="container v65-group">
-					<div class="left">
-						<v65:pods location="Contact Us"></v65:pods>
-					</div>
-					<div class="right">
-						<v65:pods location="Social Title" type="Title"></v65:pods>
-						<ul><v65:contentblock group="Social Icons"></v65:contentblock></ul>
-						<v65:subscribe contactType="Newsletter"></v65:subscribe>
-					</div>	
-				</section>
-			</div>
-		</div>
-	<!--/footerUpper-->
-
-	<!--FooterMenu-->
+			<section class="container v65-group">
+				<div class="left">
+					<v65:pods location="Contact Us"></v65:pods>
+				</div>
+				<div class="right">
+					<v65:pods location="Social Title" type="Title"></v65:pods>
+					<ul><v65:contentblock group="Social Icons"></v65:contentblock></ul>
+					<v65:subscribe contactType="Newsletter"></v65:subscribe>
+				</div>	
+			</section>
+		</div><!--/footerUpper-->
+		
 		<div class="footerLower">
-			<div class="outer">	
-				<footer class="container v65-group">
-					<div class="footerLeft">
-						<v65:layoutFooterNav></v65:layoutFooterNav>
-						<p class="accolade">
-							<v65:vin65Accolade></v65:vin65Accolade> | Copyright 2013 by Template 12
-						</p>
-					</div>
-					<div class="footerRight">
-						<a class="backToTop" href="#">back to top</a>
-					</div>
-				</footer>
-			</div>
-		</div>
-	<!--/FooterMenu-->
+			<section class="container v65-group">
+				<a class="backToTop hideText" href="#">back to top</a>
+				<v65:layoutFooterNav></v65:layoutFooterNav>
+				<p class="accolade">
+					<v65:vin65Accolade></v65:vin65Accolade> | <v65:copyright></v65:copyright>
+				</p>
+			</section>
+		</div><!--/footerLower-->
+	</footer>
+	
 
-<!--//Vin65 QuickLaunchFooter//-->
-<script src="http://assets.vin65.com/js/vin65Footer.js" type="text/javascript"></script>     
-<!--//Vin65 QuickLaunchFooter//-->
-<script src="/assets/js/jquery.sidr.min.js"></script>
-<v65:js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js">
+	<v65:js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js,/assets/js/jquery.sidr.min.js">
 
-<script>
-	$('#responsive-menu-button').sidr({
-      name: 'sidr-main',
-      source: 'nav'
-    });
-</script>
+	<!--//Vin65 QuickLaunchFooter//-->
+	<script src="http://assets.vin65.com/js/vin65Footer.js" type="text/javascript"></script>     
+	<!--//Vin65 QuickLaunchFooter//-->
 
 </body>
 </html>
