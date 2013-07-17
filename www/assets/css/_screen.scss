@@ -220,7 +220,7 @@ ul, ol, dl, p, table, pre {
 		
 	h4 { 
 		font-size: 18px;
-		line-height: 1.2;
+		line-height: 1.5;
 	}
 		
 	h5 { 
@@ -295,20 +295,20 @@ header{
 		margin:0 auto;
 			@media screen and (min-width : 768px) and (max-width : 1023px) {
 				float: left;
-				text-align:left;
 				margin: 2% 0 0 10px;
+				text-align:left;
 				width: 240px;
 			}
 			@media screen and (min-width : 1024px) {
 				float: left;
-				width: 240px;
-				text-align:left;
 				margin-top: 10px;
-				margin-left: 10px;	
+				margin-left: 10px;
+				text-align:left;	
+				width: 240px;
 			}
 			@media screen #{$break-max-tablet} {
-				margin: 0 auto 0;
 				float: none;
+				margin: 0 auto 0;
 			}
 			@media screen #{$break-max-mobile} {
 				margin-bottom: 4.5%;
@@ -340,13 +340,13 @@ header{
 
 		#v65-searchWidgetInput{
 			input{
-				width:150px;
 				float:left;
 				margin:0 5px 0 0;
+				width:150px;
 
 				@media screen #{$break-max-tablet}{
-					width:65%;
 					margin:0 2%;
+					width:65%;
 				}
 			}
 		}
@@ -364,11 +364,12 @@ header{
 
 	@media screen #{$break-max-mobile}{
 			background: #333;
-			width: 100%;
 			min-height: 45px;
+			position: fixed;
+			width: 100%;
+
 			-webkit-box-shadow: 2px 2px 2px 2px #333;
 			box-shadow: 2px 2px 2px 2px #333;
-			position: fixed;
 	}
 	@media screen #{$break-max-desktop}{
 		margin: 0 19px 25px 0;
@@ -398,15 +399,6 @@ header{
 	}
 
 }
-.spacer {
-	display: none;
-	@media screen #{$break-max-mobile}{
-		display: block;
-		width: 100%;
-		height: 75px;
-
-    }
-}
 
 /* ---- c. Mobile Navigation ----- */
 
@@ -415,10 +407,10 @@ header{
 }
 @media screen #{$break-max-mobile}{
     #mobile-header {
+    	box-sizing: border-box;
         display: block;
         float: left;
         width: 13%;
-        box-sizing: border-box;
 		padding: 9px 0 0 5px;
     }
 }
@@ -1648,7 +1640,7 @@ form#v65-checkBilling .v65-additionalComments {
 	input {
 		height: 40px;
 		@media screen #{$break-max-mobile}{
-			padding: 9px 15px;
+			padding: 4px 15px;
 		}
 	}
 }
