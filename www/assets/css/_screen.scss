@@ -6,24 +6,26 @@
 /* ====================================================================================================
 	Table of Contents
 	1. Theme Settings & Themes 
+		a.) Global Settings
+		b.) Responsive Break Points
 	2. Typography - Copy into admin.css
 	3. Header
-		a. Header Outer
+		a. Header
 		b. User Tools
+		c.) Mobile Nav Controls
 
 	4. Navigation
 		a. Main Navigation
-		b. Mobile Navigation
-		c. Sub Menu
-		d. Left Navigation
+		b. Sub Menu
 
 	5. Content
-		a. Global Site Structure
+		a. Global
 		b. Home Page Styles
 		c. Call to Action Styles
-		d. Interior Page Styles
+		d. Events
+		e. Page Styles
 
-	6 Footer
+	6. Footer
 	7. Blog
 	8. Print
 	9. Buttons
@@ -40,10 +42,11 @@
 
 	11. Generic Content Styling
 		a. Generic Content
+		b. Column Styling
 */
 
 //   ===================================================================================================
-//      1.a Theme Settings - These shouldnt change
+//      1.a Global Theme Settings - These shouldnt change
 // =====================================================================================================
 
 $backgroundColor: #fff; // Website Background Color
@@ -271,7 +274,7 @@ strong {
 /*   ===================================================================================================
      3. Header
 ======================================================================================================== */
-/* ----- a. Header Outer ---- */
+/* ----- a. Header ---- */
 header{
 	width: 100%;
 	z-index: 100;
@@ -565,7 +568,7 @@ nav{
 	}
 }
 
-/* ----- c. Sub Menu ----- */
+/* ----- b. Sub Menu ----- */
 .subMenu{
 	border-right: 1px solid #ccc;
 	float: left;
@@ -712,10 +715,6 @@ nav{
 	overflow: hidden;
 	width: 100%;
 }
-
-.altBanner {
-	width: 100%;
-}
 	.homepageContent{
 		background: #fff;
 		box-shadow: 0 0 20px $boxShadowColor;
@@ -842,9 +841,6 @@ nav{
 
 }
 
-.About, .Wines {
-}
-
 .aboutHome {
 	padding: 30px 0;
 }
@@ -871,7 +867,7 @@ nav{
 		}
 	}
 }
-/* Home Page Events Styling */
+/* ----- d. Home Page Events  ----- */
 	.Event {
 		background: #F1F1F2;
 		min-height:100px;
@@ -946,7 +942,7 @@ nav{
 		}
 	}
 
-/* ----- d. Page Styles ----- */
+/* ----- e. Page Styles ----- */
 
 	.content{
 		background: #fff;
@@ -1881,7 +1877,7 @@ form#v65-checkBilling .v65-additionalComments {
 	}
 }
 
-/* ----- d. Column Styles ----- */
+/* ----- b. Column Styles ----- */
 .colWrapper {
 	margin-bottom: 2em;
 	width: 100%;
