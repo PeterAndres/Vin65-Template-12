@@ -397,11 +397,11 @@ header{
 		text-align: center;
 		width:45%;
 		margin:0 auto;
-			@media screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+			@media screen and (min-width : 768px) and (max-width : 1023px) {
 				float: left;
-				width: 240px;
 				text-align:left;
-				margin-left: 10px;
+				margin: 2% 0 0 10px;
+				width: 240px;
 			}
 			@media screen and (min-width : 1024px) {
 				float: left;
@@ -415,10 +415,10 @@ header{
 				float: none;
 			}
 			@media screen #{$break-max-mobile} {
-				margin-bottom: 1.5%;
-				margin-top: 20%;
+				margin-bottom: 4.5%;
+				margin-top: 22%;
 			}
-			@media screen and (max-width : 767px){ 
+			@media screen and (max-width : 768px){ 
 				width: 65%;
 			}
 	}
@@ -556,8 +556,11 @@ nav{
 		display: inline-block;
 			@media screen #{$break-min-tablet}{
 				float:right;
-				margin:0;
+				margin:0 3% 0 0;
 				text-align: left;
+			}
+			@media screen #{$break-min-desktop}{
+				margin: 0;
 			}
 			@media screen #{$break-max-tablet}{
 				float: none;
