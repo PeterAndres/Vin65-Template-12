@@ -55,7 +55,6 @@ $boxShadowColor: #ccc; // Box Shadow Color
 $fontFamily: 'Lato', sans-serif; // Default Font Family
 $websiteWidth: 90%;
 
-$fontFamilyButton: 'Lato', sans-serif; // Default Font Family for Buttons
 
 //   ===================================================================================================
 //      Summer Theme
@@ -417,7 +416,7 @@ header{
 			}
 			@media screen #{$break-max-mobile} {
 				margin-bottom: 1.5%;
-				margin-top: 18%;
+				margin-top: 20%;
 			}
 			@media screen and (max-width : 767px){ 
 				width: 65%;
@@ -1433,16 +1432,16 @@ footer{
      9. Buttons
 ======================================================================================================== */
 
-button{
+button {
 	&.defaultBtn,  &.modalBtn,  &.largeBtn{
-		background:$mainButtonColor;
-		color: #fff;
-		text-align: center;
-		font-family: $fontFamilyButton;
-		min-width: 40%;
-		min-height: 40px;
+		background: $mainButtonColor;
+		border-radius: 0;
+		font-family: $fontFamily;
 		span{
+			background: $mainButtonColor;
 			color: #fff;
+			border-radius: 0;
+			padding: 5px 15px;
 		}
 		&:hover{
 			background:lighten($mainButtonColor, 10%);
@@ -1453,12 +1452,13 @@ button{
 
 	&.altBtn, &.altModalBtn, &.altLargeBtn{
 		background:$altButtonColor;
-		border: 1px solid #888;
 		color: #fff;
-		font-family: $fontFamilyButton;
-		min-width: 3em; // 48px;
+		font-family: $fontFamily;
 		span{
 			background:$altButtonColor;
+			color: #fff;
+			border-radius: 0;
+			padding: 5px 15px;
 		}
 		&:hover{
 			background: lighten($altButtonColor, 10%);
@@ -1473,15 +1473,13 @@ button{
 a{
 	&.linkBtn, &.modalLinkBtn, &.largeLinkBtn, &.fullWidthBtn{
 		background:$mainButtonColor;
-		color: #fff;
-		text-align: center;
-		font-family: $fontFamilyButton;
-		min-width: 7em; // 48px;
-		margin-right: 5px;
-		padding: 8px 20px;
+		border-radius: 0;
+		font-family: $fontFamily;
 		span{
-			color: #fff;
 			background:$mainButtonColor;
+			color: #fff;
+			border-radius: 0;
+			padding: 5px 15px;
 		}
 		&:hover{
 			background:lighten($mainButtonColor, 10%);
@@ -1503,15 +1501,13 @@ a{
 
 	&.linkAltBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
 		background:$altButtonColor;
-		color: #fff;
-		text-align: center;
-		font-family: $fontFamilyButton;
-		min-width: 7em; // 48px;
-		margin-right: 5px;
-		padding: 8px 20px;
+		border-radius: 0; 
+		font-family: $fontFamily;
 		span{
 			background:$altButtonColor;
+			border-radius: 0; 
 			color: #fff;
+			padding: 5px 15px;
 		}
 		&:hover{
 			background: lighten($altButtonColor, 10%);
@@ -1523,6 +1519,26 @@ a{
 
 	&.modalLinkBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
 		min-width: auto;
+	}
+}
+
+.v65-quickView-close {
+
+	a {
+		border-radius: 0; 
+		background: lighten($altButtonColor, 10%);
+
+		&:hover{
+			background: lighten($altButtonColor, 10%);
+			
+		}
+		
+	}
+
+}
+.v65-product-addToCart {
+	button {
+		min-width: 32%;
 	}
 }
 
@@ -1682,8 +1698,11 @@ form#v65-checkBilling .v65-additionalComments {
 					}
 				}
 				.v65-product-addToCart-quantity{
-					input{
-
+					input {
+						height: 40px;
+						@media screen #{$break-max-mobile}{
+							padding: 9px 15px;
+						}
 					}
 				}
 				.v65-product-addToCart-button{
@@ -1702,6 +1721,14 @@ form#v65-checkBilling .v65-additionalComments {
 	.v65-product-socialBar{
 		@media screen #{$break-max-mobile}{
 			display:none;
+		}
+	}
+}
+.v65-product-addToCart-quantity{
+	input {
+		height: 40px;
+		@media screen #{$break-max-mobile}{
+			padding: 9px 15px;
 		}
 	}
 }
@@ -1732,6 +1759,11 @@ form#v65-checkBilling .v65-additionalComments {
 .v65-product-quickView {
 	@media screen #{$break-max-desktop}{
 		display: none!important;
+	}
+}
+.v65-product-addToCart-quantity{
+	input {
+		height: 38px;
 	}
 }
 
@@ -1818,6 +1850,7 @@ form#v65-checkBilling .v65-additionalComments {
 			margin: 0;
 			@media screen #{$break-max-tablet}{
 			width: 23%;
+			padding: 10% 0 10%;
 			}
 		}
 		.v65-product-teaser {
@@ -1864,6 +1897,10 @@ form#v65-checkBilling .v65-additionalComments {
 		}
 
 	}
+
+.v65-product-tabs .last a {
+	border-radius: 0;
+}
 
 /* ----- e. Misc Template Specific Overrides -----*/
 
