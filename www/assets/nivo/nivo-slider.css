@@ -123,6 +123,7 @@ a.nivo-nextNav {
 	color:transparent;
 	border:0;
 	margin: 0 2px;
+	cursor: pointer;
 }
 .nivo-controlNav a.active {
 	background:url(bulletActive.svg) no-repeat;
