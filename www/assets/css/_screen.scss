@@ -568,6 +568,9 @@ nav{
 							text-decoration: underline;
 							border: none;
 						}
+						.v65-selected{
+							text-decoration: underline;
+						}
 					}
 				}
 			}
@@ -1032,6 +1035,9 @@ nav{
 	a {
 		color: $footerFont;
 		text-decoration: underline;
+		/*--[if IE 9]--*/
+			text-decoration: none;
+		/*[endif]--*/
 	}
 	h2 {
 		color: $footerFont;
