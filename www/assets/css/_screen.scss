@@ -4,11 +4,14 @@
 
 /* CSS Document - Template 13 - Coded with love <3  */
 /* ====================================================================================================
-	Table of Contents
+	Table of Contents - - - - 
+
 	1. Theme Settings & Themes 
 		a.) Global Settings
 		b.) Responsive Break Points
+
 	2. Typography - Copy into admin.css
+
 	3. Header
 		a. Header
 		b. User Tools
@@ -26,9 +29,13 @@
 		e. Page Styles
 
 	6. Footer
+
 	7. Blog
+
 	8. Print
+
 	9. Buttons
+
 	10. v65 Overrides
 		a. Home Page Product Group Overrides
 		b. Checkout Overrides
@@ -320,6 +327,17 @@ header{
 			@media screen and (max-width : 768px){ 
 				width: 65%;
 			}
+			@media (min--moz-device-pixel-ratio: 1.5),
+			       (-o-min-device-pixel-ratio: 3/2),
+			       (-webkit-min-device-pixel-ratio: 1.5),
+			       (min-device-pixel-ratio: 1.5),
+			       (min-resolution: 144dpi),
+			       (min-resolution: 1.5dppx) {
+			 
+			background: image-url('logo_2x.png') no-repeat center center;
+			 
+			}
+
 	}
 .cart {
 		@media screen #{$break-max-mobile}{
