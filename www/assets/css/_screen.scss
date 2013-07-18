@@ -577,18 +577,12 @@ nav{
 			// End Drop Down
 
 		}
-			/*home link is hidden for mobile*/
-			li.v65-home {
-				display: inline-block;
-			}
-			li.v65-pageAParent{
-				color: #000
-			}
-			/* Option to display the first three items, home is hidden above for mobile
-			@media screen and (max-width: 550px) {
-  				li:nth-child(n+5){display:none;
-  				}
-			}*/
+		li.v65-home {
+			display: inline-block;
+		}
+		li.v65-pageAParent{
+			color: #000
+		}
 	}
 }
 
