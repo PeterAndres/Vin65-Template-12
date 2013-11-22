@@ -1,86 +1,87 @@
 <cfoutput> <!DOCTYPE html>
+
 <html>
 <head>
   
 	<meta charset="utf-8">
+	
 	<cf_metaTags>
 	
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-	
+    
 	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
-    
+	<link rel="stylesheet" href="/assets/css/jquery.sidr.dark.css">
+        
 	<cf_vin65GlobalAssets>   
 	
-	<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js">
-	
 	<cf_css files="/assets/nivo/nivo-slider.css,/assets/css/screen.min.css">
-	<!--[if lte IE 7]><cf_css files="/assets/css/ie7.css"><![endif]-->
-	<!--[if IE 8]><cf_css files="/assets/css/ie8.css"><![endif]-->
+	<!--[if lt IE 9]>
+		<cf_js files="/assets/js/html5shiv-printshiv.js">
+	<![endif]-->
+	<!-- Respond.js is a polyfill so  media queries work on IE8 and older browers -->
+	<cf_js files="/assets/js/respond.min.js">
 	
-	<!--//Respond.js is a polyfill so  media queries work on IE8 and older browers//-->  
-	<script src="/assets/js/respond.min.js"></script>
-
 </head>
 <body>
 
-<div class="wrapper v65-group">
-	
-	<!--header-->
-	<div class="header">
-
-		<!--user-tools-->
-		<div id="user-tools" class="cart">
+	<header class="container v65-group">
+		<div id="user-tools">
+			<div id="mobile-header">
+				<a id="responsive-menu-button" href="##sidr-main"><img src="/assets/images/mobileIcon.png"/></a>
+			</div>	
 			<cf_modalCart>	
 			<cf_login>
-		</div>
-		<!--/user-tools-->
-		
-		<!--logo-->
-		<a href="/" accesskey="h" class="logo"><img src="/assets/images/logo.png" alt="<cf_websiteName>"></a>
-		<!--/logo-->
-		
-		<!--mainMenu-->
-		<div class="mainMenu cart">
-			<a href="##footerNav" class="menuLink">&##9776;</a>
+		</div><!--/user-tools-->
+		<!-- <div class="spacer">&nbsp;</div> -->
+
+		 <h1 class="hideText logo"><a href="/" accesskey="h"><cf_websiteName></a></h1><!--/logo -->
+				
+		<!-- <a href="/" accesskey="h" class="logo"><img src="/assets/images/logo.png" alt="<cf_websiteName>"></a> -->
+				
+		<nav>
 			<cf_layoutHeaderNav depth="2">
+		</nav>
+	</header>
+
+	<div class="bannerInterior">
+	</div><!--/banner-->
+	
+	<section class="container v65-group">
+		<div class="contentWide">
+			<cf_mainContent>
 		</div>
-		<!--/mainMenu-->
+	</section><!--/Upper Content-->
+	
+	<footer>
+			<div class="footerUpper">
+				<section class="container v65-group">
+					<div class="left">
+						<cf_pods location="Contact Us">
+					</div>
+					<div class="right">
+						<cf_pods location="Social Title" type="Title">
+						<ul><cf_contentblock group="Social Icons"></ul>
+						<cf_subscribe contactType="Newsletter">
+					</div>	
+				</section>
+			</div><!--/footerUpper-->
+			
+			<div class="footerLower">
+				<section class="container v65-group">
+					<a class="backToTop hideText" href="##">back to top</a>
+					<cf_layoutFooterNav>
+					<p class="accolade">
+						<cf_vin65Accolade> | <cf_copyright>
+					</p>
+				</section>
+			</div><!--/footerLower-->
+		</footer>
 		
-	</div>
-	<!--/header-->
-	
-	<!--content-->
-	<div class="contentCart v65-group">		
-		<cf_mainContent>		
-	</div>
-	<!--/content-->
-	
-	<!--footer-->
-	<div class="footer">
-		
-		<!--footer_nav-->
-		<div class="footerNav"> 
-			<a name="footerNav"></a> 
-			<cf_layoutFooterNav>
-		</div>
-		<!--/footer_nav-->
 
-		<!--footer_tool-->
-		<div class="footerTools"> 
-			<ul>
-				<li class="phone"><a href="tel:1-8999-999-9999">Call Us Toll Free: <strong>1-999-999-9999</strong> <img src="/assets/images/ico-call.png"></a></li>			
-				<li class="email"><a href="mailto:info@generic.com">info@generic.com</a></li>			
-				<li class="map"><a href="http://maps.google.com">Box 0000, City, State PostalCode <img src="/assets/images/ico-map.png"></a></li>
-				<li class="legal"><cf_copyright></li>			
-				<li class="accolade"><cf_vin65Accolade></li>			
-			</ul>
-		</div>
-		<!--/footer_tools-->
-	
-</div>
+		<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js,/assets/js/jquery.sidr.min.js">
 
-<cf_vin65GlobalFooterAssets>
+		<cf_vin65GlobalFooterAssets>
 
-</body>
-</html> </cfoutput>
+	</body>
+	</html> </cfoutput>

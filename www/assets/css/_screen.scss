@@ -66,16 +66,16 @@ $fontFamily: 'Lato', sans-serif; // Default Font Family
 $websiteWidth: 90%;
 
 //   ===================================================================================================
-//      Summer Theme 
+//      Mint & Orange Theme 
 // =====================================================================================================
 
-$linkColor: #1abc9c; //General Link Color
+$linkColor: #d35400; //General Link Color
 $footerFont: #fff; // Controls the color of fonts in the footer
 $winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
 
-$mainButtonColor: #d35400; // Main Button Style
-$altButtonColor: #95a5a6; // Alternate Button Style
-$footerButton: #95a5a6; // Styles any Main Buttons in the Footer
+$mainButtonColor: #66CDAA; // Main Button Style
+$altButtonColor: #ccc; // Alternate Button Style
+$footerButton: #FBAF3F; // Styles any Main Buttons in the Footer
 
 $headerBackgroundColor: #66CDAA; // Home Page Banner background color
 $ourWinesBorderColor: #1a2632; // Home Page Our Wines top border color
@@ -83,8 +83,8 @@ $ourWinesBackgroundColor: #1a2632; // Home Page Our Wines background color
 $footerUpperBackgroundColor: #66CDAA; // Upper Footer background color
 $footerLowerBackgroundColor: #999; // Lower Footer background color
 $mobileNavBackgroundColor: #333; // Mobile Nav background color
-$borderBottomColor: #d35400; // Main Nav Underline Color
-$borderEventsColor: #d35400; // Events Container Color
+$borderBottomColor: #FBAF3F; // Main Nav Underline Color
+$borderEventsColor: #FBAF3F; // Events Container Color
 
 //   ===================================================================================================
 //      Green Theme 
@@ -94,14 +94,14 @@ $borderEventsColor: #d35400; // Events Container Color
 // $footerFont: #fff; // Controls the color of fonts in the footer
 // $winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
 
-// $mainButtonColor: #a2cc00; // Main Button Style
+// $mainButtonColor: #AECC00; // Main Button Style
 // $altButtonColor: #ccc; // Alternate Button Style
-// $footerButton: #bdc3c7; // Styles any Main Buttons in the Footer
+// $footerButton: #667F00; // Styles any Main Buttons in the Footer
 
-// $headerBackgroundColor: #313D00; // Home Page Banner background color
-// $ourWinesBorderColor: #829147; // Home Page Our Wines top border color
-// $ourWinesBackgroundColor: #829147; // Home Page Our Wines background color
-// $footerUpperBackgroundColor: #313D00; // Upper Footer background color
+// $headerBackgroundColor: #A2CC00; // Home Page Banner background color
+// $ourWinesBorderColor: #677F06; // Home Page Our Wines top border color
+// $ourWinesBackgroundColor: #677F06; // Home Page Our Wines background color
+// $footerUpperBackgroundColor: #A2CC00; // Upper Footer background color
 // $footerLowerBackgroundColor: #999; // Lower Footer background color
 // $mobileNavBackgroundColor: #333; // Mobile Nav background color
 // $borderBottomColor: #CBFF00; // Main Nav Underline Color
@@ -132,22 +132,22 @@ $borderEventsColor: #d35400; // Events Container Color
 //      Brown & Robin Blue Theme
 // =====================================================================================================
 
-//$linkColor: #7EBFB9; //General Link Color
-//$footerFont: #fff; // Controls the color of fonts in the footer
-//$winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
+// $linkColor: #7EBFB9; //General Link Color
+// $footerFont: #fff; // Controls the color of fonts in the footer
+// $winesFonts: #fff; // Controls the color of fonts in the Our Wines section on the home page
 
-//$mainButtonColor: #7EBFB9; // Main Button Style
-//$altButtonColor: #ccc; // Alternate Button Style
-//$footerButton: #95a5a6; // Styles any Main Buttons in the Footer
+// $mainButtonColor: #786964; // Main Button Style
+// $altButtonColor: #ccc; // Alternate Button Style
+// $footerButton: #7EBFB9; // Styles any Main Buttons in the Footer
 
-//$headerBackgroundColor: #20120A; // Home Page Banner background color
-//$ourWinesBorderColor: #635954; // Home Page Our Wines top border color
-//$ourWinesBackgroundColor: #635954; // Home Page Our Wines background color
-//$footerUpperBackgroundColor: #20120A; // Upper Footer background color
-//$footerLowerBackgroundColor: #999; // Lower Footer background color
-//$mobileNavBackgroundColor: #333; // Mobile Nav background color
-//$borderBottomColor: #7EBFB9; // Main Nav Underline Color
-//$borderEventsColor: #7EBFB9; // Events Container Color
+// $headerBackgroundColor: #20120A; // Home Page Banner background color
+// $ourWinesBorderColor: #7EBFB9; // Home Page Our Wines top border color
+// $ourWinesBackgroundColor: #7EBFB9; // Home Page Our Wines background color
+// $footerUpperBackgroundColor: #20120A; // Upper Footer background color
+// $footerLowerBackgroundColor: #999; // Lower Footer background color
+// $mobileNavBackgroundColor: #333; // Mobile Nav background color
+// $borderBottomColor: #7EBFB9; // Main Nav Underline Color
+// $borderEventsColor: #7EBFB9; // Events Container Color
 
 //   ===================================================================================================
 //      1.b Responsive Breakpoints
@@ -328,16 +328,17 @@ header{
 			@media screen and (max-width : 768px){ 
 				width: 65%;
 			}
-			@media
-				only screen and (-webkit-min-device-pixel-ratio: 2),
-				only screen and (   -moz-min-device-pixel-ratio: 2),
-				only screen and (     -o-min-device-pixel-ratio: 2/1),
-				only screen and (        min-device-pixel-ratio: 2),
-				only screen and (                min-resolution: 192dpi),
-				only screen and (                min-resolution: 2dppx) { 		  
-				background: image-url('logo_2x.png') no-repeat center center;
-				background-size: contain
+			@media screen and (min--moz-device-pixel-ratio: 1.5),
+			       (-o-min-device-pixel-ratio: 3/2),
+			       (-webkit-min-device-pixel-ratio: 1.5),
+			       (min-device-pixel-ratio: 1.5),
+			       (min-resolution: 144dpi),
+			       (min-resolution: 1.5dppx) {
+			 
+				background-image: image-url('logo_2x.png');
+			 
 			}
+
 	}
 .cart {
 		@media screen #{$break-max-mobile}{
@@ -1714,6 +1715,11 @@ form#v65-checkBilling .v65-additionalComments {
 				color: #666;
 				font-weight: 300;
 			}
+		}
+
+		.v65-product-subtitle {
+			margin: 0 0 5px 10px;
+			width: 73%;
 		}
 
 		.v65-product-photo {
