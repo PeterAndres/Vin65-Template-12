@@ -78,6 +78,7 @@ $altButtonColor: #ccc; // Alternate Button Style
 $footerButton: #FBAF3F; // Styles any Main Buttons in the Footer
 
 $headerBackgroundColor: #66CDAA; // Home Page Banner background color
+$homepageBannerText: #333;
 $ourWinesBorderColor: #1a2632; // Home Page Our Wines top border color
 $ourWinesBackgroundColor: #1a2632; // Home Page Our Wines background color
 $footerUpperBackgroundColor: #66CDAA; // Upper Footer background color
@@ -99,6 +100,7 @@ $borderEventsColor: #FBAF3F; // Events Container Color
 // $footerButton: #667F00; // Styles any Main Buttons in the Footer
 
 // $headerBackgroundColor: #A2CC00; // Home Page Banner background color
+// $homepageBannerText: #D0D0D0;
 // $ourWinesBorderColor: #677F06; // Home Page Our Wines top border color
 // $ourWinesBackgroundColor: #677F06; // Home Page Our Wines background color
 // $footerUpperBackgroundColor: #A2CC00; // Upper Footer background color
@@ -120,6 +122,7 @@ $borderEventsColor: #FBAF3F; // Events Container Color
 // $footerButton: #CCC; // Styles any Main Buttons in the Footer
 
 // $headerBackgroundColor: #64ADCC; // Home Page Banner background color
+// $homepageBannerText: #333;
 // $ourWinesBorderColor: #3E6C7F; // Home Page Our Wines top border color
 // $ourWinesBackgroundColor: #3E6C7F; // Home Page Our Wines background color
 // $footerUpperBackgroundColor: #64ADCC; // Upper Footer background color
@@ -141,6 +144,7 @@ $borderEventsColor: #FBAF3F; // Events Container Color
 // $footerButton: #7EBFB9; // Styles any Main Buttons in the Footer
 
 // $headerBackgroundColor: #20120A; // Home Page Banner background color
+// $homepageBannerText: #D0D0D0;
 // $ourWinesBorderColor: #7EBFB9; // Home Page Our Wines top border color
 // $ourWinesBackgroundColor: #7EBFB9; // Home Page Our Wines background color
 // $footerUpperBackgroundColor: #20120A; // Upper Footer background color
@@ -680,6 +684,10 @@ nav{
 	.v65-pod {
 		max-width: 1024px;
 		margin: 0 auto;
+	}
+
+	h1, h2, h3, h4, h5, h6, p {
+		color: $homepageBannerText;
 	}
 
 	.v65-podDescription {
