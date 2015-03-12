@@ -56,29 +56,29 @@
 	</section><!--/Upper Content-->
 	
 	<footer>
-			<div class="footerUpper">
-				<section class="container v65-group">
-					<div class="left">
-						<v65:pods location="Contact Us"></v65:pods>
-					</div>
-					<div class="right">
-						<v65:pods location="Social Title" type="Title"></v65:pods>
-						<ul><v65:contentblock group="Social Icons"></v65:contentblock></ul>
-						<v65:subscribe contactType="Newsletter"></v65:subscribe>
-					</div>	
-				</section>
-			</div><!--/footerUpper-->
-			
-			<div class="footerLower">
-				<section class="container v65-group">
-					<a class="backToTop hideText" href="#">back to top</a>
-					<v65:layoutFooterNav></v65:layoutFooterNav>
-					<p class="accolade">
-						<v65:vin65Accolade></v65:vin65Accolade> | <v65:copyright></v65:copyright>
-					</p>
-				</section>
-			</div><!--/footerLower-->
-		</footer>
+		<div class="footerUpper">
+			<section class="container v65-group">
+				<div class="left">
+					<v65:pods location="Contact Us"></v65:pods>
+				</div>
+				<div class="right">
+					<v65:pods location="Social Title" type="Title"></v65:pods>
+					<ul><v65:customFile file="/v65html/_social.html"></v65:customFile></ul>
+					<v65:subscribe contactType="Newsletter"></v65:subscribe>
+				</div>	
+			</section>
+		</div><!--/footerUpper-->
+		
+		<div class="footerLower">
+			<section class="container v65-group">
+				<a class="backToTop hideText" href="#">back to top</a>
+				<v65:layoutFooterNav></v65:layoutFooterNav>
+				<p class="accolade">
+					<v65:vin65Accolade></v65:vin65Accolade> | <v65:copyright></v65:copyright>
+				</p>
+			</section>
+		</div><!--/footerLower-->
+	</footer>
 		
 
 		<v65:js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js,/assets/js/jquery.sidr.min.js">
