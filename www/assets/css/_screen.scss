@@ -1065,6 +1065,11 @@ nav{
 
 		}
 
+		i {
+			font-size: 1.7em;
+			padding: 0 3px;
+		}
+
 		.v65-podTitle {
 			@extend h2
 		}
@@ -1919,20 +1924,60 @@ form#v65-checkBilling .v65-additionalComments {
 	.col2 { 
 		float: left;
 		margin-left: 6%;
-		width: 36%;
-
-		.v65-formRight {
-			float: none;
-		}
+		width: 47%;
 	}
 
 	.col2:first-child { 
 		float: left;
 		margin-left: 0%;
-		width: 36%;
+		width: 47%;
 	}
 
-	@media screen and (max-width: 767px) {
+	.col22 {
+		float: left;
+		margin-left: 6%;
+		width: 29%;
+	}
+
+	.col22:first-child {
+		margin-left: 0;
+		width: 65%;
+	}
+
+	.col3 { 
+		float: left;
+		margin-left: 5%;
+		width: 30%;
+	}
+
+	.col3:first-child { 
+		float: left;
+		margin-left: 0%;
+		width: 30%;
+	}
+
+	.col4 {
+		float: left;
+		margin-left: 3%;
+		width: 22.7%;
+	}
+
+	.col4:first-child {
+		margin-left: 0;
+	}
+
+	@media screen and (max-width: 850px) {
+		.col4 {
+			margin: 0 2% 3em;
+			width: 46%
+		}
+
+		.col4:first-child {
+			margin-left: 2%;
+		}
+	}
+
+	@media screen and (max-width: 580px) {
 
 		.col2 { 
 			float: none;
@@ -1946,6 +1991,31 @@ form#v65-checkBilling .v65-additionalComments {
 			width: 100%;
 		}
 
-	}
+		.col22,
+		.col22:first-child {
+			float: none;
+			margin: 0 0 2em;
+			width: 100%;
+		}
 
+		.col3 { 
+			float: none;
+			margin-left: 0;
+			margin-bottom: 1.5em;
+			width: 100%;
+		}
+
+		.col3:first-child { 
+			float: none;
+			width: 100%;
+		}
+
+		.col4,
+		.col4:first-child {
+			float: none;
+			margin: 0 0 2em;
+			width: 100%;
+		}
+
+	}
 

@@ -1,1 +1,2342 @@
-@charset "utf-8";@import url("//fonts.googleapis.com/css?family=Lato:300,400,700,400italic");@font-face{font-family:'fontello';src:url("../font/fontello.eot?96886464");src:url("../font/fontello.eot?96886464#iefix") format("embedded-opentype"),url("../font/fontello.woff?96886464") format("woff"),url("../font/fontello.ttf?96886464") format("truetype"),url("../font/fontello.svg?96886464#fontello") format("svg");font-weight:normal;font-style:normal}[class^="icon-"]:before,[class*=" icon-"]:before{font-family:"fontello";font-style:normal;font-weight:normal;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em}.icon-youtube:before{content:'\55'}.icon-acrobat:before{content:'\e3'}.icon-home:before{content:'\2302'}.icon-star:before{content:'\2605'}.icon-star-empty:before{content:'\2606'}.icon-menu:before{content:'\2630'}.icon-heart-empty:before{content:'\2661'}.icon-heart:before{content:'\2665'}.icon-layout:before{content:'\268f'}.icon-mail:before{content:'\2709'}.icon-up-bold:before{content:'\e800'}.icon-down-bold:before{content:'\e801'}.icon-location:before{content:'\e724'}.icon-basket:before{content:'\e73d'}.icon-vimeo:before{content:'\f306'}.icon-twitter:before{content:'\f309'}.icon-facebook:before{content:'\f30e'}.icon-gplus:before{content:'\f30f'}.icon-pinterest:before{content:'\f312'}.icon-video:before{content:'🎬'}.icon-user:before{content:'👤'}.icon-monitor:before{content:'💻'}.icon-phone-1:before{content:'📞'}.icon-arrows-ccw:before{content:'\e802'}.icon-search-1:before{content:'🔍'}/*! normalize.css v2.1.2 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:0.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}body{background-color:#fff;font-size:75%;color:#333;font-family:"Lato",sans-serif;line-height:1.8em}a{color:#d35400;text-decoration:none}a:hover,a:focus,a:active{text-decoration:underline}h1,h2,.footerUpper .right .v65-podTitle,h3,h4,h5,h6,p,table,ul,ol{margin-top:0;padding-top:0}ul,ol,dl,p,table,pre{margin-bottom:1em}h1,h2,.footerUpper .right .v65-podTitle,h3,h4,h5,h6{color:#333;font-family:"Lato",sans-serif;font-weight:200;margin:0}h1{font-size:32px;line-height:1.2;margin-bottom:0.6em}@media screen and (max-width: 768px){h1{font-size:24px}}h2,.footerUpper .right .v65-podTitle{font-size:26px;line-height:1.2em;margin:0.25em  0 0.5em}@media screen and (max-width: 580px){h2,.footerUpper .right .v65-podTitle{font-size:22px}}h3{font-size:22px;line-height:1.2;margin-bottom:0.6em}@media screen and (max-width: 580px){h3{font-size:20px}}h4{font-size:18px;line-height:1.5}h5{font-size:14px;line-height:1.5}h6{font-size:12px;line-height:1.5}img{height:auto !important;max-width:100%}form{margin-bottom:1em}legend{color:#111}hr{background-color:#666;border:0;color:#666;height:1px}strong{font-weight:400}.hideText{overflow:hidden;text-indent:100%;white-space:nowrap}.hideText a{display:block;height:100%}header{width:100%;z-index:100;padding:20px 0}@media screen and (min-width: 767px){header{position:relative}}@media screen and (max-width: 768px){header{padding:0}}.logo{background:url('../images/logo.png?1418338004') no-repeat center center;background-size:contain;height:68px;display:block;text-align:center;width:45%;margin:0 auto}@media screen and (min-width: 768px) and (max-width: 1023px){.logo{float:left;margin:2% 0 0 10px;text-align:left;width:240px}}@media screen and (min-width: 1024px){.logo{float:left;margin-top:10px;margin-left:10px;text-align:left;width:240px}}@media screen and (max-width: 768px){.logo{float:none;margin:0 auto 0}}@media screen and (max-width: 580px){.logo{margin-bottom:4.5%;margin-top:22%}}@media screen and (min-width: 400px) and (max-width: 595px){.logo{margin-top:15%}}@media screen and (max-width: 768px){.logo{width:65%}}@media screen and (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx){.logo{background-image:url('../images/logo_2x.png?1418338004')}}@media screen and (max-width: 580px){.cart{display:none}}#productSearch{float:right;margin:50px 0 0 0;width:250px}@media screen and (max-width: 768px){#productSearch{width:100%;margin:3% 0}}#productSearch fieldset{border:none}#productSearch #v65-searchWidgetInput input{float:left;margin:0 5px 0 0;width:150px}@media screen and (max-width: 768px){#productSearch #v65-searchWidgetInput input{margin:0 2%;width:65%}}@media screen and (max-width: 768px){#productSearch .defaultBtn{width:25%}}@media screen and (max-width: 580px){#user-tools{background:#333;min-height:45px;position:fixed;width:100%;-webkit-box-shadow:2px 2px 2px 2px #333;box-shadow:2px 2px 2px 2px #333}}@media screen and (max-width: 1024px){#user-tools{margin:0 19px 25px 0}}#user-tools .v65-yourAccount,#user-tools .v65-editProfile{width:30%}#user-tools .v65-login,#user-tools .v65-logout{width:20%}@media screen and (max-width: 1024px){#user-tools .v65-login,#user-tools .v65-logout{line-height:24px}}@media screen and (max-width: 580px){#user-tools .v65-login,#user-tools .v65-logout{line-height:4em}}@media screen and (max-width: 580px){#user-tools #v65-modalCart{width:90%}}@media screen and (max-width: 1024px){#user-tools #v65-modalCart{line-height:50px;right:10px}}#mobile-header{display:none}@media screen and (max-width: 580px){#mobile-header{box-sizing:border-box;display:block;float:left;width:13%;padding:9px 0 0 5px}}nav{font-size:13px;z-index:101;height:24px;width:100%;position:relative;margin:50px 0 0 0}@media screen and (max-width: 580px){nav{display:none}}@media screen and (max-width: 1024px){nav{margin-bottom:30px;margin-top:0;text-align:center}}nav ul{margin:0;padding:0;display:inline-block}@media screen and (min-width: 767px){nav ul{float:right;margin:0 3% 0 0;text-align:left}}@media screen and (min-width: 1025px){nav ul{margin:0}}@media screen and (max-width: 768px){nav ul{float:none;margin-left:20px}}nav ul li{margin:0;padding:0;height:26px;line-height:45px;display:inline-block}@media screen and (min-width: 767px){nav ul li{float:left;height:26px;line-height:28px;margin:0  0 0 40px;position:relative;display:inline}}@media screen and (min-width: 1025px){nav ul li{float:left;margin:0 0 0 40px;position:relative;display:inline}}nav ul li a{font-family:"Lato",sans-serif;font-weight:300;font-size:13px;text-transform:uppercase;color:#666;display:block;height:30px;line-height:44px;margin:0 4px;padding:0 6px;position:relative;text-decoration:none}@media screen and (min-width: 767px){nav ul li a{height:26px;line-height:32px;display:inline-block;margin:0;padding:0}}nav ul li a:hover{color:#333;text-decoration:none;border-bottom:3px solid #fbaf3f}nav ul li a.v65-selected{border-bottom:3px solid #fbaf3f}nav ul li:hover ul{display:block;font-size:12px}nav ul li ul{background-color:#fff;display:none;position:absolute;width:180px;background-color:#fff;border:1px solid #ccc;margin:0}nav ul li ul li{background-color:#fff;display:block;float:none;margin:0;text-align:left;width:180px}nav ul li ul li a{background-color:#fff;color:#666;display:block;float:none;height:26px;line-height:28px;margin:0;padding:0 0 0 10px;text-align:left;text-transform:none;width:170px}nav ul li ul li a:hover{color:#000;text-decoration:underline;border:none}nav ul li ul li a .v65-selected{text-decoration:underline}nav ul li.v65-home{display:inline-block}nav ul li.v65-pageAParent{color:#000}.subMenu{border-right:1px solid #ccc;float:left;margin:1% 3% 3% 0;padding-right:2%;width:15.8%}@media screen and (max-width: 768px){.subMenu{width:95%;margin:0 0 30px 3%;border-right:none}}@media screen and (max-width: 1024px){.subMenu{margin:1% 1% 3% 2%}}.subMenu ul{margin:0;padding:0;list-style:none;width:100%}@media screen and (max-width: 768px){.subMenu ul{border-top:1px solid #999}}@media screen and (min-width: 767px){.subMenu ul{margin:0 0 2% 1%;padding:0}}.subMenu ul li{margin:0;padding:0}@media screen and (max-width: 768px){.subMenu ul li{border-bottom:1px solid #999;text-align:center}}@media screen and (min-width: 1025px){.subMenu ul li{line-height:2;display:list-item}}@media screen and (max-width: 768px){.subMenu ul li a{display:block;font-size:1em;line-height:3em}}.subMenu ul li ul{margin:0;padding:0;list-style:none;width:100%}@media screen and (min-width: 767px){.subMenu ul li ul{margin-left:10px;width:160px;border:none}}.subMenu ul li .v65-pageAParent{color:#000}.subMenu ul li .v65-leftSelected{color:#000;font-weight:bold}@media screen and (max-width: 768px){.subMenu h3{display:none}}.container{margin:0 auto;position:relative;width:1024px}@media screen and (max-width: 1024px){.container{width:100%}}.bannerHome{background:#66cdaa;width:100%}.bannerHome .v65-pod{max-width:1024px;margin:0 auto}.bannerHome h1,.bannerHome h2,.bannerHome .footerUpper .right .v65-podTitle,.footerUpper .right .bannerHome .v65-podTitle,.bannerHome h3,.bannerHome h4,.bannerHome h5,.bannerHome h6,.bannerHome p{color:#333}.bannerHome .v65-podDescription{float:left;padding-top:6%;position:relative;text-align:right;width:57%}.bannerHome .v65-podDescription img{max-width:100%}@media screen and (max-width: 768px){.bannerHome .v65-podDescription{padding:6% 6%;text-align:center;width:87%}}.bannerHome .v65-podImage{float:left;max-height:375px;padding-top:2%;position:relative;text-align:center;width:43%}.bannerHome .v65-podImage img{max-width:100%}@media screen and (max-width: 768px){.bannerHome .v65-podImage{display:none}}.bannerInterior{background:#66cdaa;height:3px;margin-bottom:30px;width:100%}#slider{height:80%;overflow:hidden;width:100%}.homepageContent{background:#fff;box-shadow:0 0 20px #ccc}.homepageText{float:left;margin-left:15px}.homepageText img{width:100%}@media screen and (max-width: 580px){.homepageText{padding:3%;margin:0;width:90%}}@media screen and (max-width: 768px){.homepageText{padding:0 3% 3% 2%;width:95%;margin:0}}@media screen and (min-width: 768px) and (max-width: 1024px){.homepageText{padding:3% 0% 0 2%;width:50%;margin:0}}@media screen and (min-width: 1025px){.homepageText{padding:30px 30px 30px 20px;width:55%;margin:0}}.homepageProductGroup{float:left}@media screen and (max-width: 580px){.homepageProductGroup{padding:3%;margin:0}}@media screen and (min-width: 768px) and (max-width: 1024px){.homepageProductGroup{padding:3% 3% 0 3%;width:40%}}@media screen and (max-width: 768px){.homepageProductGroup{padding:30px 3% 0 3%}}@media screen and (min-width: 1025px){.homepageProductGroup{padding:30px 0 0;width:40%}}.homepageProductGroup .v65-productGroup-title{display:none}@media screen and (max-width: 580px){.homepageProductGroup .v65-product-title a{font-size:22px}}.homepageProductGroup .v65-product-teaser{width:90%}.homepageProductGroup .v65-product-photo{float:left;width:25%;margin-right:3%}@media screen and (min-width: 767px){.homepageProductGroup .v65-productGroup-products{width:95%}}@media screen and (max-width: 1024px){.homepageProductGroup .v65-product-quickView{display:none !important}}@media screen and (max-width: 580px){.homepageProductGroup .v65-addToCartCase{display:none}}.homepageProductGroup .homepageProductGroup .v65-product-photo img{max-width:100%}.ctaLeft{float:left;width:49%}@media screen and (max-width: 1024px){.ctaLeft{padding-left:10px;box-sizing:border-box}}@media screen and (max-width: 768px){.ctaLeft{width:95%}}.ctaLeft img{width:100% !important}.ctaRight{float:left;width:49%;padding-left:20px;box-sizing:border-box}@media screen and (max-width: 768px){.ctaRight{width:95%}}.ctaRight img{width:100% !important;margin-top:20px}.aboutHome{padding:30px 0}.ourWinesHome{border-top:5px solid #1a2632;background:#1a2632;padding:30px 0}.ourWinesHome p{color:#fff}.ourWinesHome h2,.ourWinesHome .footerUpper .right .v65-podTitle,.footerUpper .right .ourWinesHome .v65-podTitle{color:#fff}@media screen and (max-width: 768px){.ourWinesHome{width:100%}}.eventsHome{padding:30px 0}@media screen and (max-width: 768px){.eventsHome h2,.eventsHome .footerUpper .right .v65-podTitle,.footerUpper .right .eventsHome .v65-podTitle{margin-left:10px}}.Event{background:#F1F1F2;min-height:100px;padding:0}@media screen and (min-width: 1025px){.Event{width:48%}}@media screen and (max-width: 1024px){.Event{margin:0 0 10px 10px !important;width:95%}}.Event .upperEvents{padding:10px 0}.Event .upperEvents .date{border-left:3px solid #fbaf3f;width:15%;display:inline-block;padding-left:10px}@media screen and (max-width: 580px){.Event .upperEvents .date{width:30%}}.Event .upperEvents .date p{margin:0;line-height:20px;font-weight:200}.Event .upperEvents .date p strong{font-size:32px;line-height:30px}.Event .upperEvents .eventName{display:inline-block;width:75%;padding-left:10px}@media screen and (max-width: 580px){.Event .upperEvents .eventName{width:50%}}.Event .upperEvents .eventName p{line-height:11px}@media screen and (max-width: 580px){.Event .upperEvents .eventName p{line-height:20px}}.Event .upperEvents .eventName p strong{font-weight:400;font-size:19px}.Event .middleEvents{padding:10px;background:#fff}.Event .lowerEvents{text-align:right}.Event .lowerEvents a{margin-right:5px}.content{background:#fff;box-shadow:0 0 20px #ccc;padding:30px}@media screen and (max-width: 768px){.content{box-shadow:none;padding:0;border-top:2px solid #CCC}}.contentWide{padding:30px;margin-bottom:30px}@media screen and (max-width: 768px){.contentWide{box-shadow:none;padding:3%}}@media screen and (min-width: 767px){.contentWide .subMenu{display:none}}.contentCart{background:#fff;box-shadow:0 0 20px #ccc;padding:30px}@media screen and (max-width: 768px){.contentCart{box-shadow:none;padding:0.2em;border-top:2px solid #CCC}}.pageContent{float:right;width:75%;margin-bottom:30px}@media screen and (max-width: 768px){.pageContent{width:94%;padding:3%;margin-bottom:0}}@media screen and (max-width: 1024px){.pageContent{padding-right:2%}}.footerUpper{background:#66cdaa;padding:30px 2%}.footerUpper p{color:#fff}.footerUpper a{color:#fff;text-decoration:underline;text-decoration:none}.footerUpper h2,.footerUpper .right .v65-podTitle{color:#fff}.footerUpper button span{background:#fbaf3f !important}.footerUpper .left{float:left;margin-right:45px;width:25%;border-right:1px solid #fff}@media screen and (max-width: 580px){.footerUpper .left{width:100%;border:none;text-align:center}}.footerUpper .right{float:left;width:40%;text-align:left}@media screen and (max-width: 580px){.footerUpper .right{width:100%;text-align:center}}.footerUpper .right ul{padding:0;list-style:none}.footerUpper .right li{display:inline}.footerUpper .right li i{font-size:24px}@media screen and (max-width: 580px){.footerUpper .v65-podTitle{margin-left:7px}}.footerUpper button.defaultBtn{background:#fbaf3f !important}.footerUpper #v65-subscribeWidget{margin-top:15px}@media screen and (max-width: 580px){.footerUpper #v65-subscribeWidget input{width:25%;height:50px}}@media screen and (max-width: 768px){.footerUpper #v65-subscribeWidget input{width:40%}}.footerLower{background:#333;color:#fff;padding:0 2%}.footerLower ul{list-style:none;width:100%;margin:0;padding:0}@media screen and (max-width: 580px){.footerLower ul{text-align:center}}.footerLower li{margin:0;padding:0;width:100%}@media screen and (min-width: 767px){.footerLower li{display:inline;padding-right:5px;border:none}}.footerLower li a{font-size:1em;line-height:3em;display:block;color:#fff}@media screen and (min-width: 767px){.footerLower li a{display:inline;font-size:0.917em;position:relative}.footerLower li a:hover{color:#8bf0bd}}.footerLower .accolade{color:#fff;font-size:9px;margin:0 3px 5px 0}@media screen and (max-width: 580px){.footerLower .accolade{text-align:center}}.footerLower .accolade a{color:#fff;font-size:9px}.backToTop{background:url("/assets/images/upButton.png");display:block;height:29px;position:absolute;right:0;top:20px;width:25px}@media screen and (min-width: 767px){.backToTop{float:right;margin-top:20px;position:relative;top:0}}.backToTop:hover{background:url("/assets/images/upButtonH.png")}footer{width:100%}@media screen and (min-width: 767px){footer{color:#000}}@media screen and (min-width: 768px) and (max-width: 1024px){.footerLeft{background:none;width:85%}}@media screen and (max-width: 580px){.footerLeft{width:85%;border:none;text-align:center;padding-left:5px}}@media screen and (max-width: 1024px){.footerLeft{margin-left:10px}}.footerLeft a{color:#fff;font-size:12px;margin-left:3px}#v65-subscribeWidget input{width:150px;height:40px;border:none;background:#FAFAFA}.blogContent{padding:5%;width:90%}@media screen and (min-width: 767px){.blogContent{width:65%;padding:5%;float:left}}@media screen and (min-width: 1025px){.blogContent{width:600px;padding:20px 25px 0 0;float:left}}.blogRightWrapper{display:none}@media screen and (min-width: 767px){.blogRightWrapper{display:block;width:20%;padding:20px 0 0 0;float:right}}@media screen and (min-width: 1025px){.blogRightWrapper{float:right;padding:20px 0 0 0;width:325px}}.blogRightWrapper ul{list-style:none;margin:0 0 1em;padding:0}.blogRightWrapper ul li{font-size:11px;margin:0 0 0 10px}.blogFilterLeft{display:none;padding:0}@media screen and (min-width: 767px){.blogFilterLeft{width:auto;display:block}}@media screen and (min-width: 1025px){.blogFilterLeft{display:block;float:left;padding:0 25px 0 0;width:150px}}.blogFilterRight{display:none}@media screen and (min-width: 767px){.blogFilterRight{width:auto;display:block}}@media screen and (min-width: 1025px){.blogFilterRight{display:block;float:left;width:150px}}.printBody{background-color:#66cdaa;background-image:none;margin:0;padding:0}.printWrapper{margin:20px auto;width:730px;background:#fff;-webkit-box-shadow:1px 1px 3px 2px #999;box-shadow:1px 1px 3px 2px #999}.printHeader{height:150px;width:730px;margin-bottom:15px;border-bottom:1px solid #999}.printContent{text-align:left;width:700px;padding:10px}.receiptFooter{text-align:center;padding-bottom:5px}.receiptFooter strong{font-weight:600}#v65-cartSubtotal td,.v65-cartTax td,#v65-cartTable th{background-color:#F1F1F1}#v65-cartTotal td{background-color:#CCC}button.defaultBtn,button.modalBtn,button.largeBtn{background:#66cdaa;border-radius:0;font-family:"Lato",sans-serif;margin-bottom:5px}button.defaultBtn span,button.modalBtn span,button.largeBtn span{background:#66cdaa;color:#fff;border-radius:0;padding:5px 15px}@media screen and (max-width: 580px){button.defaultBtn span,button.modalBtn span,button.largeBtn span{padding:0 25px}}button.defaultBtn:hover,button.modalBtn:hover,button.largeBtn:hover{background:#8cdabf}button.altBtn,button.altModalBtn,button.altLargeBtn{background:#ccc;color:#fff;font-family:"Lato",sans-serif;margin-bottom:5px}button.altBtn span,button.altModalBtn span,button.altLargeBtn span{background:#ccc;color:#fff;border-radius:0;padding:5px 15px}@media screen and (max-width: 580px){button.altBtn span,button.altModalBtn span,button.altLargeBtn span{padding:0 25px}}button.altBtn:hover,button.altModalBtn:hover,button.altLargeBtn:hover{background:#e6e6e6}button.altBtn:hover span,button.altModalBtn:hover span,button.altLargeBtn:hover span{background:#e6e6e6}a.linkBtn,a.modalLinkBtn,a.largeLinkBtn,a.fullWidthBtn{background:#66cdaa;border-radius:0;font-family:"Lato",sans-serif;margin-bottom:5px}a.linkBtn span,a.modalLinkBtn span,a.largeLinkBtn span,a.fullWidthBtn span{background:#66cdaa;color:#fff;border-radius:0;padding:5px 15px}@media screen and (max-width: 580px){a.linkBtn span,a.modalLinkBtn span,a.largeLinkBtn span,a.fullWidthBtn span{padding:0 25px}}a.linkBtn:hover,a.modalLinkBtn:hover,a.largeLinkBtn:hover,a.fullWidthBtn:hover{background:#8cdabf;text-decoration:none}a.linkBtn:hover span,a.modalLinkBtn:hover span,a.largeLinkBtn:hover span,a.fullWidthBtn:hover span{background:#8cdabf}a.fullWidthBtn{display:block;font-size:16px;max-width:100%;text-align:center;width:100%}a.linkAltBtn,a.modalLinkAltBtn,a.modalLinkAltBtn{background:#ccc;border-radius:0;font-family:"Lato",sans-serif;margin-bottom:5px}a.linkAltBtn span,a.modalLinkAltBtn span,a.modalLinkAltBtn span{background:#ccc;border-radius:0;color:#fff;padding:5px 15px}@media screen and (max-width: 580px){a.linkAltBtn span,a.modalLinkAltBtn span,a.modalLinkAltBtn span{padding:0 25px}}a.linkAltBtn:hover,a.modalLinkAltBtn:hover,a.modalLinkAltBtn:hover{background:#e6e6e6}a.linkAltBtn:hover span,a.modalLinkAltBtn:hover span,a.modalLinkAltBtn:hover span{background:#e6e6e6}a.modalLinkBtn,a.modalLinkAltBtn,a.modalLinkAltBtn{min-width:auto}.v65-quickView-close a{border-radius:0;background:#e6e6e6}.v65-quickView-close a:hover{background:#e6e6e6}.v65-product-addToCart button{min-width:32%}.v65-productGroup{margin:0}.v65-product-addToCart{margin:0}.homepageProductGroup .v65-productGroup-products{text-align:left;width:100%;font-family:"Lato",sans-serif}.homepageProductGroup .v65-productGroup-title{color:#333;font-size:26px;line-height:1.2;margin:0.25em  0 0.5em}@media screen and (max-width: 580px){.homepageProductGroup .v65-productGroup-title{font-size:22px}}.homepageProductGroup .v65-productGroup-teaser{float:none;margin:0;width:100%;display:none}.homepageProductGroup .v65-productGroup-product{margin:0 0 1em;width:100%}.homepageProductGroup .v65-productGroup-product .v65-product-title{font-family:"Lato",sans-serif;font-size:28px;font-weight:200;margin-bottom:15px;line-height:25px}.homepageProductGroup .v65-productGroup-product .v65-product-title a{color:#333}@media screen and (min-width: 1025px){.homepageProductGroup .v65-productGroup-product .v65-product-title{width:250px}}#v65-signUpClubSummaryWrapper{margin-bottom:20px}.v65-product-sortBy{float:left;text-align:left;width:50%}.v65-product-sortBy form{padding:0;margin:0}.v65-product-sortBy form select{width:130px}@media screen and (max-width: 768px){.v65-socialMediaBar-FacebookLike{width:100%;overflow:hidden}}@media screen and (max-width: 570px){.v65-product2Up{width:100%}}@media screen and (max-width: 580px){.v65-product2Up .v65-product-inventoryMessage{display:none}}.v65-product2Up .v65-product-addToCart{clear:both}.v65-product2Up .v65-product-addToCart .v65-addToCart fieldset .v65-product-addToCart-quantity input{height:40px}@media screen and (max-width: 580px){.v65-product2Up .v65-product-addToCart .v65-addToCart fieldset .v65-product-addToCart-quantity input{padding:9px 15px}}@media screen and (max-width: 580px){.v65-product2Up .v65-product-socialBar{display:none}}.v65-product-addToCart-quantity input{height:40px}@media screen and (max-width: 580px){.v65-product-addToCart-quantity input{padding:4px 15px}}.twitterWrapper{width:300px;float:left;margin:0 0 20px 20px;clear:both}@media screen and (max-width: 768px){.twitterWrapper{width:90%;margin:0 auto;padding:5%}}.v65-product-sortBy{width:25%}.v65-product-pagination{width:75%}@media screen and (max-width: 1024px){.v65-product-quickView{display:none !important}}.v65-product-addToCart-quantity input{height:38px}.v65Left{float:left;margin:0 10px}.v65Right{float:left;margin-left:2%}.v65-product1Up{background:#F1F1F2;position:relative;border:1px solid #E2E2E2}.v65-product1Up .v65-product-title{float:left;width:95%;margin:10px 0 10px 10px}.v65-product1Up .v65-product-title a{color:#666;font-weight:300}.v65-product1Up .v65-product-subtitle{margin:0 0 5px 10px;width:73%}.v65-product1Up .v65-product-photo{float:right;width:24%;background:#fff;margin:0}.v65-product1Up .v65-product-teaser{width:80%;margin:0 0 5px 10px}.v65-product1Up .v65-product-reviewStats{margin:0 0 5px 10px}.v65-product1Up .v65-product-inventoryMessage{margin:0 0 5px 10px}.v65-product1Up .v65-product-addToCart-priceWrapper{display:block}.v65-product1Up .v65-product-addToCart{clear:none;margin-left:10px}.v65-product1Up .v65-product-socialBar{padding:5px 0 5px 5px;height:0px}.v65-product2Up{background:#F1F1F2;position:relative;border:1px solid #E2E2E2;width:47%}@media screen and (max-width: 768px){.v65-product2Up{width:95%}}.v65-product2Up .v65-product-title{float:left;width:73%;margin:10px 0 10px 10px}.v65-product2Up .v65-product-title a{color:#666;font-weight:300}.v65-product2Up .v65-product-photo{width:24%;background:#fff;margin:0}@media screen and (max-width: 768px){.v65-product2Up .v65-product-photo{width:23%;padding:10% 0 10%}}.v65-product2Up .v65-product-teaser{width:68%;margin:0 0 5px 10px}.v65-product2Up .v65-product-reviewStats{margin:0 0 5px 10px}.v65-product2Up .v65-product-inventoryMessage{margin:0 0 5px 10px}.v65-product2Up .v65-product-addToCart-priceWrapper{display:block}.v65-product2Up .v65-product-addToCart{clear:none;margin-left:10px}.v65-product2Up .v65-product-socialBar{padding:5px 0 5px 5px;height:0px}.v65-product3Up .v65-product-title a{color:#666;font-weight:300}.v65-product5Up .v65-product-title a{color:#666;font-weight:300}.v65-product-tabs .last a{border-radius:0}.v65-clubTitle{font-family:"Lato",sans-serif}.v65-productBadge{position:absolute;top:0;left:0}#v65-modalCartTable th{background-color:#fff}.v65-product-quickView{border-radius:0}.v65-productList tr:hover{background-color:#1a2632}.v65-productList tr.alternatRow:hover{background-color:#1a2632}.bannerText{float:left;padding-top:6%;position:relative;text-align:right;width:57%}.bannerText img{max-width:100%}@media screen and (max-width: 768px){.bannerText{padding:6% 6%;text-align:center;width:87%}}.bannerImage{float:left;max-height:375px;padding-top:2%;position:relative;text-align:center;width:43%}.bannerImage img{max-width:100%}@media screen and (max-width: 768px){.bannerImage{display:none}}.colWrapper{margin-bottom:2em;width:100%}.colWrapper:before,.colWrapper:after{content:"";display:table}.colWrapper:after{clear:both}.col2{float:left;margin-left:6%;width:36%}.col2 .v65-formRight{float:none}.col2:first-child{float:left;margin-left:0%;width:36%}@media screen and (max-width: 767px){.col2{float:none;margin-left:0;margin-bottom:1.5em;width:100%}.col2:first-child{float:none;width:100%}}
+@charset "utf-8";
+@import url("//fonts.googleapis.com/css?family=Lato:300,400,700,400italic");
+/* ======================================================================================================				
+	Font @ Import
+==================================================================================================== */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../font/icomoon.eot?-4xo876");
+  src: url("../font/icomoon.eot?#iefix-4xo876") format("embedded-opentype"), url("../font/icomoon.woff?-4xo876") format("woff"), url("../font/icomoon.ttf?-4xo876") format("truetype"), url("../font/icomoon.svg?-4xo876#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search-1:before {
+  content: "\f002";
+}
+
+.icon-phone-1:before {
+  content: "\f095";
+}
+
+.icon-mail:before {
+  content: "\f0e0";
+}
+
+.icon-acrobat:before {
+  content: "\f1c1";
+}
+
+.icon-down-bold:before {
+  content: "\e60a";
+}
+
+.icon-up-bold:before {
+  content: "\e60b";
+}
+
+.icon-comments:before {
+  content: "\e60c";
+}
+
+.icon-clock:before {
+  content: "\e60e";
+}
+
+.icon-link:before {
+  content: "\e60d";
+}
+
+.icon-location:before {
+  content: "\e609";
+}
+
+.icon-menu:before {
+  content: "\e600";
+}
+
+.icon-yelp:before {
+  content: "\e608";
+}
+
+.icon-facebook:before {
+  content: "\e601";
+}
+
+.icon-gplus:before {
+  content: "\e602";
+}
+
+.icon-instagram:before {
+  content: "\e607";
+}
+
+.icon-pinterest:before {
+  content: "\e603";
+}
+
+.icon-twitter:before {
+  content: "\e604";
+}
+
+.icon-vimeo:before {
+  content: "\e605";
+}
+
+.icon-youtube:before {
+  content: "\e606";
+}
+
+/* ======================================================================================================				
+	Normalize @ Import File
+==================================================================================================== */
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ====================================================================================================				
+	Vin65 Screen .SCSS
+==================================================================================================== */
+/* CSS Document - Vin65 Template 13 - Coded with love <3  */
+/* ====================================================================================================
+	Table of Contents - - - - 
+
+	1. Theme Settings & Themes 
+		a.) Global Settings
+		b.) Responsive Break Points
+
+	2. Typography - Copy into admin.css
+
+	3. Header
+		a. Header
+		b. User Tools
+		c.) Mobile Nav Controls
+
+	4. Navigation
+		a. Main Navigation
+		b. Sub Menu
+
+	5. Content
+		a. Global
+		b. Home Page Styles
+		c. Call to Action Styles
+		d. Events
+		e. Page Styles
+
+	6. Footer
+
+	7. Blog
+
+	8. Print
+
+	9. Buttons
+
+	10. v65 Overrides
+		a. Home Page Product Group Overrides
+		b. Checkout Overrides
+		c. Responsive Product
+		d. Product Page
+			i. 1 Up
+			ii. 2 Up
+			iii. 3 Up
+			iv. 5 Up 
+		e. Misc
+
+	11. Generic Content Styling
+		a. Generic Content
+		b. Column Styling
+*/
+/*   ===================================================================================================
+     2. Typography - These get copied into the admin.css
+======================================================================================================== */
+body {
+  background-color: white;
+  font-size: 75%;
+  color: #333333;
+  font-family: "Lato", sans-serif;
+  line-height: 1.8em;
+}
+
+a {
+  color: #d35400;
+  text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+}
+
+h1, h2, .footerUpper .right .v65-podTitle, h3, h4, h5, h6, p, table, ul, ol {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+ul, ol, dl, p, table, pre {
+  margin-bottom: 1em;
+}
+
+h1, h2, .footerUpper .right .v65-podTitle, h3, h4, h5, h6 {
+  color: #333;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 0.6em;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+h2, .footerUpper .right .v65-podTitle {
+  font-size: 26px;
+  line-height: 1.2em;
+  margin: 0.25em  0 0.5em;
+}
+@media screen and (max-width: 580px) {
+  h2, .footerUpper .right .v65-podTitle {
+    font-size: 22px;
+  }
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 0.6em;
+}
+@media screen and (max-width: 580px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+img {
+  height: auto !important;
+  max-width: 100%;
+}
+
+form {
+  margin-bottom: 1em;
+}
+
+legend {
+  color: #111;
+}
+
+hr {
+  background-color: #666;
+  border: 0;
+  color: #666;
+  height: 1px;
+}
+
+strong {
+  font-weight: 400;
+}
+
+.hideText {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.hideText a {
+  display: block;
+  height: 100%;
+}
+
+/*   ===================================================================================================
+     3. Header
+======================================================================================================== */
+/* ----- a. Header ---- */
+header {
+  width: 100%;
+  z-index: 100;
+  padding: 20px 0;
+}
+@media screen and (min-width: 767px) {
+  header {
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0;
+  }
+}
+
+.logo {
+  background: url('../images/logo.png?1418338004') no-repeat center center;
+  background-size: contain;
+  height: 68px;
+  display: block;
+  text-align: center;
+  width: 45%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo {
+    float: left;
+    margin: 2% 0 0 10px;
+    text-align: left;
+    width: 240px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .logo {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    width: 240px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    float: none;
+    margin: 0 auto 0;
+  }
+}
+@media screen and (max-width: 580px) {
+  .logo {
+    margin-bottom: 4.5%;
+    margin-top: 22%;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 595px) {
+  .logo {
+    margin-top: 15%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 65%;
+  }
+}
+@media screen and (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .logo {
+    background-image: url('../images/logo_2x.png?1418338004');
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .cart {
+    display: none;
+  }
+}
+
+#productSearch {
+  float: right;
+  margin: 50px 0 0 0;
+  width: 250px;
+}
+@media screen and (max-width: 768px) {
+  #productSearch {
+    width: 100%;
+    margin: 3% 0;
+  }
+}
+#productSearch fieldset {
+  border: none;
+}
+#productSearch #v65-searchWidgetInput input {
+  float: left;
+  margin: 0 5px 0 0;
+  width: 150px;
+}
+@media screen and (max-width: 768px) {
+  #productSearch #v65-searchWidgetInput input {
+    margin: 0 2%;
+    width: 65%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #productSearch .defaultBtn {
+    width: 25%;
+  }
+}
+
+/* ----- b. User Tools ----- */
+@media screen and (max-width: 580px) {
+  #user-tools {
+    background: #333;
+    min-height: 45px;
+    position: fixed;
+    width: 100%;
+    -webkit-box-shadow: 2px 2px 2px 2px #333;
+    box-shadow: 2px 2px 2px 2px #333;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #user-tools {
+    margin: 0 19px 25px 0;
+  }
+}
+#user-tools .v65-yourAccount, #user-tools .v65-editProfile {
+  width: 30%;
+}
+#user-tools .v65-login, #user-tools .v65-logout {
+  width: 20%;
+}
+@media screen and (max-width: 1024px) {
+  #user-tools .v65-login, #user-tools .v65-logout {
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 580px) {
+  #user-tools .v65-login, #user-tools .v65-logout {
+    line-height: 4em;
+  }
+}
+@media screen and (max-width: 580px) {
+  #user-tools #v65-modalCart {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #user-tools #v65-modalCart {
+    line-height: 50px;
+    right: 10px;
+  }
+}
+
+/* ---- c. Mobile Navigation ----- */
+#mobile-header {
+  display: none;
+}
+
+@media screen and (max-width: 580px) {
+  #mobile-header {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 13%;
+    padding: 9px 0 0 5px;
+  }
+}
+/*   ===================================================================================================
+     4. Navigation
+======================================================================================================== */
+/* ----- a. Main Navigation ----- */
+nav {
+  font-size: 13px;
+  z-index: 101;
+  height: 24px;
+  width: 100%;
+  position: relative;
+  margin: 50px 0 0 0;
+}
+@media screen and (max-width: 580px) {
+  nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  nav {
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-align: center;
+  }
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+@media screen and (min-width: 767px) {
+  nav ul {
+    float: right;
+    margin: 0 3% 0 0;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1025px) {
+  nav ul {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    float: none;
+    margin-left: 20px;
+  }
+}
+nav ul li {
+  margin: 0;
+  padding: 0;
+  height: 26px;
+  line-height: 45px;
+  display: inline-block;
+}
+@media screen and (min-width: 767px) {
+  nav ul li {
+    float: left;
+    height: 26px;
+    line-height: 28px;
+    margin: 0  0 0 40px;
+    position: relative;
+    display: inline;
+  }
+}
+@media screen and (min-width: 1025px) {
+  nav ul li {
+    float: left;
+    margin: 0 0 0 40px;
+    position: relative;
+    display: inline;
+  }
+}
+nav ul li a {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #666;
+  display: block;
+  height: 30px;
+  line-height: 44px;
+  margin: 0 4px;
+  padding: 0 6px;
+  position: relative;
+  text-decoration: none;
+}
+@media screen and (min-width: 767px) {
+  nav ul li a {
+    height: 26px;
+    line-height: 32px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+}
+nav ul li a:hover {
+  color: #333333;
+  text-decoration: none;
+  border-bottom: 3px solid #fbaf3f;
+}
+nav ul li a.v65-selected {
+  border-bottom: 3px solid #fbaf3f;
+}
+nav ul li:hover ul {
+  display: block;
+  font-size: 12px;
+}
+nav ul li ul {
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  width: 180px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 0;
+}
+nav ul li ul li {
+  background-color: #fff;
+  display: block;
+  float: none;
+  margin: 0;
+  text-align: left;
+  width: 180px;
+}
+nav ul li ul li a {
+  background-color: #fff;
+  color: #666;
+  display: block;
+  float: none;
+  height: 26px;
+  line-height: 28px;
+  margin: 0;
+  padding: 0 0 0 10px;
+  text-align: left;
+  text-transform: none;
+  width: 170px;
+}
+nav ul li ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+  border: none;
+}
+nav ul li ul li a .v65-selected {
+  text-decoration: underline;
+}
+nav ul li.v65-home {
+  display: inline-block;
+}
+nav ul li.v65-pageAParent {
+  color: black;
+}
+
+/* ----- b. Sub Menu ----- */
+.subMenu {
+  border-right: 1px solid #ccc;
+  float: left;
+  margin: 1% 3% 3% 0;
+  padding-right: 2%;
+  width: 15.8%;
+}
+@media screen and (max-width: 768px) {
+  .subMenu {
+    width: 95%;
+    margin: 0 0 30px 3%;
+    border-right: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .subMenu {
+    margin: 1% 1% 3% 2%;
+  }
+}
+.subMenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .subMenu ul {
+    border-top: 1px solid #999;
+  }
+}
+@media screen and (min-width: 767px) {
+  .subMenu ul {
+    margin: 0 0 2% 1%;
+    padding: 0;
+  }
+}
+.subMenu ul li {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .subMenu ul li {
+    border-bottom: 1px solid #999;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .subMenu ul li {
+    line-height: 2;
+    display: list-item;
+  }
+}
+@media screen and (max-width: 768px) {
+  .subMenu ul li a {
+    display: block;
+    font-size: 1em;
+    line-height: 3em;
+  }
+}
+.subMenu ul li ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  .subMenu ul li ul {
+    margin-left: 10px;
+    width: 160px;
+    border: none;
+  }
+}
+.subMenu ul li .v65-pageAParent {
+  color: #000;
+}
+.subMenu ul li .v65-leftSelected {
+  color: #000;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .subMenu h3 {
+    display: none;
+  }
+}
+
+/*   ===================================================================================================
+     5. Content
+======================================================================================================== */
+/* ----- a. Global Site Structure ----- */
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 1024px;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* ----- b. Homepage Styles ----- */
+.bannerHome {
+  background: mediumaquamarine;
+  width: 100%;
+}
+.bannerHome .v65-pod {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.bannerHome h1, .bannerHome h2, .bannerHome .footerUpper .right .v65-podTitle, .footerUpper .right .bannerHome .v65-podTitle, .bannerHome h3, .bannerHome h4, .bannerHome h5, .bannerHome h6, .bannerHome p {
+  color: #333333;
+}
+.bannerHome .v65-podDescription {
+  float: left;
+  padding-top: 6%;
+  position: relative;
+  text-align: right;
+  width: 57%;
+}
+.bannerHome .v65-podDescription img {
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .bannerHome .v65-podDescription {
+    padding: 6% 6%;
+    text-align: center;
+    width: 87%;
+  }
+}
+.bannerHome .v65-podImage {
+  float: left;
+  max-height: 375px;
+  padding-top: 2%;
+  position: relative;
+  text-align: center;
+  width: 43%;
+}
+.bannerHome .v65-podImage img {
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .bannerHome .v65-podImage {
+    display: none;
+  }
+}
+
+.bannerInterior {
+  background: mediumaquamarine;
+  height: 3px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+#slider {
+  height: 80%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.homepageContent {
+  background: #fff;
+  box-shadow: 0 0 20px #cccccc;
+}
+
+.homepageText {
+  float: left;
+  margin-left: 15px;
+}
+.homepageText img {
+  width: 100%;
+}
+@media screen and (max-width: 580px) {
+  .homepageText {
+    padding: 3%;
+    margin: 0;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .homepageText {
+    padding: 0 3% 3% 2%;
+    width: 95%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .homepageText {
+    padding: 3% 0% 0 2%;
+    width: 50%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .homepageText {
+    padding: 30px 30px 30px 20px;
+    width: 55%;
+    margin: 0;
+  }
+}
+
+.homepageProductGroup {
+  float: left;
+}
+@media screen and (max-width: 580px) {
+  .homepageProductGroup {
+    padding: 3%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .homepageProductGroup {
+    padding: 3% 3% 0 3%;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .homepageProductGroup {
+    padding: 30px 3% 0 3%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .homepageProductGroup {
+    padding: 30px 0 0;
+    width: 40%;
+  }
+}
+.homepageProductGroup .v65-productGroup-title {
+  display: none;
+}
+@media screen and (max-width: 580px) {
+  .homepageProductGroup .v65-product-title a {
+    font-size: 22px;
+  }
+}
+.homepageProductGroup .v65-product-teaser {
+  width: 90%;
+}
+.homepageProductGroup .v65-product-photo {
+  float: left;
+  width: 25%;
+  margin-right: 3%;
+}
+@media screen and (min-width: 767px) {
+  .homepageProductGroup .v65-productGroup-products {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .homepageProductGroup .v65-product-quickView {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 580px) {
+  .homepageProductGroup .v65-addToCartCase {
+    display: none;
+  }
+}
+.homepageProductGroup .homepageProductGroup .v65-product-photo img {
+  max-width: 100%;
+}
+
+/* ----- c. Home Page Call To Action Styling ----- */
+.ctaLeft {
+  float: left;
+  width: 49%;
+}
+@media screen and (max-width: 1024px) {
+  .ctaLeft {
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ctaLeft {
+    width: 95%;
+  }
+}
+.ctaLeft img {
+  width: 100% !important;
+}
+
+.ctaRight {
+  float: left;
+  width: 49%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  .ctaRight {
+    width: 95%;
+  }
+}
+.ctaRight img {
+  width: 100% !important;
+  margin-top: 20px;
+}
+
+.aboutHome {
+  padding: 30px 0;
+}
+
+.ourWinesHome {
+  border-top: 5px solid #1a2632;
+  background: #1a2632;
+  padding: 30px 0;
+}
+.ourWinesHome p {
+  color: white;
+}
+.ourWinesHome h2, .ourWinesHome .footerUpper .right .v65-podTitle, .footerUpper .right .ourWinesHome .v65-podTitle {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .ourWinesHome {
+    width: 100%;
+  }
+}
+
+.eventsHome {
+  padding: 30px 0;
+}
+@media screen and (max-width: 768px) {
+  .eventsHome h2, .eventsHome .footerUpper .right .v65-podTitle, .footerUpper .right .eventsHome .v65-podTitle {
+    margin-left: 10px;
+  }
+}
+
+/* ----- d. Home Page Events  ----- */
+.Event {
+  background: #F1F1F2;
+  min-height: 100px;
+  padding: 0;
+}
+@media screen and (min-width: 1025px) {
+  .Event {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .Event {
+    margin: 0 0 10px 10px !important;
+    width: 95%;
+  }
+}
+.Event .upperEvents {
+  padding: 10px 0;
+}
+.Event .upperEvents .date {
+  border-left: 3px solid #fbaf3f;
+  width: 15%;
+  display: inline-block;
+  padding-left: 10px;
+}
+@media screen and (max-width: 580px) {
+  .Event .upperEvents .date {
+    width: 30%;
+  }
+}
+.Event .upperEvents .date p {
+  margin: 0;
+  line-height: 20px;
+  font-weight: 200;
+}
+.Event .upperEvents .date p strong {
+  font-size: 32px;
+  line-height: 30px;
+}
+.Event .upperEvents .eventName {
+  display: inline-block;
+  width: 75%;
+  padding-left: 10px;
+}
+@media screen and (max-width: 580px) {
+  .Event .upperEvents .eventName {
+    width: 50%;
+  }
+}
+.Event .upperEvents .eventName p {
+  line-height: 11px;
+}
+@media screen and (max-width: 580px) {
+  .Event .upperEvents .eventName p {
+    line-height: 20px;
+  }
+}
+.Event .upperEvents .eventName p strong {
+  font-weight: 400;
+  font-size: 19px;
+}
+.Event .middleEvents {
+  padding: 10px;
+  background: #fff;
+}
+.Event .lowerEvents {
+  text-align: right;
+}
+.Event .lowerEvents a {
+  margin-right: 5px;
+}
+
+/* ----- e. Page Styles ----- */
+.content {
+  background: #fff;
+  box-shadow: 0 0 20px #cccccc;
+  padding: 30px;
+}
+@media screen and (max-width: 768px) {
+  .content {
+    box-shadow: none;
+    padding: 0;
+    border-top: 2px solid #CCC;
+  }
+}
+
+.contentWide {
+  padding: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .contentWide {
+    box-shadow: none;
+    padding: 3%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .contentWide .subMenu {
+    display: none;
+  }
+}
+
+.contentCart {
+  background: #fff;
+  box-shadow: 0 0 20px #cccccc;
+  padding: 30px;
+}
+@media screen and (max-width: 768px) {
+  .contentCart {
+    box-shadow: none;
+    padding: 0.2em;
+    border-top: 2px solid #CCC;
+  }
+}
+
+.pageContent {
+  float: right;
+  width: 75%;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .pageContent {
+    width: 94%;
+    padding: 3%;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .pageContent {
+    padding-right: 2%;
+  }
+}
+
+/*   ===================================================================================================
+     6. Footer	
+======================================================================================================== */
+.footerUpper {
+  background: mediumaquamarine;
+  padding: 30px 2%;
+}
+.footerUpper p {
+  color: white;
+}
+.footerUpper a {
+  color: white;
+  text-decoration: underline;
+  /*--[if IE 9]--*/
+  text-decoration: none;
+  /*[endif]--*/
+}
+.footerUpper h2, .footerUpper .right .v65-podTitle {
+  color: white;
+}
+.footerUpper button span {
+  background: #fbaf3f !important;
+}
+.footerUpper .left {
+  float: left;
+  margin-right: 45px;
+  width: 25%;
+  border-right: 1px solid #fff;
+}
+@media screen and (max-width: 580px) {
+  .footerUpper .left {
+    width: 100%;
+    border: none;
+    text-align: center;
+  }
+}
+.footerUpper .right {
+  float: left;
+  width: 40%;
+  text-align: left;
+}
+@media screen and (max-width: 580px) {
+  .footerUpper .right {
+    width: 100%;
+    text-align: center;
+  }
+}
+.footerUpper .right i {
+  font-size: 1.7em;
+  padding: 0 3px;
+}
+.footerUpper .right ul {
+  padding: 0;
+  list-style: none;
+}
+.footerUpper .right li {
+  display: inline;
+}
+.footerUpper .right li i {
+  font-size: 24px;
+}
+@media screen and (max-width: 580px) {
+  .footerUpper .v65-podTitle {
+    margin-left: 7px;
+  }
+}
+.footerUpper button.defaultBtn {
+  background: #fbaf3f !important;
+}
+.footerUpper #v65-subscribeWidget {
+  margin-top: 15px;
+}
+@media screen and (max-width: 580px) {
+  .footerUpper #v65-subscribeWidget input {
+    width: 25%;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footerUpper #v65-subscribeWidget input {
+    width: 40%;
+  }
+}
+
+.footerLower {
+  background: #333333;
+  color: #fff;
+  padding: 0 2%;
+}
+.footerLower ul {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 580px) {
+  .footerLower ul {
+    text-align: center;
+  }
+}
+.footerLower li {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  .footerLower li {
+    display: inline;
+    padding-right: 5px;
+    border: none;
+  }
+}
+.footerLower li a {
+  font-size: 1em;
+  line-height: 3em;
+  display: block;
+  color: #fff;
+}
+@media screen and (min-width: 767px) {
+  .footerLower li a {
+    display: inline;
+    font-size: 0.917em;
+    position: relative;
+  }
+  .footerLower li a:hover {
+    color: #8bf0bd;
+  }
+}
+.footerLower .accolade {
+  color: #fff;
+  font-size: 9px;
+  margin: 0 3px 5px 0;
+}
+@media screen and (max-width: 580px) {
+  .footerLower .accolade {
+    text-align: center;
+  }
+}
+.footerLower .accolade a {
+  color: #fff;
+  font-size: 9px;
+}
+
+.backToTop {
+  background: url("/assets/images/upButton.png");
+  display: block;
+  height: 29px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 25px;
+}
+@media screen and (min-width: 767px) {
+  .backToTop {
+    float: right;
+    margin-top: 20px;
+    position: relative;
+    top: 0;
+  }
+}
+.backToTop:hover {
+  background: url("/assets/images/upButtonH.png");
+}
+
+footer {
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  footer {
+    color: black;
+  }
+}
+
+/* Footer Nav
+-----------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footerLeft {
+    background: none;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .footerLeft {
+    width: 85%;
+    border: none;
+    text-align: center;
+    padding-left: 5px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footerLeft {
+    margin-left: 10px;
+  }
+}
+.footerLeft a {
+  color: #fff;
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+#v65-subscribeWidget input {
+  width: 150px;
+  height: 40px;
+  border: none;
+  background: #FAFAFA;
+}
+
+/*   ===================================================================================================
+     7. Blog Template
+======================================================================================================== */
+.blogContent {
+  padding: 5%;
+  width: 90%;
+}
+@media screen and (min-width: 767px) {
+  .blogContent {
+    width: 65%;
+    padding: 5%;
+    float: left;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .blogContent {
+    width: 600px;
+    padding: 20px 25px 0 0;
+    float: left;
+  }
+}
+
+.blogRightWrapper {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .blogRightWrapper {
+    display: block;
+    width: 20%;
+    padding: 20px 0 0 0;
+    float: right;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .blogRightWrapper {
+    float: right;
+    padding: 20px 0 0 0;
+    width: 325px;
+  }
+}
+.blogRightWrapper ul {
+  list-style: none;
+  margin: 0 0 1em;
+  padding: 0;
+}
+.blogRightWrapper ul li {
+  font-size: 11px;
+  margin: 0 0 0 10px;
+}
+
+.blogFilterLeft {
+  display: none;
+  padding: 0;
+}
+@media screen and (min-width: 767px) {
+  .blogFilterLeft {
+    width: auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .blogFilterLeft {
+    display: block;
+    float: left;
+    padding: 0 25px 0 0;
+    width: 150px;
+  }
+}
+
+.blogFilterRight {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .blogFilterRight {
+    width: auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .blogFilterRight {
+    display: block;
+    float: left;
+    width: 150px;
+  }
+}
+
+/*   ===================================================================================================
+     8. Print Template
+======================================================================================================== */
+.printBody {
+  background-color: mediumaquamarine;
+  background-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+.printWrapper {
+  margin: 20px auto;
+  width: 730px;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 3px 2px #999;
+  box-shadow: 1px 1px 3px 2px #999;
+}
+
+.printHeader {
+  height: 150px;
+  width: 730px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #999;
+}
+
+.printContent {
+  text-align: left;
+  width: 700px;
+  padding: 10px;
+}
+
+.receiptFooter {
+  text-align: center;
+  padding-bottom: 5px;
+}
+.receiptFooter strong {
+  font-weight: 600;
+}
+
+#v65-cartSubtotal td, .v65-cartTax td, #v65-cartTable th {
+  background-color: #F1F1F1;
+}
+
+#v65-cartTotal td {
+  background-color: #CCC;
+}
+
+/*   ===================================================================================================
+     9. Buttons
+======================================================================================================== */
+button.defaultBtn, button.modalBtn, button.largeBtn {
+  background: mediumaquamarine;
+  border-radius: 0;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 5px;
+}
+button.defaultBtn span, button.modalBtn span, button.largeBtn span {
+  background: mediumaquamarine;
+  color: #fff;
+  border-radius: 0;
+  padding: 5px 15px;
+}
+@media screen and (max-width: 580px) {
+  button.defaultBtn span, button.modalBtn span, button.largeBtn span {
+    padding: 0 25px;
+  }
+}
+button.defaultBtn:hover, button.modalBtn:hover, button.largeBtn:hover {
+  background: #8cdabf;
+}
+button.altBtn, button.altModalBtn, button.altLargeBtn {
+  background: #cccccc;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 5px;
+}
+button.altBtn span, button.altModalBtn span, button.altLargeBtn span {
+  background: #cccccc;
+  color: #fff;
+  border-radius: 0;
+  padding: 5px 15px;
+}
+@media screen and (max-width: 580px) {
+  button.altBtn span, button.altModalBtn span, button.altLargeBtn span {
+    padding: 0 25px;
+  }
+}
+button.altBtn:hover, button.altModalBtn:hover, button.altLargeBtn:hover {
+  background: #e6e6e6;
+}
+button.altBtn:hover span, button.altModalBtn:hover span, button.altLargeBtn:hover span {
+  background: #e6e6e6;
+}
+
+a.linkBtn, a.modalLinkBtn, a.largeLinkBtn, a.fullWidthBtn {
+  background: mediumaquamarine;
+  border-radius: 0;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 5px;
+}
+a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span, a.fullWidthBtn span {
+  background: mediumaquamarine;
+  color: #fff;
+  border-radius: 0;
+  padding: 5px 15px;
+}
+@media screen and (max-width: 580px) {
+  a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span, a.fullWidthBtn span {
+    padding: 0 25px;
+  }
+}
+a.linkBtn:hover, a.modalLinkBtn:hover, a.largeLinkBtn:hover, a.fullWidthBtn:hover {
+  background: #8cdabf;
+  text-decoration: none;
+}
+a.linkBtn:hover span, a.modalLinkBtn:hover span, a.largeLinkBtn:hover span, a.fullWidthBtn:hover span {
+  background: #8cdabf;
+}
+a.fullWidthBtn {
+  display: block;
+  font-size: 16px;
+  max-width: 100%;
+  text-align: center;
+  width: 100%;
+}
+a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
+  background: #cccccc;
+  border-radius: 0;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 5px;
+}
+a.linkAltBtn span, a.modalLinkAltBtn span, a.modalLinkAltBtn span {
+  background: #cccccc;
+  border-radius: 0;
+  color: #fff;
+  padding: 5px 15px;
+}
+@media screen and (max-width: 580px) {
+  a.linkAltBtn span, a.modalLinkAltBtn span, a.modalLinkAltBtn span {
+    padding: 0 25px;
+  }
+}
+a.linkAltBtn:hover, a.modalLinkAltBtn:hover, a.modalLinkAltBtn:hover {
+  background: #e6e6e6;
+}
+a.linkAltBtn:hover span, a.modalLinkAltBtn:hover span, a.modalLinkAltBtn:hover span {
+  background: #e6e6e6;
+}
+a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
+  min-width: auto;
+}
+
+.v65-quickView-close a {
+  border-radius: 0;
+  background: #e6e6e6;
+}
+.v65-quickView-close a:hover {
+  background: #e6e6e6;
+}
+
+.v65-product-addToCart button {
+  min-width: 32%;
+}
+
+/*   ===================================================================================================
+     10. Vin65 Overrides
+======================================================================================================== */
+/* ----- a. Homepage Product Group ----- */
+.v65-productGroup {
+  margin: 0;
+}
+
+.v65-product-addToCart {
+  margin: 0;
+}
+
+.homepageProductGroup .v65-productGroup-products {
+  text-align: left;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+/* Heading 2 Styling */
+.homepageProductGroup .v65-productGroup-title {
+  color: #333;
+  font-size: 26px;
+  line-height: 1.2;
+  margin: 0.25em  0 0.5em;
+}
+@media screen and (max-width: 580px) {
+  .homepageProductGroup .v65-productGroup-title {
+    font-size: 22px;
+  }
+}
+
+.homepageProductGroup .v65-productGroup-teaser {
+  float: none;
+  margin: 0;
+  width: 100%;
+  display: none;
+}
+
+.homepageProductGroup .v65-productGroup-product {
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+.homepageProductGroup .v65-productGroup-product .v65-product-title {
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-weight: 200;
+  margin-bottom: 15px;
+  line-height: 25px;
+}
+.homepageProductGroup .v65-productGroup-product .v65-product-title a {
+  color: #333;
+}
+@media screen and (min-width: 1025px) {
+  .homepageProductGroup .v65-productGroup-product .v65-product-title {
+    width: 250px;
+  }
+}
+
+/* ----- b. Checkout Overrides ----- */
+#v65-signUpClubSummaryWrapper {
+  margin-bottom: 20px;
+}
+
+/* ----- Fix for product sorting  ----- */
+.v65-product-sortBy {
+  float: left;
+  text-align: left;
+  width: 50%;
+}
+
+.v65-product-sortBy form {
+  padding: 0;
+  margin: 0;
+}
+
+.v65-product-sortBy form select {
+  width: 130px;
+}
+
+/* ----- Fix for overflow on FB sharing widget on mobile  ----- */
+@media screen and (max-width: 768px) {
+  .v65-socialMediaBar-FacebookLike {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .v65-product2Up {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .v65-product2Up .v65-product-inventoryMessage {
+    display: none;
+  }
+}
+.v65-product2Up .v65-product-addToCart {
+  clear: both;
+}
+.v65-product2Up .v65-product-addToCart .v65-addToCart fieldset .v65-product-addToCart-quantity input {
+  height: 40px;
+}
+@media screen and (max-width: 580px) {
+  .v65-product2Up .v65-product-addToCart .v65-addToCart fieldset .v65-product-addToCart-quantity input {
+    padding: 9px 15px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .v65-product2Up .v65-product-socialBar {
+    display: none;
+  }
+}
+
+.v65-product-addToCart-quantity input {
+  height: 40px;
+}
+@media screen and (max-width: 580px) {
+  .v65-product-addToCart-quantity input {
+    padding: 4px 15px;
+  }
+}
+
+.twitterWrapper {
+  width: 300px;
+  float: left;
+  margin: 0 0 20px 20px;
+  clear: both;
+}
+@media screen and (max-width: 768px) {
+  .twitterWrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5%;
+  }
+}
+
+/* -------- d. Product Page Over Rides -----------*/
+.v65-product-sortBy {
+  width: 25%;
+}
+
+.v65-product-pagination {
+  width: 75%;
+}
+
+@media screen and (max-width: 1024px) {
+  .v65-product-quickView {
+    display: none !important;
+  }
+}
+
+.v65-product-addToCart-quantity input {
+  height: 38px;
+}
+
+.v65Left {
+  float: left;
+  margin: 0 10px;
+}
+
+.v65Right {
+  float: left;
+  margin-left: 2%;
+}
+
+/* 1-Up Layout */
+.v65-product1Up {
+  background: #F1F1F2;
+  position: relative;
+  border: 1px solid #E2E2E2;
+}
+.v65-product1Up .v65-product-title {
+  float: left;
+  width: 95%;
+  margin: 10px 0 10px 10px;
+}
+.v65-product1Up .v65-product-title a {
+  color: #666;
+  font-weight: 300;
+}
+.v65-product1Up .v65-product-subtitle {
+  margin: 0 0 5px 10px;
+  width: 73%;
+}
+.v65-product1Up .v65-product-photo {
+  float: right;
+  width: 24%;
+  background: #fff;
+  margin: 0;
+}
+.v65-product1Up .v65-product-teaser {
+  width: 80%;
+  margin: 0 0 5px 10px;
+}
+.v65-product1Up .v65-product-reviewStats {
+  margin: 0 0 5px 10px;
+}
+.v65-product1Up .v65-product-inventoryMessage {
+  margin: 0 0 5px 10px;
+}
+.v65-product1Up .v65-product-addToCart-priceWrapper {
+  display: block;
+}
+.v65-product1Up .v65-product-addToCart {
+  clear: none;
+  margin-left: 10px;
+}
+.v65-product1Up .v65-product-socialBar {
+  padding: 5px 0 5px 5px;
+  height: 0px;
+}
+
+/* 2-Up Layout */
+.v65-product2Up {
+  background: #F1F1F2;
+  position: relative;
+  border: 1px solid #E2E2E2;
+  width: 47%;
+}
+@media screen and (max-width: 768px) {
+  .v65-product2Up {
+    width: 95%;
+  }
+}
+.v65-product2Up .v65-product-title {
+  float: left;
+  width: 73%;
+  margin: 10px 0 10px 10px;
+}
+.v65-product2Up .v65-product-title a {
+  color: #666;
+  font-weight: 300;
+}
+.v65-product2Up .v65-product-photo {
+  width: 24%;
+  background: #fff;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .v65-product2Up .v65-product-photo {
+    width: 23%;
+    padding: 10% 0 10%;
+  }
+}
+.v65-product2Up .v65-product-teaser {
+  width: 68%;
+  margin: 0 0 5px 10px;
+}
+.v65-product2Up .v65-product-reviewStats {
+  margin: 0 0 5px 10px;
+}
+.v65-product2Up .v65-product-inventoryMessage {
+  margin: 0 0 5px 10px;
+}
+.v65-product2Up .v65-product-addToCart-priceWrapper {
+  display: block;
+}
+.v65-product2Up .v65-product-addToCart {
+  clear: none;
+  margin-left: 10px;
+}
+.v65-product2Up .v65-product-socialBar {
+  padding: 5px 0 5px 5px;
+  height: 0px;
+}
+
+/* 3-Up Display */
+.v65-product3Up .v65-product-title a {
+  color: #666;
+  font-weight: 300;
+}
+
+/* 5-Up Display */
+.v65-product5Up .v65-product-title a {
+  color: #666;
+  font-weight: 300;
+}
+
+.v65-product-tabs .last a {
+  border-radius: 0;
+}
+
+/* ----- e. Misc Template Specific Overrides -----*/
+.v65-clubTitle {
+  font-family: "Lato", sans-serif;
+}
+
+.v65-productBadge {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#v65-modalCartTable th {
+  background-color: #fff;
+}
+
+.v65-product-quickView {
+  border-radius: 0;
+}
+
+.v65-productList tr:hover {
+  background-color: #1a2632;
+}
+
+.v65-productList tr.alternatRow:hover {
+  background-color: #1a2632;
+}
+
+/*   ===================================================================================================
+     11. Default Generic Content
+======================================================================================================== */
+/* ----- a. Generic Content -----*/
+.bannerText {
+  float: left;
+  padding-top: 6%;
+  position: relative;
+  text-align: right;
+  width: 57%;
+}
+.bannerText img {
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .bannerText {
+    padding: 6% 6%;
+    text-align: center;
+    width: 87%;
+  }
+}
+
+.bannerImage {
+  float: left;
+  max-height: 375px;
+  padding-top: 2%;
+  position: relative;
+  text-align: center;
+  width: 43%;
+}
+.bannerImage img {
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .bannerImage {
+    display: none;
+  }
+}
+
+/* ----- b. Column Styles ----- */
+.colWrapper {
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.colWrapper:before, .colWrapper:after {
+  content: "";
+  display: table;
+}
+
+.colWrapper:after {
+  clear: both;
+}
+
+.col2 {
+  float: left;
+  margin-left: 6%;
+  width: 47%;
+}
+
+.col2:first-child {
+  float: left;
+  margin-left: 0%;
+  width: 47%;
+}
+
+.col22 {
+  float: left;
+  margin-left: 6%;
+  width: 29%;
+}
+
+.col22:first-child {
+  margin-left: 0;
+  width: 65%;
+}
+
+.col3 {
+  float: left;
+  margin-left: 5%;
+  width: 30%;
+}
+
+.col3:first-child {
+  float: left;
+  margin-left: 0%;
+  width: 30%;
+}
+
+.col4 {
+  float: left;
+  margin-left: 3%;
+  width: 22.7%;
+}
+
+.col4:first-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .col4 {
+    margin: 0 2% 3em;
+    width: 46%;
+  }
+
+  .col4:first-child {
+    margin-left: 2%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .col2 {
+    float: none;
+    margin-left: 0;
+    margin-bottom: 1.5em;
+    width: 100%;
+  }
+
+  .col2:first-child {
+    float: none;
+    width: 100%;
+  }
+
+  .col22,
+  .col22:first-child {
+    float: none;
+    margin: 0 0 2em;
+    width: 100%;
+  }
+
+  .col3 {
+    float: none;
+    margin-left: 0;
+    margin-bottom: 1.5em;
+    width: 100%;
+  }
+
+  .col3:first-child {
+    float: none;
+    width: 100%;
+  }
+
+  .col4,
+  .col4:first-child {
+    float: none;
+    margin: 0 0 2em;
+    width: 100%;
+  }
+}
