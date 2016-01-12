@@ -536,7 +536,7 @@ body {
 }
 
 a {
-  color: #667f00;
+  color: #d35400;
   text-decoration: none;
 }
 a:hover, a:focus, a:active {
@@ -709,7 +709,7 @@ header {
     width: 65%;
   }
 }
-@media screen and (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .logo {
     background-image: url('../images/logo_2x.png?1418338004');
   }
@@ -786,7 +786,7 @@ header {
 }
 @media screen and (max-width: 580px) {
   #user-tools #v65-modalCart {
-    width: 90%;
+    width: 85%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -908,10 +908,10 @@ nav ul li a {
 nav ul li a:hover {
   color: #333333;
   text-decoration: none;
-  border-bottom: 3px solid #cbff00;
+  border-bottom: 3px solid #fbaf3f;
 }
 nav ul li a.v65-selected {
-  border-bottom: 3px solid #cbff00;
+  border-bottom: 3px solid #fbaf3f;
 }
 nav ul li:hover ul {
   display: block;
@@ -1065,7 +1065,7 @@ nav ul li.v65-pageAParent {
 
 /* ----- b. Homepage Styles ----- */
 .bannerHome {
-  background: #3e4c04;
+  background: mediumaquamarine;
   width: 100%;
 }
 .bannerHome .v65-pod {
@@ -1073,7 +1073,7 @@ nav ul li.v65-pageAParent {
   margin: 0 auto;
 }
 .bannerHome h1, .bannerHome h2, .bannerHome .footerUpper .right .v65-podTitle, .footerUpper .right .bannerHome .v65-podTitle, .bannerHome h3, .bannerHome h4, .bannerHome h5, .bannerHome h6, .bannerHome p {
-  color: #d0d0d0;
+  color: #333333;
 }
 .bannerHome .v65-podDescription {
   float: left;
@@ -1110,7 +1110,7 @@ nav ul li.v65-pageAParent {
 }
 
 .bannerInterior {
-  background: #3e4c04;
+  background: mediumaquamarine;
   height: 3px;
   margin-bottom: 30px;
   width: 100%;
@@ -1265,8 +1265,8 @@ nav ul li.v65-pageAParent {
 }
 
 .ourWinesHome {
-  border-top: 5px solid #677f06;
-  background: #3e4c04;
+  border-top: 5px solid #1a2632;
+  background: #1a2632;
   padding: 30px 0;
 }
 .ourWinesHome p {
@@ -1311,7 +1311,7 @@ nav ul li.v65-pageAParent {
   padding: 10px 0;
 }
 .Event .upperEvents .date {
-  border-left: 3px solid #cbff00;
+  border-left: 3px solid #fbaf3f;
   width: 15%;
   display: inline-block;
   padding-left: 10px;
@@ -1428,7 +1428,7 @@ nav ul li.v65-pageAParent {
      6. Footer	
 ======================================================================================================== */
 .footerUpper {
-  background: #3e4c04;
+  background: mediumaquamarine;
   padding: 30px 2%;
 }
 .footerUpper p {
@@ -1445,7 +1445,7 @@ nav ul li.v65-pageAParent {
   color: white;
 }
 .footerUpper button span {
-  background: #667f00 !important;
+  background: #fbaf3f !important;
 }
 .footerUpper .left {
   float: left;
@@ -1491,7 +1491,7 @@ nav ul li.v65-pageAParent {
   }
 }
 .footerUpper button.defaultBtn {
-  background: #667f00 !important;
+  background: #fbaf3f !important;
 }
 .footerUpper #v65-subscribeWidget {
   margin-top: 15px;
@@ -1721,7 +1721,7 @@ footer {
      8. Print Template
 ======================================================================================================== */
 .printBody {
-  background-color: #3e4c04;
+  background-color: mediumaquamarine;
   background-image: none;
   margin: 0;
   padding: 0;
@@ -1768,13 +1768,13 @@ footer {
      9. Buttons
 ======================================================================================================== */
 button.defaultBtn, button.modalBtn, button.largeBtn {
-  background: #aecc00;
+  background: mediumaquamarine;
   border-radius: 0;
   font-family: "Lato", sans-serif;
   margin-bottom: 5px;
 }
 button.defaultBtn span, button.modalBtn span, button.largeBtn span {
-  background: #aecc00;
+  background: mediumaquamarine;
   color: #fff;
   border-radius: 0;
   padding: 5px 15px;
@@ -1785,7 +1785,7 @@ button.defaultBtn span, button.modalBtn span, button.largeBtn span {
   }
 }
 button.defaultBtn:hover, button.modalBtn:hover, button.largeBtn:hover {
-  background: #daff00;
+  background: #8cdabf;
 }
 button.altBtn, button.altModalBtn, button.altLargeBtn {
   background: #cccccc;
@@ -1812,13 +1812,13 @@ button.altBtn:hover span, button.altModalBtn:hover span, button.altLargeBtn:hove
 }
 
 a.linkBtn, a.modalLinkBtn, a.largeLinkBtn, a.fullWidthBtn {
-  background: #aecc00;
+  background: mediumaquamarine;
   border-radius: 0;
   font-family: "Lato", sans-serif;
   margin-bottom: 5px;
 }
 a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span, a.fullWidthBtn span {
-  background: #aecc00;
+  background: mediumaquamarine;
   color: #fff;
   border-radius: 0;
   padding: 5px 15px;
@@ -1829,11 +1829,11 @@ a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span, a.fullWidthBtn span {
   }
 }
 a.linkBtn:hover, a.modalLinkBtn:hover, a.largeLinkBtn:hover, a.fullWidthBtn:hover {
-  background: #daff00;
+  background: #8cdabf;
   text-decoration: none;
 }
 a.linkBtn:hover span, a.modalLinkBtn:hover span, a.largeLinkBtn:hover span, a.fullWidthBtn:hover span {
-  background: #daff00;
+  background: #8cdabf;
 }
 a.fullWidthBtn {
   display: block;
@@ -2185,11 +2185,11 @@ a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
 }
 
 .v65-productList tr:hover {
-  background-color: #3e4c04;
+  background-color: #1a2632;
 }
 
 .v65-productList tr.alternatRow:hover {
-  background-color: #3e4c04;
+  background-color: #1a2632;
 }
 
 /*   ===================================================================================================
