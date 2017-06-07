@@ -30,8 +30,9 @@
 			<div id="mobile-header">
 				<a id="responsive-menu-button" href="##sidr-main"><img src="/assets/images/mobileIcon.png"/></a>
 			</div>	
-			<cf_modalCart>	
+			<cf_points>
 			<cf_login>
+			<cf_modalCart>	
 		</div><!--/user-tools-->
 		<!-- <div class="spacer">&nbsp;</div> -->
 
@@ -54,29 +55,29 @@
 	</section><!--/Upper Content-->
 	
 	<footer>
-			<div class="footerUpper">
-				<section class="container v65-group">
-					<div class="left">
-						<cf_pods location="Contact Us">
-					</div>
-					<div class="right">
-						<cf_pods location="Social Title" type="Title">
-						<ul><cf_contentblock group="Social Icons"></ul>
-						<cf_subscribe contactType="Newsletter">
-					</div>	
-				</section>
-			</div><!--/footerUpper-->
-			
-			<div class="footerLower">
-				<section class="container v65-group">
-					<a class="backToTop hideText" href="##">back to top</a>
-					<cf_layoutFooterNav>
-					<p class="accolade">
-						<cf_vin65Accolade> | <cf_copyright>
-					</p>
-				</section>
-			</div><!--/footerLower-->
-		</footer>
+		<div class="footerUpper">
+			<section class="container v65-group">
+				<div class="left">
+					<cf_pods location="Contact Us">
+				</div>
+				<div class="right">
+					<cf_pods location="Social Title" type="Title">
+					<ul><cf_customFile file="/v65html/_social.html"></ul>
+					<cf_subscribe contactType="Newsletter">
+				</div>	
+			</section>
+		</div><!--/footerUpper-->
+		
+		<div class="footerLower">
+			<section class="container v65-group">
+				<a class="backToTop hideText" href="##">back to top</a>
+				<cf_layoutFooterNav>
+				<p class="accolade">
+					<cf_vin65Accolade> | <cf_copyright>
+				</p>
+			</section>
+		</div><!--/footerLower-->
+	</footer>
 		
 
 		<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js,/assets/js/jquery.sidr.min.js">

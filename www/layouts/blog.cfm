@@ -30,8 +30,9 @@
 			<div id="mobile-header">
 				<a id="responsive-menu-button" href="##sidr-main"><img src="/assets/images/mobileIcon.png"/></a>
 			</div>	
-			<cf_modalCart>	
+			<cf_points>
 			<cf_login>
+			<cf_modalCart>	
 		</div><!--/user-tools-->
 		<!-- <div class="spacer">&nbsp;</div> -->
 
@@ -91,7 +92,7 @@
 				</div>
 				<div class="right">
 					<cf_pods location="Social Title" type="Title">
-					<ul><cf_contentblock group="Social Icons"></ul>
+					<ul><cf_customFile file="/v65html/_social.html"></ul>
 					<cf_subscribe contactType="Newsletter">
 				</div>	
 			</section>

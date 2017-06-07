@@ -753,6 +753,9 @@ header {
 }
 
 /* ----- b. User Tools ----- */
+#user-tools {
+  width: auto;
+}
 @media screen and (max-width: 580px) {
   #user-tools {
     background: #333;
@@ -766,6 +769,15 @@ header {
 @media screen and (max-width: 1024px) {
   #user-tools {
     margin: 0 19px 25px 0;
+  }
+}
+#user-tools .v65-pointsBalance {
+  display: inline-block;
+  padding-right: 1em;
+}
+@media screen and (max-width: 580px) {
+  #user-tools .v65-pointsBalance {
+    display: none;
   }
 }
 #user-tools .v65-yourAccount, #user-tools .v65-editProfile {
@@ -784,15 +796,33 @@ header {
     line-height: 4em;
   }
 }
-@media screen and (max-width: 580px) {
-  #user-tools #v65-modalCart {
-    width: 85%;
+@media screen and (min-width: 581px) {
+  #user-tools .v65-yourAccount, #user-tools .v65-editProfile, #user-tools .v65-login, #user-tools .v65-logout {
+    width: auto;
   }
+}
+#user-tools #v65-modalCart {
+  position: static;
 }
 @media screen and (max-width: 1024px) {
   #user-tools #v65-modalCart {
     line-height: 50px;
     right: 10px;
+  }
+}
+@media screen and (min-width: 581px) {
+  #user-tools #v65-modalCart {
+    display: inline-block;
+    padding-left: 1em;
+  }
+}
+#user-tools .v65-pointsBalance {
+  display: inline-block;
+  padding-right: 1em;
+}
+@media screen and (max-width: 580px) {
+  #user-tools .v65-pointsBalance {
+    display: none;
   }
 }
 
@@ -1943,6 +1973,26 @@ a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
 /* ----- b. Checkout Overrides ----- */
 #v65-signUpClubSummaryWrapper {
   margin-bottom: 20px;
+}
+
+#v65-pointsGainedOnOrder {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  margin: 0.5em 0 1em;
+}
+#v65-pointsGainedOnOrder p {
+  margin: 0;
+}
+
+.v65-removeLoyaltyPoints img, .v65-infoTooltip img {
+  padding-top: 4px;
+  width: 14px;
+}
+
+#v65-checkoutCartSummaryMini,
+#v65-checkCartSummaryMoreOptions {
+  float: none;
+  width: 100%;
 }
 
 /* ----- Fix for product sorting  ----- */
