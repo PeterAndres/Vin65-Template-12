@@ -36,7 +36,7 @@
 		</div><!--/user-tools-->
 		<!-- <div class="spacer">&nbsp;</div> -->
 
-		 <h1 class="hideText logo"><a href="/" accesskey="h"><cf_websiteName></a></h1><!--/logo -->
+		<cf_logo>
 				
 		<!-- <a href="/" accesskey="h" class="logo"><img src="/assets/images/logo.png" alt="<cf_websiteName>"></a> -->
 				
@@ -92,7 +92,7 @@
 				</div>
 				<div class="right">
 					<cf_pods location="Social Title" type="Title">
-					<ul><cf_customFile file="/v65html/_social.html"></ul>
+					<cf_socialMediaLinks>
 					<cf_subscribe contactType="Newsletter">
 				</div>	
 			</section>
@@ -102,6 +102,9 @@
 			<section class="container v65-group">
 				<a class="backToTop hideText" href="##">back to top</a>
 				<cf_layoutFooterNav>
+				<p class="disclaimer">
+						<cf_footerInfo>
+				</p>
 				<p class="accolade">
 					<cf_vin65Accolade> | <cf_copyright>
 				</p>
