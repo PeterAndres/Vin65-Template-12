@@ -1,8 +1,7 @@
-@charset "utf-8";
-@import url("//fonts.googleapis.com/css?family=Lato:300,400,700,400italic");
 /* ======================================================================================================				
 	Font @ Import
 ==================================================================================================== */
+@import url("//fonts.googleapis.com/css?family=Lato:300,400,700,400italic");
 @font-face {
   font-family: 'icomoon';
   src: url("../font/icomoon.eot?-4xo876");
@@ -10,7 +9,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -528,9 +526,9 @@ table {
      2. Typography - These get copied into the admin.css
 ======================================================================================================== */
 body {
-  background-color: white;
+  background-color: #fff;
   font-size: 75%;
-  color: #333333;
+  color: #333;
   font-family: "Lato", sans-serif;
   line-height: 1.8em;
 }
@@ -661,57 +659,39 @@ header {
   }
 }
 
-.logo {
-  background: url('../images/logo.png?1418338004') no-repeat center center;
-  background-size: contain;
-  height: 68px;
-  display: block;
-  text-align: center;
-  width: 45%;
-  margin: 0 auto;
+.v65-logo {
+  margin: 0 auto !important;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .logo {
-    float: left;
-    margin: 2% 0 0 10px;
+  .v65-logo {
+    float: left !important;
+    margin: 2% 0 0 10px !important;
     text-align: left;
-    width: 240px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .logo {
-    float: left;
-    margin-top: 10px;
-    margin-left: 10px;
+  .v65-logo {
+    float: left !important;
+    margin-top: 10px !important;
+    margin-left: 10px !important;
     text-align: left;
-    width: 240px;
   }
 }
 @media screen and (max-width: 768px) {
-  .logo {
-    float: none;
-    margin: 0 auto 0;
+  .v65-logo {
+    float: none !important;
+    margin: 0 auto 0 !important;
   }
 }
 @media screen and (max-width: 580px) {
-  .logo {
-    margin-bottom: 4.5%;
-    margin-top: 22%;
-  }
-}
-@media screen and (min-width: 400px) and (max-width: 595px) {
-  .logo {
-    margin-top: 15%;
+  .v65-logo {
+    margin-bottom: 4.5% !important;
+    margin-top: 19% !important;
   }
 }
 @media screen and (max-width: 768px) {
-  .logo {
-    width: 65%;
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  .logo {
-    background-image: url('../images/logo_2x.png?1418338004');
+  .v65-logo {
+    width: 70% !important;
   }
 }
 
@@ -936,12 +916,12 @@ nav ul li a {
   }
 }
 nav ul li a:hover {
-  color: #333333;
+  color: #333;
   text-decoration: none;
-  border-bottom: 3px solid #fbaf3f;
+  border-bottom: 3px solid #FBAF3F;
 }
 nav ul li a.v65-selected {
-  border-bottom: 3px solid #fbaf3f;
+  border-bottom: 3px solid #FBAF3F;
 }
 nav ul li:hover ul {
   display: block;
@@ -989,7 +969,7 @@ nav ul li.v65-home {
   display: inline-block;
 }
 nav ul li.v65-pageAParent {
-  color: black;
+  color: #000;
 }
 
 /* ----- b. Sub Menu ----- */
@@ -1095,7 +1075,7 @@ nav ul li.v65-pageAParent {
 
 /* ----- b. Homepage Styles ----- */
 .bannerHome {
-  background: mediumaquamarine;
+  background: #66CDAA;
   width: 100%;
 }
 .bannerHome .v65-pod {
@@ -1103,7 +1083,7 @@ nav ul li.v65-pageAParent {
   margin: 0 auto;
 }
 .bannerHome h1, .bannerHome h2, .bannerHome .footerUpper .right .v65-podTitle, .footerUpper .right .bannerHome .v65-podTitle, .bannerHome h3, .bannerHome h4, .bannerHome h5, .bannerHome h6, .bannerHome p {
-  color: #333333;
+  color: #333;
 }
 .bannerHome .v65-podDescription {
   float: left;
@@ -1140,7 +1120,7 @@ nav ul li.v65-pageAParent {
 }
 
 .bannerInterior {
-  background: mediumaquamarine;
+  background: #66CDAA;
   height: 3px;
   margin-bottom: 30px;
   width: 100%;
@@ -1154,7 +1134,7 @@ nav ul li.v65-pageAParent {
 
 .homepageContent {
   background: #fff;
-  box-shadow: 0 0 20px #cccccc;
+  box-shadow: 0 0 20px #ccc;
 }
 
 .homepageText {
@@ -1300,10 +1280,10 @@ nav ul li.v65-pageAParent {
   padding: 30px 0;
 }
 .ourWinesHome p {
-  color: white;
+  color: #fff;
 }
 .ourWinesHome h2, .ourWinesHome .footerUpper .right .v65-podTitle, .footerUpper .right .ourWinesHome .v65-podTitle {
-  color: white;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   .ourWinesHome {
@@ -1341,7 +1321,7 @@ nav ul li.v65-pageAParent {
   padding: 10px 0;
 }
 .Event .upperEvents .date {
-  border-left: 3px solid #fbaf3f;
+  border-left: 3px solid #FBAF3F;
   width: 15%;
   display: inline-block;
   padding-left: 10px;
@@ -1396,7 +1376,7 @@ nav ul li.v65-pageAParent {
 /* ----- e. Page Styles ----- */
 .content {
   background: #fff;
-  box-shadow: 0 0 20px #cccccc;
+  box-shadow: 0 0 20px #ccc;
   padding: 30px;
 }
 @media screen and (max-width: 768px) {
@@ -1425,7 +1405,7 @@ nav ul li.v65-pageAParent {
 
 .contentCart {
   background: #fff;
-  box-shadow: 0 0 20px #cccccc;
+  box-shadow: 0 0 20px #ccc;
   padding: 30px;
 }
 @media screen and (max-width: 768px) {
@@ -1458,24 +1438,24 @@ nav ul li.v65-pageAParent {
      6. Footer	
 ======================================================================================================== */
 .footerUpper {
-  background: mediumaquamarine;
+  background: #66CDAA;
   padding: 30px 2%;
 }
 .footerUpper p {
-  color: white;
+  color: #fff;
 }
 .footerUpper a {
-  color: white;
+  color: #fff;
   text-decoration: underline;
   /*--[if IE 9]--*/
   text-decoration: none;
   /*[endif]--*/
 }
 .footerUpper h2, .footerUpper .right .v65-podTitle {
-  color: white;
+  color: #fff;
 }
 .footerUpper button span {
-  background: #fbaf3f !important;
+  background: #FBAF3F !important;
 }
 .footerUpper .left {
   float: left;
@@ -1492,7 +1472,7 @@ nav ul li.v65-pageAParent {
 }
 .footerUpper .right {
   float: left;
-  width: 40%;
+  width: 60%;
   text-align: left;
 }
 @media screen and (max-width: 580px) {
@@ -1521,7 +1501,7 @@ nav ul li.v65-pageAParent {
   }
 }
 .footerUpper button.defaultBtn {
-  background: #fbaf3f !important;
+  background: #FBAF3F !important;
 }
 .footerUpper #v65-subscribeWidget {
   margin-top: 15px;
@@ -1539,15 +1519,19 @@ nav ul li.v65-pageAParent {
 }
 
 .footerLower {
-  background: #333333;
+  background: #333;
   color: #fff;
-  padding: 0 2%;
+  padding: 2%;
 }
 .footerLower ul {
   list-style: none;
   width: 100%;
-  margin: 0;
   padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .footerLower ul {
+    margin: 2% 0;
+  }
 }
 @media screen and (max-width: 580px) {
   .footerLower ul {
@@ -1582,17 +1566,17 @@ nav ul li.v65-pageAParent {
     color: #8bf0bd;
   }
 }
-.footerLower .accolade {
+.footerLower .accolade, .footerLower .disclaimer {
   color: #fff;
   font-size: 9px;
   margin: 0 3px 5px 0;
 }
 @media screen and (max-width: 580px) {
-  .footerLower .accolade {
+  .footerLower .accolade, .footerLower .disclaimer {
     text-align: center;
   }
 }
-.footerLower .accolade a {
+.footerLower .accolade a, .footerLower .disclaimer a {
   color: #fff;
   font-size: 9px;
 }
@@ -1623,7 +1607,7 @@ footer {
 }
 @media screen and (min-width: 767px) {
   footer {
-    color: black;
+    color: #000;
   }
 }
 
@@ -1751,7 +1735,7 @@ footer {
      8. Print Template
 ======================================================================================================== */
 .printBody {
-  background-color: mediumaquamarine;
+  background-color: #66CDAA;
   background-image: none;
   margin: 0;
   padding: 0;
@@ -1798,13 +1782,13 @@ footer {
      9. Buttons
 ======================================================================================================== */
 button.defaultBtn, button.modalBtn, button.largeBtn {
-  background: mediumaquamarine;
+  background: #66CDAA;
   border-radius: 0;
   font-family: "Lato", sans-serif;
   margin-bottom: 5px;
 }
 button.defaultBtn span, button.modalBtn span, button.largeBtn span {
-  background: mediumaquamarine;
+  background: #66CDAA;
   color: #fff;
   border-radius: 0;
   padding: 5px 15px;
@@ -1818,13 +1802,13 @@ button.defaultBtn:hover, button.modalBtn:hover, button.largeBtn:hover {
   background: #8cdabf;
 }
 button.altBtn, button.altModalBtn, button.altLargeBtn {
-  background: #cccccc;
+  background: #ccc;
   color: #fff;
   font-family: "Lato", sans-serif;
   margin-bottom: 5px;
 }
 button.altBtn span, button.altModalBtn span, button.altLargeBtn span {
-  background: #cccccc;
+  background: #ccc;
   color: #fff;
   border-radius: 0;
   padding: 5px 15px;
@@ -1842,13 +1826,13 @@ button.altBtn:hover span, button.altModalBtn:hover span, button.altLargeBtn:hove
 }
 
 a.linkBtn, a.modalLinkBtn, a.largeLinkBtn, a.fullWidthBtn {
-  background: mediumaquamarine;
+  background: #66CDAA;
   border-radius: 0;
   font-family: "Lato", sans-serif;
   margin-bottom: 5px;
 }
 a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span, a.fullWidthBtn span {
-  background: mediumaquamarine;
+  background: #66CDAA;
   color: #fff;
   border-radius: 0;
   padding: 5px 15px;
@@ -1873,13 +1857,13 @@ a.fullWidthBtn {
   width: 100%;
 }
 a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
-  background: #cccccc;
+  background: #ccc;
   border-radius: 0;
   font-family: "Lato", sans-serif;
   margin-bottom: 5px;
 }
 a.linkAltBtn span, a.modalLinkAltBtn span, a.modalLinkAltBtn span {
-  background: #cccccc;
+  background: #ccc;
   border-radius: 0;
   color: #fff;
   padding: 5px 15px;

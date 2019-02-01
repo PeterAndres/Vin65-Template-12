@@ -297,44 +297,29 @@ header{
 	}
 }
 
-	.logo{
-		background: image-url('logo.png') no-repeat center center;
-		background-size: contain;
-		height: 68px;
-		display: block;
-		text-align: center;
-		width:45%;
-		margin:0 auto;
+	.v65-logo{
+		margin:0 auto !important;
 			@media screen and (min-width : 768px) and (max-width : 1023px) {
-				float: left;
-				margin: 2% 0 0 10px;
+				float: left !important;
+				margin: 2% 0 0 10px !important;
 				text-align:left;
-				width: 240px;
 			}
 			@media screen and (min-width : 1024px) {
-				float: left;
-				margin-top: 10px;
-				margin-left: 10px;
+				float: left !important;
+				margin-top: 10px !important;
+				margin-left: 10px !important;
 				text-align:left;	
-				width: 240px;
 			}
 			@media screen #{$break-max-tablet} {
-				float: none;
-				margin: 0 auto 0;
+				float: none !important;
+				margin: 0 auto 0 !important;
 			}
 			@media screen #{$break-max-mobile} {
-				margin-bottom: 4.5%;
-				margin-top: 22%;
-			}
-			@media screen and (min-width : 400px) and (max-width : 595px) {
-				margin-top: 15%;
+				margin-bottom: 4.5% !important;
+				margin-top: 19% !important;
 			}
 			@media screen and (max-width : 768px){ 
-				width: 65%;
-			}
-
-			@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){ 
-				background-image: image-url('logo_2x.png');
+				width: 70% !important;
 			}
 
 	}
@@ -1080,7 +1065,7 @@ nav{
 	}
 	.right {
 		float: left;
-		width: 40%;
+		width: 60%;
 		text-align: left;
 		@media screen #{$break-max-mobile}{
 			width: 100%;
@@ -1139,13 +1124,17 @@ nav{
 .footerLower {
 	background: $mobileNavBackgroundColor;
 	color: #fff;
-	padding: 0 2%;
+	padding: 2%;
 	
 	ul{ 
 		list-style: none;
 		width: 100%;
-		margin: 0;
 		padding: 0;
+		
+		@media screen #{$break-max-tablet}{
+			margin: 2% 0;
+		}
+		
 		@media screen #{$break-max-mobile}{
 			text-align: center;
 		}
@@ -1177,7 +1166,7 @@ nav{
 		}
 	}
 
-	.accolade {
+	.accolade, .disclaimer {
 		color: #fff;
 		font-size: 9px;
 		margin:0 3px 5px 0;
