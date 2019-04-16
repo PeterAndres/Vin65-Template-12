@@ -533,8 +533,16 @@ body {
   line-height: 1.8em;
 }
 
+*:focus {
+  outline: 3px solid #f73e3e !important;
+}
+
+*.focus--mouse:focus {
+  outline: 0 !important;
+} 
+
 a {
-  color: #d35400;
+  color: #ab4400;
   text-decoration: none;
 }
 a:hover, a:focus, a:active {
@@ -630,7 +638,7 @@ strong {
 }
 
 .hideText {
-  overflow: hidden;
+  overflow: visible;
   text-indent: 100%;
   white-space: nowrap;
 }
@@ -662,6 +670,15 @@ header {
 .v65-logo {
   margin: 0 auto !important;
 }
+
+.v65-logo a{
+  color: transparent;
+  font-size: 0;
+  display: block;
+  height: 100%;
+
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .v65-logo {
     float: left !important;
@@ -1075,7 +1092,7 @@ nav ul li.v65-pageAParent {
 
 /* ----- b. Homepage Styles ----- */
 .bannerHome {
-  background: #66CDAA;
+  background: #2A8365;
   width: 100%;
 }
 .bannerHome .v65-pod {
@@ -1083,7 +1100,7 @@ nav ul li.v65-pageAParent {
   margin: 0 auto;
 }
 .bannerHome h1, .bannerHome h2, .bannerHome .footerUpper .right .v65-podTitle, .footerUpper .right .bannerHome .v65-podTitle, .bannerHome h3, .bannerHome h4, .bannerHome h5, .bannerHome h6, .bannerHome p {
-  color: #333;
+  color: #ffffff;
 }
 .bannerHome .v65-podDescription {
   float: left;
@@ -1120,10 +1137,15 @@ nav ul li.v65-pageAParent {
 }
 
 .bannerInterior {
-  background: #66CDAA;
+  background: #2A8365;
   height: 3px;
   margin-bottom: 30px;
   width: 100%;
+}
+
+.bannerLink{
+  color: #fff; 
+  text-decoration: underline;
 }
 
 #slider {
@@ -1434,15 +1456,43 @@ nav ul li.v65-pageAParent {
   }
 }
 
+@media screen and (orientation:landscape)
+and (max-device-width: 700px) {
+   
+   #v65-modalContentWrapper{
+     left: 0%;
+     top: 0%;
+     margin: 0;
+     width: 100%;
+     border: none;
+   }
+
+   #v65-modalContent p{
+     font-size: 10pt;
+   }
+
+   .v65-form{
+    width: 50%;float: left;margin-right: 2%;
+  }
+
+   .v65-form input[type=text], .v65-form input[type=password]{
+      width: 93% !important;
+   }
+}
+
 /*   ===================================================================================================
      6. Footer	
 ======================================================================================================== */
 .footerUpper {
-  background: #66CDAA;
+  background: #2A8365;
   padding: 30px 2%;
 }
-.footerUpper p {
+.footerUpper p, .footerUpper li {
   color: #fff;
+}
+
+.footerUpper li{
+  margin-bottom: 7px;
 }
 .footerUpper a {
   color: #fff;
@@ -1455,6 +1505,7 @@ nav ul li.v65-pageAParent {
   color: #fff;
 }
 .footerUpper button span {
+  color: #000 !important;
   background: #FBAF3F !important;
 }
 .footerUpper .left {
@@ -1735,7 +1786,7 @@ footer {
      8. Print Template
 ======================================================================================================== */
 .printBody {
-  background-color: #66CDAA;
+  background-color: #2A8365;
   background-image: none;
   margin: 0;
   padding: 0;
@@ -1781,14 +1832,18 @@ footer {
 /*   ===================================================================================================
      9. Buttons
 ======================================================================================================== */
+
+button{
+  height:100%;
+}
+
 button.defaultBtn, button.modalBtn, button.largeBtn {
-  background: #66CDAA;
+  background: #2A8365;
   border-radius: 0;
   font-family: "Lato", sans-serif;
-  margin-bottom: 5px;
 }
 button.defaultBtn span, button.modalBtn span, button.largeBtn span {
-  background: #66CDAA;
+  background: #2A8365;
   color: #fff;
   border-radius: 0;
   padding: 5px 15px;
@@ -1799,7 +1854,7 @@ button.defaultBtn span, button.modalBtn span, button.largeBtn span {
   }
 }
 button.defaultBtn:hover, button.modalBtn:hover, button.largeBtn:hover {
-  background: #8cdabf;
+  background: #226b52;
 }
 button.altBtn, button.altModalBtn, button.altLargeBtn {
   background: #ccc;
@@ -1826,13 +1881,13 @@ button.altBtn:hover span, button.altModalBtn:hover span, button.altLargeBtn:hove
 }
 
 a.linkBtn, a.modalLinkBtn, a.largeLinkBtn, a.fullWidthBtn {
-  background: #66CDAA;
+  background: #2A8365;
   border-radius: 0;
   font-family: "Lato", sans-serif;
-  margin-bottom: 5px;
+  height:100%;
 }
 a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span, a.fullWidthBtn span {
-  background: #66CDAA;
+  background: #2A8365;
   color: #fff;
   border-radius: 0;
   padding: 5px 15px;
@@ -1843,11 +1898,11 @@ a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span, a.fullWidthBtn span {
   }
 }
 a.linkBtn:hover, a.modalLinkBtn:hover, a.largeLinkBtn:hover, a.fullWidthBtn:hover {
-  background: #8cdabf;
+  background: #236d54;
   text-decoration: none;
 }
 a.linkBtn:hover span, a.modalLinkBtn:hover span, a.largeLinkBtn:hover span, a.fullWidthBtn:hover span {
-  background: #8cdabf;
+  background: #236d54;
 }
 a.fullWidthBtn {
   display: block;
@@ -1863,7 +1918,7 @@ a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
   margin-bottom: 5px;
 }
 a.linkAltBtn span, a.modalLinkAltBtn span, a.modalLinkAltBtn span {
-  background: #ccc;
+  background: #696969;
   border-radius: 0;
   color: #fff;
   padding: 5px 15px;
@@ -1874,10 +1929,10 @@ a.linkAltBtn span, a.modalLinkAltBtn span, a.modalLinkAltBtn span {
   }
 }
 a.linkAltBtn:hover, a.modalLinkAltBtn:hover, a.modalLinkAltBtn:hover {
-  background: #e6e6e6;
+  background: #5d5c5c;
 }
 a.linkAltBtn:hover span, a.modalLinkAltBtn:hover span, a.modalLinkAltBtn:hover span {
-  background: #e6e6e6;
+  background: #5d5c5c;
 }
 a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
   min-width: auto;
@@ -1885,10 +1940,10 @@ a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
 
 .v65-quickView-close a {
   border-radius: 0;
-  background: #e6e6e6;
+  background: #757575;
 }
 .v65-quickView-close a:hover {
-  background: #e6e6e6;
+  background: #929292;
 }
 
 .v65-product-addToCart button {
