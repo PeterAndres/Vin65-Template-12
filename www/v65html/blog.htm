@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en-US">
 <head>
   
 	<meta charset="utf-8">
@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="http://quicklaunch.vin65.com/quicklaunch.js"></script>
 	<!--//Vin65 QuickLaunch//-->   
 	
-	<v65:css files="/assets/nivo/nivo-slider.css,/assets/css/screen.min.css">
+	<v65:css files="/assets/slick/slick-winedirect.css,/assets/slick/slick-theme-winedirect.css,/assets/css/screen.min.css">
 	<!--[if lt IE 9]>
 		<v65:js files="/assets/js/html5shiv-printshiv.js"></v65:js>
 	<![endif]-->
@@ -47,45 +47,47 @@
 		</nav>
 	</header>
 	
-	<!--Banner-->
-	<div class="bannerInterior">
-	</div>
-	<!--/banner-->
+	<main>
+		<!--Banner-->
+		<div class="bannerInterior">
+		</div>
+		<!--/banner-->
 
-	<!-- Content -->
-	<section class="container v65-group">
-	<!--blogContent-->
-		<article class="blogContent">
-			<v65:mainContent></v65:mainContent>
-		</article>
-		<!--/blogContent-->
-		
-		<!--blogRightWrapper-->
-		<aside class="blogRightWrapper">
-		
-			<div class="blogFilterLeft">
-				<h5>Recent Posts</h5>
-				<v65:blogRecentPosts maxrows="10"></v65:blogRecentPosts>
-				
-				<h5>Blog Categories</h5>
-				<v65:blogCategories></v65:blogCategories>
-								
-			</div>
+		<!-- Content -->
+		<section class="container v65-group">
+		<!--blogContent-->
+			<article class="blogContent">
+				<v65:mainContent></v65:mainContent>
+			</article>
+			<!--/blogContent-->
 			
-			<div class="blogFilterRight">
-				
-				<h5>Blog Archives</h5>
-				<v65:blogArchives></v65:blogArchives>
-				
-				<h5>Our Writers</h5>
-				<v65:blogAuthors></v65:blogAuthors>
-
-			</div>
+			<!--blogRightWrapper-->
+			<aside class="blogRightWrapper">
 			
-		</aside>
-		<!--/blogRightWrapper-->	
-		</section><!--/Upper Content-->	
+				<div class="blogFilterLeft">
+					<h5>Recent Posts</h5>
+					<v65:blogRecentPosts maxrows="10"></v65:blogRecentPosts>
+					
+					<h5>Blog Categories</h5>
+					<v65:blogCategories></v65:blogCategories>
+									
+				</div>
+				
+				<div class="blogFilterRight">
+					
+					<h5>Blog Archives</h5>
+					<v65:blogArchives></v65:blogArchives>
+					
+					<h5>Our Writers</h5>
+					<v65:blogAuthors></v65:blogAuthors>
 
+				</div>
+				
+			</aside>
+			<!--/blogRightWrapper-->	
+			</section><!--/Upper Content-->	
+		</main>
+		
 	<footer>
 		<div class="footerUpper">
 			<section class="container v65-group">
@@ -115,7 +117,7 @@
 	</footer>
 	
 
-	<v65:js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js,/assets/js/jquery.sidr.min.js">
+	<v65:js files="/assets/slick/slick-winedirect.js,/assets/js/jquery.sidr.min.js,/assets/js/track-focus.min.js">
 
 	<!--//Vin65 QuickLaunchFooter//-->
 	<script src="http://assets.vin65.com/js/vin65Footer.js" type="text/javascript"></script>     

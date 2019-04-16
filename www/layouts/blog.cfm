@@ -1,6 +1,6 @@
 <cfoutput> <!DOCTYPE html>
 
-<html>
+<html lang="en-US">
 <head>
   
 	<meta charset="utf-8">
@@ -15,7 +15,7 @@
         
 	<cf_vin65GlobalAssets>   
 	
-	<cf_css files="/assets/nivo/nivo-slider.css,/assets/css/screen.min.css">
+	<cf_css files="/assets/slick/slick-winedirect.css,/assets/slick/slick-theme-winedirect.css,/assets/css/screen.min.css">
 	<!--[if lt IE 9]>
 		<cf_js files="/assets/js/html5shiv-printshiv.js">
 	<![endif]-->
@@ -45,45 +45,47 @@
 		</nav>
 	</header>
 	
-	<!--Banner-->
-	<div class="bannerInterior">
-	</div>
-	<!--/banner-->
+	<main>
+		<!--Banner-->
+		<div class="bannerInterior">
+		</div>
+		<!--/banner-->
 
-	<!-- Content -->
-	<section class="container v65-group">
-	<!--blogContent-->
-		<article class="blogContent">
-			<cf_mainContent>
-		</article>
-		<!--/blogContent-->
-		
-		<!--blogRightWrapper-->
-		<aside class="blogRightWrapper">
-		
-			<div class="blogFilterLeft">
-				<h5>Recent Posts</h5>
-				<cf_blogRecentPosts maxrows="10">
-				
-				<h5>Blog Categories</h5>
-				<cf_blogCategories>
-								
-			</div>
+		<!-- Content -->
+		<section class="container v65-group">
+		<!--blogContent-->
+			<article class="blogContent">
+				<cf_mainContent>
+			</article>
+			<!--/blogContent-->
 			
-			<div class="blogFilterRight">
-				
-				<h5>Blog Archives</h5>
-				<cf_blogArchives>
-				
-				<h5>Our Writers</h5>
-				<cf_blogAuthors>
-
-			</div>
+			<!--blogRightWrapper-->
+			<aside class="blogRightWrapper">
 			
-		</aside>
-		<!--/blogRightWrapper-->	
-		</section><!--/Upper Content-->	
+				<div class="blogFilterLeft">
+					<h5>Recent Posts</h5>
+					<cf_blogRecentPosts maxrows="10">
+					
+					<h5>Blog Categories</h5>
+					<cf_blogCategories>
+									
+				</div>
+				
+				<div class="blogFilterRight">
+					
+					<h5>Blog Archives</h5>
+					<cf_blogArchives>
+					
+					<h5>Our Writers</h5>
+					<cf_blogAuthors>
 
+				</div>
+				
+			</aside>
+			<!--/blogRightWrapper-->	
+			</section><!--/Upper Content-->	
+		</main>
+		
 	<footer>
 		<div class="footerUpper">
 			<section class="container v65-group">
@@ -113,7 +115,7 @@
 	</footer>
 	
 
-	<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js,/assets/js/jquery.sidr.min.js">
+	<cf_js files="/assets/slick/slick-winedirect.js,/assets/js/jquery.sidr.min.js,/assets/js/track-focus.min.js">
 
 	<cf_vin65GlobalFooterAssets>
 

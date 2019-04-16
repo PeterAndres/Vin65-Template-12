@@ -1,5 +1,5 @@
 <cfoutput> <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
   
 	<meta charset="utf-8">
@@ -15,15 +15,15 @@
 
 </head>
 <body class="print">
+	<main>
+		<img src="/assets/images/email/header.gif" alt="<cf_websiteName>" />
+		<cf_mainContent>
 
-	<img src="/assets/images/email/header.gif" alt="<cf_websiteName>" />
-	<cf_mainContent>
+		<p style="text-align: center;">
+			<strong><cf_websiteName></strong><br>
+		</p>
 
-	<p style="text-align: center;">
-		<strong><cf_websiteName></strong><br>
-	</p>
-
-	<cf_vin65GlobalFooterAssets>
-
+		<cf_vin65GlobalFooterAssets>
+	</main>
 </body>
 </html> </cfoutput>

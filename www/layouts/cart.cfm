@@ -1,6 +1,6 @@
 <cfoutput> <!DOCTYPE html>
 
-<html>
+<html lang="en-US">
 <head>
   
 	<meta charset="utf-8">
@@ -15,7 +15,7 @@
         
 	<cf_vin65GlobalAssets>   
 	
-	<cf_css files="/assets/nivo/nivo-slider.css,/assets/css/screen.min.css">
+	<cf_css files="/assets/slick/slick-winedirect.css,/assets/slick/slick-theme-winedirect.css,/assets/nivo/nivo-slider.css,/assets/css/screen.min.css">
 	<!--[if lt IE 9]>
 		<cf_js files="/assets/js/html5shiv-printshiv.js">
 	<![endif]-->
@@ -42,14 +42,16 @@
 		</nav>
 	</header>
 
-	<div class="bannerInterior">
-	</div><!--/banner-->
-	
-	<section class="container v65-group">
-		<div class="contentWide">
-			<cf_mainContent>
-		</div>
-	</section><!--/Upper Content-->
+	<main>
+		<div class="bannerInterior">
+		</div><!--/banner-->
+		
+		<section class="container v65-group">
+			<div class="contentWide">
+				<cf_mainContent>
+			</div>
+		</section><!--/Upper Content-->
+	</main>
 	
 	<footer>
 		<div class="footerUpper">
@@ -80,7 +82,7 @@
 	</footer>
 		
 
-		<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js,/assets/js/jquery.sidr.min.js">
+		<cf_js files="/assets/slick/slick-winedirect.js,/assets/js/scripts.js,/assets/js/jquery.sidr.min.js,/assets/js/track-focus.min.js">
 
 		<cf_vin65GlobalFooterAssets>
 
